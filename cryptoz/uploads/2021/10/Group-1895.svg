@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="229" height="49.564" viewBox="0 0 229 49.564">
+  <g id="Group_1895" data-name="Group 1895" transform="translate(-198 -70)">
+    <text id="Cryptoz" transform="translate(253 107)" fill="#fff" font-size="32" font-family="Michroma" letter-spacing="0.008em"><tspan x="0" y="0">Cryptoz</tspan></text>
+    <g id="Group_1891" data-name="Group 1891" transform="translate(0 -2)">
+      <g id="Page-1" transform="translate(198 79)">
+        <g id="sketch-symbol">
+          <path id="Path" d="M10.262,1.4,23.518,0,36.773,1.4,47.035,15.177,23.518,42.564,0,15.177Z" fill="#04da9a"/>
+          <g id="Group" transform="translate(0 15.178)">
+            <path id="Path-2" data-name="Path" d="M9.526,0,23.518,27.386,0,0Z" fill="#04da9a"/>
+            <path id="Path-3" data-name="Path" d="M9.526,27.386,23.518,0,0,27.386Z" transform="translate(47.035 27.386) rotate(180)" fill="#04da9a"/>
+            <path id="Path-4" data-name="Path" d="M79.634,0h27.984L93.626,27.386Z" transform="translate(-70.108)" fill="#00cb8e"/>
+          </g>
+          <g id="Group-2" data-name="Group">
+            <path id="Path-5" data-name="Path" d="M93.626,0,80.37,1.4l-.736,13.776Z" transform="translate(-70.108)" fill="#04da9a"/>
+            <path id="Path-6" data-name="Path" d="M13.992,15.177.736,13.776,0,0Z" transform="translate(37.509 15.177) rotate(180)" fill="#04da9a"/>
+            <path id="Path-7" data-name="Path" d="M0,0,10.262,13.776,9.526,0Z" transform="translate(47.035 15.177) rotate(180)" fill="#04da9a"/>
+            <path id="Path-8" data-name="Path" d="M0,25.491,10.262,11.715,9.526,25.491Z" transform="translate(0 -10.314)" fill="#04da9a"/>
+          </g>
+        </g>
+      </g>
+      <path id="path6" d="M496.855,1383.322a4.2,4.2,0,1,1-3.027-7.117h0a4.173,4.173,0,0,1,2.528.846l2.988-2.988a8.407,8.407,0,1,0,.485,12.233Z" transform="translate(-271.107 -1284.31)" fill="#212530" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
