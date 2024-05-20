@@ -1,0 +1,320 @@
+[2021-06-13 04:06:58 : INFO] - Re_Smush_It_Task with attachment ID : 6442, autocreated on : June 13, 2021 04:06:58 
+[2021-06-13 04:08:56 : INFO] - Re_Smush_It_Task with attachment ID : 6443, autocreated on : June 13, 2021 04:08:56 
+[2021-06-13 04:12:00 : INFO] - 
+ 
+[2021-06-13 04:12:00 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 04:12:00 +0000 on http://dev3.iamabdus.com/indro 
+[2021-06-13 04:12:00 : INFO] - WP: 5.7.2 
+[2021-06-13 04:12:00 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 04:12:00 : INFO] - MySQL: 5.6.41 
+[2021-06-13 04:12:00 : INFO] - WPLANG: en_US 
+[2021-06-13 04:12:00 : INFO] - Server: Apache 
+[2021-06-13 04:12:00 : INFO] - Outbound connections: N 
+[2021-06-13 04:12:00 : INFO] - safe_mode: 0 
+[2021-06-13 04:12:00 : INFO] - max_execution_time: 300 
+[2021-06-13 04:12:00 : INFO] - memory_limit: 448M (used: 50.3M | 52.3M) 
+[2021-06-13 04:12:00 : INFO] - multisite: N 
+[2021-06-13 04:12:00 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 04:12:00 : INFO] - A total of 2 tasks of type smush found and will be processed in this iteration 
+[2021-06-13 04:12:00 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 04:12:00 
+[2021-06-13 04:12:00 : INFO] - Semaphore lock (smush) complete 
+[2021-06-13 04:12:00 : INFO] - Processing task with ID : 79, and type 'smush' 
+[2021-06-13 04:12:00 : INFO] - Task with ID 79 and type (smush) failed with error code invalid_file_path - The linked attachment ID does not have a valid file path 
+[2021-06-13 04:12:00 : INFO] - Processing task with ID : 80, and type 'smush' 
+[2021-06-13 04:12:00 : INFO] - Task with ID 80 and type (smush) failed with error code invalid_file_type - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/04/comment-2.svg - cannot be optimized, it has an invalid file type 
+[2021-06-13 04:12:00 : INFO] - Decremented the semaphore (smush) by 1 
+[2021-06-13 04:12:00 : INFO] - Semaphore (smush) unlocked 
+[2021-06-13 04:12:00 : INFO] - Successfully processed the queue (smush). 2 tasks were processed out of 2. 
+[2021-06-13 04:12:00 : INFO] - Semaphore (smush, wplu_options) was successfully cleaned up 
+[2021-06-13 04:12:00 : INFO] - Cleaning up tasks of type (smush). A total of 2 tasks will be deleted. 
+[2021-06-13 04:22:05 : INFO] - 
+ 
+[2021-06-13 04:22:05 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 04:22:05 +0000 on http://dev3.iamabdus.com/indro 
+[2021-06-13 04:22:05 : INFO] - WP: 5.7.2 
+[2021-06-13 04:22:05 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 04:22:05 : INFO] - MySQL: 5.6.41 
+[2021-06-13 04:22:05 : INFO] - WPLANG: en_US 
+[2021-06-13 04:22:05 : INFO] - Server: Apache 
+[2021-06-13 04:22:05 : INFO] - Outbound connections: N 
+[2021-06-13 04:22:05 : INFO] - safe_mode: 0 
+[2021-06-13 04:22:05 : INFO] - max_execution_time: 300 
+[2021-06-13 04:22:05 : INFO] - memory_limit: 448M (used: 50.3M | 52.3M) 
+[2021-06-13 04:22:05 : INFO] - multisite: N 
+[2021-06-13 04:22:05 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 04:22:05 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
+[2021-06-13 04:30:18 : INFO] - Re_Smush_It_Task with attachment ID : 6453, autocreated on : June 13, 2021 04:30:18 
+[2021-06-13 04:30:19 : INFO] - Re_Smush_It_Task with attachment ID : 6454, autocreated on : June 13, 2021 04:30:19 
+[2021-06-13 04:30:22 : INFO] - Re_Smush_It_Task with attachment ID : 6455, autocreated on : June 13, 2021 04:30:22 
+[2021-06-13 04:30:24 : INFO] - Re_Smush_It_Task with attachment ID : 6456, autocreated on : June 13, 2021 04:30:24 
+[2021-06-13 04:30:27 : INFO] - Re_Smush_It_Task with attachment ID : 6457, autocreated on : June 13, 2021 04:30:27 
+[2021-06-13 04:34:38 : INFO] - Re_Smush_It_Task with attachment ID : 6462, autocreated on : June 13, 2021 04:34:38 
+[2021-06-13 04:35:22 : INFO] - 
+ 
+[2021-06-13 04:35:22 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 04:35:22 +0000 on http://dev3.iamabdus.com/indro 
+[2021-06-13 04:35:22 : INFO] - WP: 5.7.2 
+[2021-06-13 04:35:22 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 04:35:22 : INFO] - MySQL: 5.6.41 
+[2021-06-13 04:35:22 : INFO] - WPLANG: en_US 
+[2021-06-13 04:35:22 : INFO] - Server: Apache 
+[2021-06-13 04:35:22 : INFO] - Outbound connections: N 
+[2021-06-13 04:35:22 : INFO] - safe_mode: 0 
+[2021-06-13 04:35:22 : INFO] - max_execution_time: 300 
+[2021-06-13 04:35:22 : INFO] - memory_limit: 448M (used: 50.3M | 52.3M) 
+[2021-06-13 04:35:22 : INFO] - multisite: N 
+[2021-06-13 04:35:22 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 04:35:22 : INFO] - A total of 6 tasks of type smush found and will be processed in this iteration 
+[2021-06-13 04:35:22 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 04:35:22 
+[2021-06-13 04:35:22 : INFO] - Semaphore lock (smush) complete 
+[2021-06-13 04:35:22 : INFO] - Processing task with ID : 81, and type 'smush' 
+[2021-06-13 04:35:22 : INFO] - Re_Smush_It_Task with attachment ID : 6453, autocreated on : June 13, 2021 04:30:18 
+[2021-06-13 04:35:22 : INFO] - 90 
+[2021-06-13 04:35:23 : INFO] - Backing up the original image - 2021/04/workers-standing-checking-beside-working-oil-pumps-1-1-updraft-pre-smush-original.jpg 
+[2021-06-13 04:35:23 : INFO] - Re_Smush_It_Task with attachment ID : 6453, autocreated on : June 13, 2021 04:30:18 
+[2021-06-13 04:35:23 : INFO] - 90 
+[2021-06-13 04:35:25 : INFO] - Re_Smush_It_Task with attachment ID : 6453, autocreated on : June 13, 2021 04:30:18 
+[2021-06-13 04:35:25 : INFO] - 90 
+[2021-06-13 04:35:29 : INFO] - Re_Smush_It_Task with attachment ID : 6453, autocreated on : June 13, 2021 04:30:18 
+[2021-06-13 04:35:29 : INFO] - 90 
+[2021-06-13 04:35:30 : INFO] - Re_Smush_It_Task with attachment ID : 6453, autocreated on : June 13, 2021 04:30:18 
+[2021-06-13 04:35:30 : INFO] - 90 
+[2021-06-13 04:35:32 : INFO] - Re_Smush_It_Task with attachment ID : 6453, autocreated on : June 13, 2021 04:30:18 
+[2021-06-13 04:35:32 : INFO] - 90 
+[2021-06-13 04:35:33 : INFO] - Successfully optimized the image - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/04/workers-standing-checking-beside-working-oil-pumps-1-1.jpg.The file was compressed from 124.22 KB to 122.14 KB saving 1.67 percent using WP-Optimize 
+[2021-06-13 04:35:33 : INFO] - Completed processing task with ID : 81, and type 'smush' 
+[2021-06-13 04:35:33 : INFO] - Processing task with ID : 82, and type 'smush' 
+[2021-06-13 04:35:33 : INFO] - Re_Smush_It_Task with attachment ID : 6454, autocreated on : June 13, 2021 04:30:19 
+[2021-06-13 04:35:33 : INFO] - 90 
+[2021-06-13 04:35:34 : INFO] - Backing up the original image - 2021/04/workers-standing-checking-beside-working-oil-pumps-2-updraft-pre-smush-original.jpg 
+[2021-06-13 04:35:34 : INFO] - Re_Smush_It_Task with attachment ID : 6454, autocreated on : June 13, 2021 04:30:19 
+[2021-06-13 04:35:34 : INFO] - 90 
+[2021-06-13 04:35:40 : INFO] - Re_Smush_It_Task with attachment ID : 6454, autocreated on : June 13, 2021 04:30:19 
+[2021-06-13 04:35:40 : INFO] - 90 
+[2021-06-13 04:35:41 : INFO] - Re_Smush_It_Task with attachment ID : 6454, autocreated on : June 13, 2021 04:30:19 
+[2021-06-13 04:35:41 : INFO] - 90 
+[2021-06-13 04:35:42 : INFO] - Re_Smush_It_Task with attachment ID : 6454, autocreated on : June 13, 2021 04:30:19 
+[2021-06-13 04:35:42 : INFO] - 90 
+[2021-06-13 04:35:48 : INFO] - Task with ID 82 and type (smush) failed with error code invalid_response - The compression apparently succeeded, but WP-Optimize could not retrieve the compressed image from the remote server. 
+[2021-06-13 04:35:48 : INFO] - data: {"src":"http:\/\/par3.static.resmush.it\/66cebea47b83aa6d185449367d79b97d\/_src_workers-standing-checking-beside-working-oil-pumps-2-768x512.jpg","dest":"http:\/\/par3.static.resmush.it\/66cebea47b83aa6d185449367d79b97d\/workers-standing-checking-beside-working-oil-pumps-2-768x512.jpg","src_size":83187,"dest_size":77010,"percent":7,"output":"json","expires":"Sun, 13 Jun 2021 06:40:43 +0200","generator":"reSmush.it rev.3.0.4.20210124"} 
+[2021-06-13 04:35:48 : INFO] - Re_Smush_It_Task with attachment ID : 6454, autocreated on : June 13, 2021 04:30:19 
+[2021-06-13 04:35:48 : INFO] - 90 
+[2021-06-13 04:35:50 : INFO] - Successfully optimized the image - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/04/workers-standing-checking-beside-working-oil-pumps-2.jpg.The file was compressed from 113.58 KB to 113.58 KB saving 0 percent using WP-Optimize 
+[2021-06-13 04:35:50 : INFO] - Completed processing task with ID : 82, and type 'smush' 
+[2021-06-13 04:35:50 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 04:35:50 
+[2021-06-13 04:35:50 : INFO] - Processing task with ID : 83, and type 'smush' 
+[2021-06-13 04:35:50 : INFO] - Re_Smush_It_Task with attachment ID : 6455, autocreated on : June 13, 2021 04:30:22 
+[2021-06-13 04:35:50 : INFO] - 90 
+[2021-06-13 04:35:52 : INFO] - Backing up the original image - 2021/04/cutting-metal-with-plasma-equipment-plant-1-updraft-pre-smush-original.jpg 
+[2021-06-13 04:35:52 : INFO] - Re_Smush_It_Task with attachment ID : 6455, autocreated on : June 13, 2021 04:30:22 
+[2021-06-13 04:35:52 : INFO] - 90 
+[2021-06-13 04:35:53 : INFO] - Re_Smush_It_Task with attachment ID : 6455, autocreated on : June 13, 2021 04:30:22 
+[2021-06-13 04:35:53 : INFO] - 90 
+[2021-06-13 04:35:54 : INFO] - Re_Smush_It_Task with attachment ID : 6455, autocreated on : June 13, 2021 04:30:22 
+[2021-06-13 04:35:54 : INFO] - 90 
+[2021-06-13 04:35:55 : INFO] - Re_Smush_It_Task with attachment ID : 6455, autocreated on : June 13, 2021 04:30:22 
+[2021-06-13 04:35:55 : INFO] - 90 
+[2021-06-13 04:36:01 : INFO] - Task with ID 83 and type (smush) failed with error code invalid_response - The compression apparently succeeded, but WP-Optimize could not retrieve the compressed image from the remote server. 
+[2021-06-13 04:36:01 : INFO] - data: {"src":"http:\/\/ams1.static.resmush.it\/8d231f2d8448b33837de1f7ed868074a\/_src_cutting-metal-with-plasma-equipment-plant-1-768x512.jpg","dest":"http:\/\/ams1.static.resmush.it\/8d231f2d8448b33837de1f7ed868074a\/cutting-metal-with-plasma-equipment-plant-1-768x512.jpg","src_size":72032,"dest_size":63216,"percent":12,"output":"json","expires":"Sun, 13 Jun 2021 06:40:55 +0200","generator":"reSmush.it rev.3.0.4.20210124"} 
+[2021-06-13 04:36:01 : INFO] - Re_Smush_It_Task with attachment ID : 6455, autocreated on : June 13, 2021 04:30:22 
+[2021-06-13 04:36:01 : INFO] - 90 
+[2021-06-13 04:36:09 : INFO] - Successfully optimized the image - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/04/cutting-metal-with-plasma-equipment-plant-1.jpg.The file was compressed from 185.80 KB to 140.97 KB saving 24.13 percent using WP-Optimize 
+[2021-06-13 04:36:09 : INFO] - Completed processing task with ID : 83, and type 'smush' 
+[2021-06-13 04:36:09 : INFO] - Processing task with ID : 84, and type 'smush' 
+[2021-06-13 04:36:09 : INFO] - Re_Smush_It_Task with attachment ID : 6456, autocreated on : June 13, 2021 04:30:24 
+[2021-06-13 04:36:09 : INFO] - 90 
+[2021-06-13 04:36:11 : INFO] - Backing up the original image - 2021/04/steel-pipelines-cables-plant-1-updraft-pre-smush-original.jpg 
+[2021-06-13 04:36:11 : INFO] - Re_Smush_It_Task with attachment ID : 6456, autocreated on : June 13, 2021 04:30:24 
+[2021-06-13 04:36:11 : INFO] - 90 
+[2021-06-13 04:36:12 : INFO] - Re_Smush_It_Task with attachment ID : 6456, autocreated on : June 13, 2021 04:30:24 
+[2021-06-13 04:36:12 : INFO] - 90 
+[2021-06-13 04:36:13 : INFO] - Re_Smush_It_Task with attachment ID : 6456, autocreated on : June 13, 2021 04:30:24 
+[2021-06-13 04:36:13 : INFO] - 90 
+[2021-06-13 04:36:15 : INFO] - Re_Smush_It_Task with attachment ID : 6456, autocreated on : June 13, 2021 04:30:24 
+[2021-06-13 04:36:15 : INFO] - 90 
+[2021-06-13 04:36:17 : INFO] - Re_Smush_It_Task with attachment ID : 6456, autocreated on : June 13, 2021 04:30:24 
+[2021-06-13 04:36:17 : INFO] - 90 
+[2021-06-13 04:36:18 : INFO] - Successfully optimized the image - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/04/steel-pipelines-cables-plant-1.jpg.The file was compressed from 176.24 KB to 176.24 KB saving 0 percent using WP-Optimize 
+[2021-06-13 04:36:18 : INFO] - Completed processing task with ID : 84, and type 'smush' 
+[2021-06-13 04:36:18 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 04:36:18 
+[2021-06-13 04:36:18 : INFO] - Processing task with ID : 85, and type 'smush' 
+[2021-06-13 04:36:18 : INFO] - Re_Smush_It_Task with attachment ID : 6457, autocreated on : June 13, 2021 04:30:27 
+[2021-06-13 04:36:18 : INFO] - 90 
+[2021-06-13 04:36:19 : INFO] - Backing up the original image - 2021/04/interior-view-steel-factory-1-updraft-pre-smush-original.jpg 
+[2021-06-13 04:36:19 : INFO] - Re_Smush_It_Task with attachment ID : 6457, autocreated on : June 13, 2021 04:30:27 
+[2021-06-13 04:36:19 : INFO] - 90 
+[2021-06-13 04:36:20 : INFO] - Re_Smush_It_Task with attachment ID : 6457, autocreated on : June 13, 2021 04:30:27 
+[2021-06-13 04:36:20 : INFO] - 90 
+[2021-06-13 04:36:21 : INFO] - Re_Smush_It_Task with attachment ID : 6457, autocreated on : June 13, 2021 04:30:27 
+[2021-06-13 04:36:21 : INFO] - 90 
+[2021-06-13 04:36:22 : INFO] - Re_Smush_It_Task with attachment ID : 6457, autocreated on : June 13, 2021 04:30:27 
+[2021-06-13 04:36:22 : INFO] - 90 
+[2021-06-13 04:36:23 : INFO] - Re_Smush_It_Task with attachment ID : 6457, autocreated on : June 13, 2021 04:30:27 
+[2021-06-13 04:36:23 : INFO] - 90 
+[2021-06-13 04:36:24 : INFO] - Successfully optimized the image - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/04/interior-view-steel-factory-1.jpg.The file was compressed from 194.32 KB to 173.27 KB saving 10.83 percent using WP-Optimize 
+[2021-06-13 04:36:24 : INFO] - Completed processing task with ID : 85, and type 'smush' 
+[2021-06-13 04:36:24 : INFO] - Processing task with ID : 86, and type 'smush' 
+[2021-06-13 04:36:24 : INFO] - Re_Smush_It_Task with attachment ID : 6462, autocreated on : June 13, 2021 04:34:38 
+[2021-06-13 04:36:24 : INFO] - 90 
+[2021-06-13 04:36:26 : INFO] - Backing up the original image - 2021/04/man-worker-firld-by-solar-panels-1-updraft-pre-smush-original.jpg 
+[2021-06-13 04:36:26 : INFO] - Re_Smush_It_Task with attachment ID : 6462, autocreated on : June 13, 2021 04:34:38 
+[2021-06-13 04:36:26 : INFO] - 90 
+[2021-06-13 04:36:27 : INFO] - Re_Smush_It_Task with attachment ID : 6462, autocreated on : June 13, 2021 04:34:38 
+[2021-06-13 04:36:27 : INFO] - 90 
+[2021-06-13 04:36:28 : INFO] - Re_Smush_It_Task with attachment ID : 6462, autocreated on : June 13, 2021 04:34:38 
+[2021-06-13 04:36:28 : INFO] - 90 
+[2021-06-13 04:36:29 : INFO] - Re_Smush_It_Task with attachment ID : 6462, autocreated on : June 13, 2021 04:34:38 
+[2021-06-13 04:36:29 : INFO] - 90 
+[2021-06-13 04:36:30 : INFO] - Re_Smush_It_Task with attachment ID : 6462, autocreated on : June 13, 2021 04:34:38 
+[2021-06-13 04:36:30 : INFO] - 90 
+[2021-06-13 04:36:36 : INFO] - Task with ID 86 and type (smush) failed with error code invalid_response - The compression apparently succeeded, but WP-Optimize could not retrieve the compressed image from the remote server. 
+[2021-06-13 04:36:36 : INFO] - data: {"src":"http:\/\/par2.static.resmush.it\/0284d5700066aaa7ca1a99e60505d708\/_src_man-worker-firld-by-solar-panels-1-800x484.jpg","dest":"http:\/\/par2.static.resmush.it\/0284d5700066aaa7ca1a99e60505d708\/man-worker-firld-by-solar-panels-1-800x484.jpg","src_size":92342,"dest_size":88125,"percent":5,"output":"json","expires":"Sun, 13 Jun 2021 06:41:31 +0200","generator":"reSmush.it rev.3.0.4.20210124"} 
+[2021-06-13 04:36:36 : INFO] - Successfully optimized the image - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/04/man-worker-firld-by-solar-panels-1.jpg.The file was compressed from 179.99 KB to 106.78 KB saving 40.67 percent using WP-Optimize 
+[2021-06-13 04:36:36 : INFO] - Completed processing task with ID : 86, and type 'smush' 
+[2021-06-13 04:36:36 : INFO] - Decremented the semaphore (smush) by 1 
+[2021-06-13 04:36:36 : INFO] - Semaphore (smush) unlocked 
+[2021-06-13 04:36:36 : INFO] - Successfully processed the queue (smush). 6 tasks were processed out of 6. 
+[2021-06-13 04:36:36 : INFO] - Semaphore (smush, wplu_options) was successfully cleaned up 
+[2021-06-13 04:36:36 : INFO] - Cleaning up tasks of type (smush). A total of 6 tasks will be deleted. 
+[2021-06-13 04:45:29 : INFO] - 
+ 
+[2021-06-13 04:45:29 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 04:45:29 +0000 on http://dev3.iamabdus.com/indro 
+[2021-06-13 04:45:29 : INFO] - WP: 5.7.2 
+[2021-06-13 04:45:29 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 04:45:29 : INFO] - MySQL: 5.6.41 
+[2021-06-13 04:45:29 : INFO] - WPLANG: en_US 
+[2021-06-13 04:45:29 : INFO] - Server: Apache 
+[2021-06-13 04:45:29 : INFO] - Outbound connections: N 
+[2021-06-13 04:45:29 : INFO] - safe_mode: 0 
+[2021-06-13 04:45:29 : INFO] - max_execution_time: 300 
+[2021-06-13 04:45:29 : INFO] - memory_limit: 448M (used: 50.3M | 52.3M) 
+[2021-06-13 04:45:29 : INFO] - multisite: N 
+[2021-06-13 04:45:29 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 04:45:29 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
+[2021-06-13 07:51:47 : INFO] - Re_Smush_It_Task with attachment ID : 6562, autocreated on : June 13, 2021 07:51:47 
+[2021-06-13 07:56:59 : INFO] - 
+ 
+[2021-06-13 07:56:59 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 07:56:59 +0000 on http://dev3.iamabdus.com/indro 
+[2021-06-13 07:56:59 : INFO] - WP: 5.7.2 
+[2021-06-13 07:56:59 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 07:56:59 : INFO] - MySQL: 5.6.41 
+[2021-06-13 07:56:59 : INFO] - WPLANG: en_US 
+[2021-06-13 07:56:59 : INFO] - Server: Apache 
+[2021-06-13 07:56:59 : INFO] - Outbound connections: N 
+[2021-06-13 07:56:59 : INFO] - safe_mode: 0 
+[2021-06-13 07:56:59 : INFO] - max_execution_time: 300 
+[2021-06-13 07:56:59 : INFO] - memory_limit: 448M (used: 50.3M | 52.3M) 
+[2021-06-13 07:56:59 : INFO] - multisite: N 
+[2021-06-13 07:56:59 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 07:56:59 : INFO] - A total of 1 tasks of type smush found and will be processed in this iteration 
+[2021-06-13 07:56:59 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 07:56:59 
+[2021-06-13 07:56:59 : INFO] - Semaphore lock (smush) complete 
+[2021-06-13 07:56:59 : INFO] - Processing task with ID : 87, and type 'smush' 
+[2021-06-13 07:56:59 : INFO] - Task with ID 87 and type (smush) failed with error code invalid_file_path - The linked attachment ID does not have a valid file path 
+[2021-06-13 07:56:59 : INFO] - Decremented the semaphore (smush) by 1 
+[2021-06-13 07:56:59 : INFO] - Semaphore (smush) unlocked 
+[2021-06-13 07:56:59 : INFO] - Successfully processed the queue (smush). 1 tasks were processed out of 1. 
+[2021-06-13 07:56:59 : INFO] - Semaphore (smush, wplu_options) was successfully cleaned up 
+[2021-06-13 07:56:59 : INFO] - Cleaning up tasks of type (smush). A total of 1 tasks will be deleted. 
+[2021-06-13 08:04:43 : INFO] - Re_Smush_It_Task with attachment ID : 6579, autocreated on : June 13, 2021 08:04:43 
+[2021-06-13 08:05:49 : INFO] - Re_Smush_It_Task with attachment ID : 6583, autocreated on : June 13, 2021 08:05:49 
+[2021-06-13 08:07:03 : INFO] - 
+ 
+[2021-06-13 08:07:03 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 08:07:03 +0000 on http://dev3.iamabdus.com/indro 
+[2021-06-13 08:07:03 : INFO] - WP: 5.7.2 
+[2021-06-13 08:07:03 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 08:07:03 : INFO] - MySQL: 5.6.41 
+[2021-06-13 08:07:03 : INFO] - WPLANG: en_US 
+[2021-06-13 08:07:03 : INFO] - Server: Apache 
+[2021-06-13 08:07:03 : INFO] - Outbound connections: N 
+[2021-06-13 08:07:03 : INFO] - safe_mode: 0 
+[2021-06-13 08:07:03 : INFO] - max_execution_time: 300 
+[2021-06-13 08:07:03 : INFO] - memory_limit: 448M (used: 50.3M | 52.3M) 
+[2021-06-13 08:07:03 : INFO] - multisite: N 
+[2021-06-13 08:07:03 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 08:07:03 : INFO] - A total of 2 tasks of type smush found and will be processed in this iteration 
+[2021-06-13 08:07:03 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 08:07:03 
+[2021-06-13 08:07:03 : INFO] - Semaphore lock (smush) complete 
+[2021-06-13 08:07:03 : INFO] - Processing task with ID : 88, and type 'smush' 
+[2021-06-13 08:07:03 : INFO] - Task with ID 88 and type (smush) failed with error code invalid_file_path - The linked attachment ID does not have a valid file path 
+[2021-06-13 08:07:03 : INFO] - Processing task with ID : 89, and type 'smush' 
+[2021-06-13 08:07:03 : INFO] - Re_Smush_It_Task with attachment ID : 6583, autocreated on : June 13, 2021 08:05:49 
+[2021-06-13 08:07:03 : INFO] - 90 
+[2021-06-13 08:07:13 : INFO] - Backing up the original image - 2021/06/image-2-1-1-updraft-pre-smush-original.png 
+[2021-06-13 08:07:13 : INFO] - Re_Smush_It_Task with attachment ID : 6583, autocreated on : June 13, 2021 08:05:49 
+[2021-06-13 08:07:13 : INFO] - 90 
+[2021-06-13 08:07:15 : INFO] - Re_Smush_It_Task with attachment ID : 6583, autocreated on : June 13, 2021 08:05:49 
+[2021-06-13 08:07:15 : INFO] - 90 
+[2021-06-13 08:07:16 : INFO] - Re_Smush_It_Task with attachment ID : 6583, autocreated on : June 13, 2021 08:05:49 
+[2021-06-13 08:07:16 : INFO] - 90 
+[2021-06-13 08:07:17 : INFO] - Re_Smush_It_Task with attachment ID : 6583, autocreated on : June 13, 2021 08:05:49 
+[2021-06-13 08:07:17 : INFO] - 90 
+[2021-06-13 08:07:19 : INFO] - Re_Smush_It_Task with attachment ID : 6583, autocreated on : June 13, 2021 08:05:49 
+[2021-06-13 08:07:19 : INFO] - 90 
+[2021-06-13 08:07:23 : INFO] - Successfully optimized the image - /home/dev3iamabdus/public_html/indro/wp-content/uploads/2021/06/image-2-1-1.png.The file was compressed from 204.04 KB to 204.04 KB saving 0 percent using WP-Optimize 
+[2021-06-13 08:07:23 : INFO] - Completed processing task with ID : 89, and type 'smush' 
+[2021-06-13 08:07:23 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 08:07:23 
+[2021-06-13 08:07:23 : INFO] - Decremented the semaphore (smush) by 1 
+[2021-06-13 08:07:23 : INFO] - Semaphore (smush) unlocked 
+[2021-06-13 08:07:23 : INFO] - Successfully processed the queue (smush). 2 tasks were processed out of 2. 
+[2021-06-13 08:07:23 : INFO] - Semaphore (smush, wplu_options) was successfully cleaned up 
+[2021-06-13 08:07:23 : INFO] - Cleaning up tasks of type (smush). A total of 2 tasks will be deleted. 
+[2021-06-13 08:17:08 : INFO] - 
+ 
+[2021-06-13 08:17:08 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 08:17:08 +0000 on http://dev3.iamabdus.com/indro 
+[2021-06-13 08:17:08 : INFO] - WP: 5.7.2 
+[2021-06-13 08:17:08 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 08:17:08 : INFO] - MySQL: 5.6.41 
+[2021-06-13 08:17:08 : INFO] - WPLANG: en_US 
+[2021-06-13 08:17:08 : INFO] - Server: Apache 
+[2021-06-13 08:17:08 : INFO] - Outbound connections: N 
+[2021-06-13 08:17:08 : INFO] - safe_mode: 0 
+[2021-06-13 08:17:08 : INFO] - max_execution_time: 300 
+[2021-06-13 08:17:08 : INFO] - memory_limit: 448M (used: 50.3M | 52.3M) 
+[2021-06-13 08:17:08 : INFO] - multisite: N 
+[2021-06-13 08:17:08 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 08:17:08 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
+[2021-06-13 21:19:28 : INFO] - Re_Smush_It_Task with attachment ID : 6678, autocreated on : June 13, 2021 09:19:28 
+[2021-06-13 21:19:29 : INFO] - Re_Smush_It_Task with attachment ID : 6679, autocreated on : June 13, 2021 09:19:29 
+[2021-06-13 21:26:27 : INFO] - 
+ 
+[2021-06-13 21:26:27 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 21:26:27 +0000 on http://indro.iamabdus.com/v1.0 
+[2021-06-13 21:26:27 : INFO] - WP: 5.7.2 
+[2021-06-13 21:26:27 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 21:26:27 : INFO] - MySQL: 5.6.41 
+[2021-06-13 21:26:27 : INFO] - WPLANG: en_US 
+[2021-06-13 21:26:27 : INFO] - Server: Apache 
+[2021-06-13 21:26:27 : INFO] - Outbound connections: N 
+[2021-06-13 21:26:27 : INFO] - safe_mode: 0 
+[2021-06-13 21:26:27 : INFO] - max_execution_time: 300 
+[2021-06-13 21:26:27 : INFO] - memory_limit: 448M (used: 50.2M | 52.3M) 
+[2021-06-13 21:26:27 : INFO] - multisite: N 
+[2021-06-13 21:26:27 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 21:26:27 : INFO] - A total of 2 tasks of type smush found and will be processed in this iteration 
+[2021-06-13 21:26:27 : INFO] - Set semaphore last lock (smush) time to 2021-06-13 21:26:27 
+[2021-06-13 21:26:27 : INFO] - Semaphore lock (smush) complete 
+[2021-06-13 21:26:27 : INFO] - Processing task with ID : 90, and type 'smush' 
+[2021-06-13 21:26:27 : INFO] - Task with ID 90 and type (smush) failed with error code invalid_file_type - /home/indroiam/public_html/v1.0/wp-content/uploads/2021/06/Group-5.svg - cannot be optimized, it has an invalid file type 
+[2021-06-13 21:26:27 : INFO] - Processing task with ID : 91, and type 'smush' 
+[2021-06-13 21:26:27 : INFO] - Re_Smush_It_Task with attachment ID : 6679, autocreated on : June 13, 2021 09:19:29 
+[2021-06-13 21:26:27 : INFO] - 90 
+[2021-06-13 21:26:30 : INFO] - Backing up the original image - 2021/06/Group-5-updraft-pre-smush-original.png 
+[2021-06-13 21:26:30 : INFO] - Successfully optimized the image - /home/indroiam/public_html/v1.0/wp-content/uploads/2021/06/Group-5.png.The file was compressed from 2.30 KB to 1.07 KB saving 53.55 percent using WP-Optimize 
+[2021-06-13 21:26:30 : INFO] - Completed processing task with ID : 91, and type 'smush' 
+[2021-06-13 21:26:30 : INFO] - Decremented the semaphore (smush) by 1 
+[2021-06-13 21:26:30 : INFO] - Semaphore (smush) unlocked 
+[2021-06-13 21:26:30 : INFO] - Successfully processed the queue (smush). 2 tasks were processed out of 2. 
+[2021-06-13 21:26:30 : INFO] - Semaphore (smush, wplu_options) was successfully cleaned up 
+[2021-06-13 21:26:30 : INFO] - Cleaning up tasks of type (smush). A total of 2 tasks will be deleted. 
+[2021-06-13 21:36:32 : INFO] - 
+ 
+[2021-06-13 21:36:32 : INFO] - Header for logs at time:  Sun, 13 Jun 2021 21:36:32 +0000 on http://indro.iamabdus.com/v1.0 
+[2021-06-13 21:36:32 : INFO] - WP: 5.7.2 
+[2021-06-13 21:36:32 : INFO] - PHP: 7.2.26 (cgi-fcgi, Linux uscentral428.accountservergroup.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) 
+[2021-06-13 21:36:32 : INFO] - MySQL: 5.6.41 
+[2021-06-13 21:36:32 : INFO] - WPLANG: en_US 
+[2021-06-13 21:36:32 : INFO] - Server: Apache 
+[2021-06-13 21:36:32 : INFO] - Outbound connections: N 
+[2021-06-13 21:36:32 : INFO] - safe_mode: 0 
+[2021-06-13 21:36:32 : INFO] - max_execution_time: 300 
+[2021-06-13 21:36:32 : INFO] - memory_limit: 448M (used: 50.2M | 52.3M) 
+[2021-06-13 21:36:32 : INFO] - multisite: N 
+[2021-06-13 21:36:32 : INFO] - openssl: OpenSSL 1.0.1e 11 Feb 2013 
+[2021-06-13 21:36:32 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
