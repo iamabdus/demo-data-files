@@ -1,0 +1,124 @@
+
+---Downloaded files---
+The import files for: angel Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://angel.iamabdus.com/v1.4
+Data file = /home/angeliam/domains/angel.iamabdus.com/public_html/v1.4/wp-content/uploads/2024/05/demo-content-import-file_2024-05-22__11-33-59.xml
+Widget file = /home/angeliam/domains/angel.iamabdus.com/public_html/v1.4/wp-content/uploads/2024/05/demo-widgets-import-file_2024-05-22__11-33-59.json
+Customizer file = /home/angeliam/domains/angel.iamabdus.com/public_html/v1.4/wp-content/uploads/2024/05/demo-customizer-import-file_2024-05-22__11-33-59.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Footer Widgets : 
+
+Text - No Title - Imported
+Navigation Menu - Useful Links - Imported
+Gallery - Gallery - Imported
+Text - Newsletter - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
