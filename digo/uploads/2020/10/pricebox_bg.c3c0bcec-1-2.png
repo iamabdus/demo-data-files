@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="en-US">
+<head><style>img.lazy{min-height:1px}</style><link rel="preload" href="http://dev3.iamabdus.com/digo/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Page not found &#8211; Digo</title>
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Digo &raquo; Feed" href="http://dev3.iamabdus.com/digo/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Digo &raquo; Comments Feed" href="http://dev3.iamabdus.com/digo/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/dev3.iamabdus.com\/digo\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" href="http://dev3.iamabdus.com/digo/wp-content/cache/minify/633cc.css" media="all" />
+
+
+
+
+
+
+<link rel='stylesheet' id='ewebot-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Lora%3A400%2C400i%2C700%2C700i%7CNunito%3A200%2C200i%2C300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i&#038;display=swap%22+rel%3D%22stylesheet&#038;ver=5.5.1' type='text/css' media='all' />
+<link rel="stylesheet" href="http://dev3.iamabdus.com/digo/wp-content/cache/minify/16adc.css" media="all" />
+
+<script src="http://dev3.iamabdus.com/digo/wp-content/cache/minify/7ab91.js"></script>
+
+<link rel="https://api.w.org/" href="http://dev3.iamabdus.com/digo/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dev3.iamabdus.com/digo/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dev3.iamabdus.com/digo/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.1" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
+			body{
+	margin-bottom: 0 !important;
+}
+
+
+/* ===============
+	Navbar
+================== */
+
+.bdt-navbar-parent-indicator-yes ul>li.bdt-parent>a:after{
+		content: "\f107" !important;
+    font-family: FontAwesome,serif !important;
+    font-size: 15px !important;
+    line-height: 1;
+    padding-left: 4px !important;
+    vertical-align: middle !important;
+    position: relative;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    display: inline-block;
+    margin-left: 0px !important;
+	color: #3B3663 !important;
+}
+
+
+.bdt-navbar-dropdown{
+	top: 41px !important;
+	padding: 10px 15px 10px 20px !important;
+	border-radius: 5px;
+	font-family: Nunito;
+	font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.elementor-8627 .elementor-element.elementor-element-ada30e2 .bdt-navbar-dropdown-nav > li > a:hover{
+	color: #F3600D !important;
+}
+
+
+
+/* 			.cakelements-burger-menu__container{
+			left: -312px !important;
+		}
+
+@media (min-width: 767.98px) { 
+		.cakelements-burger-menu__container{
+			left: -198px !important;
+		}
+}
+@media (min-width: 1024px) { 
+		.cakelements-burger-menu__container{
+			  left: -246.512px !important;
+		}
+} */
+
+/* ===============
+	Modal in Navbar
+================== */
+
+.elementor-8627 .elementor-element.elementor-element-c2054f2 .bdt-modal-wrapper .bdt-modal-button{
+	background: linear-gradient(265.12deg, rgba(255, 255, 255, 0.3) 11.19%, rgba(255, 255, 255, 0) 85.73%), #F3600D;
+}
+.bdt-modal-c2054f2{
+	z-index: 9991;
+}
+
+.bdt-modal-dialog{
+	margin-top: 70px !important;
+}
+
+/* ===============
+	nab-bar_sticky
+================== */
+
+.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active{
+		padding-bottom: 5px !important;
+		padding-top: 10px !important;
+}
+
+@media (min-width: 767.98px) { 
+		.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active{
+		padding-bottom: 8px !important;
+		padding-top: 8px !important;
+}
+}
+
+@media (min-width: 1441px) { 
+		.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active{
+		padding-bottom: 8px !important;
+		padding-top: 10px !important;
+}
+}
+
+@media (min-width: 1921px) { 
+		.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active{
+		padding-bottom: 8px !important;
+		padding-top: 24px !important;
+}
+}
+
+.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active .elementor-widget-cakelements-brand-logo{
+	    width: 85% !important;
+}
+
+
+.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active .bdt-modal-button{
+	padding: 13px 20px !important;
+		font-size: 14px !important;
+}
+
+.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active .elementor-element-6f6f224{
+		right: 170px !important;
+		top: -3px !important;
+}
+
+.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active .elementor-element-6f6f224 a{
+		font-size: 16px !important;		
+}
+
+.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active .elementor-element.elementor-element-ada30e2 .bdt-navbar-nav > li > a{
+		font-size: 16px !important;
+}
+
+.elementor-8627 .elementor-element.elementor-element-0f0b47c.bdt-sticky.bdt-active .toggle-button{
+	font-size: 25px !important;
+	margin-top: 10px !important;
+}
+
+.nav_sticky{
+	transition: all .6s ease !important;
+}
+
+/* ===============
+	Banner
+================== */
+
+/*==== search ====*/
+.bdt-search-icon{
+		background: linear-gradient(265.12deg, rgba(255, 255, 255, 0.3) 11.19%, rgba(255, 255, 255, 0) 85.73%), #F3600D;
+    width: 110px !important;
+    border-radius: 50px;
+}
+
+
+.elementor-2058 .elementor-element.elementor-element-0a4042c .bdt-search .bdt-search-icon svg{
+	display: none !important;
+}
+
+.bdt-search-icon{
+	position: relative;
+}
+
+.bdt-search-icon:before{
+		content: '\21E2';
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: "sans-serif";
+    color: #fff;
+}
+
+
+.bdt-search .bdt-search-icon:not(a):not(button):not(input) {
+    pointer-events: inherit !important;
+	cursor: pointer;
+}
+
+/*==== Typed curser ====*/
+
+.bdt-heading .typed-cursor{
+	opacity: 0 !important;
+	animation: blink 0s infinite !important;
+}
+#bdtah-2c25ad4 .bdt-heading-tag{
+	height: 150px;
+}
+
+
+/* ===============
+	Section 2
+================== */
+
+
+@media (min-width: 767.98px) { 
+		.services_card2{
+			border-left: 1px solid #EBEBEF !important;
+			border-right: 1px solid #EBEBEF !important;
+	}
+}
+
+
+/* ===============
+	Clip Css
+================== */
+
+
+@media (min-width: 768px) { 
+.clip_1{
+	clip-path: polygon(0% 0%, 0% 0%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.clip_2{
+	clip-path: polygon(0% 0%, 0% 0%, 100% 0, 100% 100%, 0% 85%);
+}
+
+.clip_3{
+	clip-path: polygon(0% 0%, 0% 16%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip_4{
+	clip-path: polygon(0% 0%, 0% 0%, 100% 16%, 100% 100%, 0% 100%);
+}
+}
+
+
+
+/* ===============
+	Services-Section
+================== */
+
+/*==== Imgbox ====*/
+
+.imgbox .elementor-image-box-content .elementor-image-box-title,
+.imgbox .elementor-image-box-content .elementor-image-box-description{
+	transition:all 0.3s;
+}
+
+
+.imgbox:hover:hover h3{
+	color: #444444 !important;
+}
+
+
+.imgbox:hover:hover .elementor-image-box-description{
+	color: #696687 !important;
+}
+
+.imgbox:hover:hover .elementor-widget-container{
+    box-shadow: 14px 24px 43px 0px rgba(33, 41, 48, 0.42) !important;
+}
+
+.imgbox p:before{
+	  content: "";
+    position: absolute;
+	  width: 30px;
+    height: 2px;
+    left: calc(50% - 15px);
+    bottom: 61px;
+    background: #fff;
+    opacity: 1;
+}
+
+
+.imgbox:hover:hover p:before{
+	background-color: #444444 !important;
+}
+
+
+@media (min-width: 767px) {
+.imgbox p:before{
+    bottom: 100px;
+}
+}
+
+
+/* ===============
+	TRAFFIC & INCREASE
+================== */
+
+/*==== revenue_card ====*/
+@media (max-width: 767px) {
+.revenue_card .elementor-image-box-img{
+	margin-bottom: 0px !important;
+	margin-top: 12px !important;
+}
+	
+	.revenue_card .elementor-image-box-wrapper{
+	display: flex;
+}
+	
+	.revenue_card .elementor-image-box-content{
+	margin-left: 15px;
+}
+}
+
+
+/* ===============
+	Testimonial
+================== */
+
+.testi_1 .bdt-testimonial-text{
+	text-align: left !important;
+}
+
+.testi_1 .bdt-flex-center {
+	justify-content: flex-start !important;
+}
+
+.testi_1 .bdt-testimonial-title {
+	display: block !important;
+}
+
+.testi_1 .bdt-testimonial-text:after {
+    content: '\201D' !important;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -14px !important;
+    left: 6% !important;
+    margin-left: 0px !important;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: "sans-serif";
+    color: linear-gradient(-50deg, rgb(241, 160, 15) 0%, rgb(241, 160, 15) 1%, rgb(244, 110, 21) 100%) !important;
+}
+
+.testi_1 .bdt-testimonial-text p:last-child {
+    margin-bottom: 0;
+		padding-left: 45px;
+}
+
+@media (min-width: 1024px) {
+	.testi_1 .bdt-testimonial-text:after {
+    left: 4% !important;
+		font-size: 100px !important;
+}
+}
+
+
+@media (min-width: 1024px) {
+	.testi_1 .bdt-testimonial-text:after {
+    top: -17px !important;
+    font-size: 90px !important;
+}
+
+.testi_1 .bdt-testimonial-text p:last-child {
+		padding-left: 55px !important;
+}
+}
+
+.testi_1 .bdt-navigation-next{
+	margin-left: 18px;
+}
+
+
+.testi_1 .bdt-navigation-prev:after{
+		content: '\21e0';
+		position: absolute;
+    left: -5px;
+    top: 0px;
+    font-size: 30px;
+}
+
+.testi_1 .bdt-navigation-next:after{
+		content: '\21e2';
+		position: absolute;
+    left: 50px;
+    top: 0px;
+		font-size: 30px;
+}
+
+.elementor-2058 .elementor-element.elementor-element-a2e0c95 .bdt-testimonial-slider .bdt-navigation-prev i, .elementor-2058 .elementor-element.elementor-element-a2e0c95 .bdt-testimonial-slider .bdt-navigation-next i{
+	display: none !important;
+}
+
+
+@media (max-width: 959px){
+.bdt-visible\@m {
+    display: block !important;
+}
+}
+
+/* ===============
+	Contact 7--Form
+================== */
+
+
+	.wpcf7-form .wpcf7-form-control-wrap input:focus {
+    outline: none !important;
+}
+
+
+/*====== Form button =======*/
+
+.wpcf7-form .wpcf7-submit{
+    background: linear-gradient(265.12deg, #F79056 11.19%, #F3600D 85.73%);
+		color: #fff;
+		transition: all .3s ease-out;
+	  position: relative;
+    top: 20px;
+		box-shadow: 0px 10px 10px 0px rgba(247, 154.00000000000009, 47, 0.15);
+	
+}
+
+.wpcf7-form .wpcf7-submit:hover{
+    background: #fff!important;
+	border-color: #FF5800 !important;
+}
+
+.wpcf7-form .wpcf7-submit:focus {
+    outline: none !important;
+}
+
+/* ===============
+	Footer
+================== */
+
+.elementor-element-946f39a{
+	overflow: hidden !important;
+}
+
+.elementor-8631 .elementor-element.elementor-element-9df94df .bdt-ss-btn{
+	border: none !important;
+}
+.elementor-8631 .elementor-element.elementor-element-9df94df .bdt-ss-btn .bdt-ss-icon{
+	width: 3.2em !important;
+}
+/* ===============
+	Defult button
+================== */
+/* 
+.dft-button a{
+    background: linear-gradient(50deg, rgb(241, 160, 15) 0%, rgb(241, 160, 15) 1%, rgb(244, 110, 21) 100%);
+	transition: all .3s ease-out;
+	border: 1px solid #02010100;
+	box-shadow: 0px 10px 10px 0px rgba(247, 154.00000000000009, 47, 0.15);
+}
+
+
+.dft-button a:hover{
+		background: white;
+		color: #F3600D !important;
+		border: 1px solid #F3600D;
+} */
+
+.bdt-ep-button-icon-inner i{
+	transition: all .3s ease-out;
+}
+
+.bdt-ep-button-wrapper a:hover:hover .bdt-ep-button-icon-inner i{
+	transform: translate3d(5px, 0, 0);
+}
+
+/* ===============
+	Consultency Page
+================== */
+/* Form */
+.contact-form-subtitle{
+	font-size: 14px;
+	color: rgba(54,73,88,0.5);
+}
+
+
+
+/* ===============
+	Email-Marketing Page
+================== */
+
+/* ===============
+	Section 2
+================== */
+.heading-clr{
+	color: #0C5ADB!important;
+}
+
+.heading-clr1{
+	color: #F3600D
+!important;
+}
+
+.Increase_client:after{
+	  content: "";
+    position: absolute;
+	  width: 40px;
+    height: 3px;
+    left: calc(50% - 15px);
+    bottom: -20px;
+    background: #0C5ADB;
+    opacity: 1;
+}
+
+.Increase_client1:after{
+	  content: "";
+    position: absolute;
+	  width: 40px;
+    height: 3px;
+    left: calc(50% - 15px);
+    bottom: -20px;
+    background: #F3600D;
+    opacity: 1;
+}
+		</style>
+		</head>
+
+<body class="error404 wp-custom-logo hfeed elementor-default elementor-kit-8638">
+
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header">
+			<div data-elementor-type="section" data-elementor-id="8627" class="elementor elementor-8627" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section bdt-sticky="animation: bdt-animation-slide-bottom; top: 100" class="bdt-sticky elementor-section elementor-top-section elementor-element elementor-element-0f0b47c elementor-section-full_width nav_sticky elementor-section-height-default elementor-section-height-default" data-id="0f0b47c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e66b32f" data-id="e66b32f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-aa22366 elementor-widget elementor-widget-cakelements-brand-logo cakelements-widget-image" data-id="aa22366" data-element_type="widget" data-widget_type="cakelements-brand-logo.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+											<a href="http://dev3.iamabdus.com/digo">
+							<img width="173" height="48" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20173%2048'%3E%3C/svg%3E" data-src="http://dev3.iamabdus.com/digo/wp-content/uploads/2020/08/digo.svg" class="attachment-full size-full lazy" alt="digo logo" loading="lazy" />								</a>
+											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d60d3c7" data-id="d60d3c7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6a70ac5 cakelements-burger-menu__align-right elementor-hidden-desktop elementor-widget elementor-widget-cakelements-burger-menu" data-id="6a70ac5" data-element_type="widget" data-widget_type="cakelements-burger-menu.default">
+				<div class="elementor-widget-container">
+					<div class="cakelements-burger-menu-toggle-container">
+			<div class="toggle-button">
+				<i class="eicon-menu-bar"></i>
+			</div>
+		</div>
+		<nav class="cakelements-burger-menu__container"><ul id="menu-1-6a70ac5" class="cakelements-burger-menu"><li id="menu-item-3166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-3166"><a href="http://dev3.iamabdus.com/digo/">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-8076" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8076"><a href="http://dev3.iamabdus.com/digo/home2/">Home2</a></li>
+</ul>
+</li>
+<li id="menu-item-4719" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4719"><a href="#">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-11026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11026"><a href="#">Service Sample 1</a>
+	<ul class="sub-menu">
+		<li id="menu-item-11023" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11023"><a href="#">Web-Development</a>
+		<ul class="sub-menu">
+			<li id="menu-item-10891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10891"><a href="http://dev3.iamabdus.com/digo/content-marketing-strategy/">Content Marketing Strategy</a></li>
+			<li id="menu-item-10890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10890"><a href="http://dev3.iamabdus.com/digo/web-design/">Web Design</a></li>
+			<li id="menu-item-10889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10889"><a href="http://dev3.iamabdus.com/digo/mobile-marketing/">Mobile Marketing</a></li>
+			<li id="menu-item-10888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10888"><a href="http://dev3.iamabdus.com/digo/digital-consultancy/">Digital Consultancy</a></li>
+		</ul>
+</li>
+		<li id="menu-item-11024" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11024"><a href="#">Online Marketting</a></li>
+		<li id="menu-item-11025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11025"><a href="#">Sales Optimization</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11027"><a href="#">Service Sample 2</a>
+	<ul class="sub-menu">
+		<li id="menu-item-11039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11039"><a href="http://dev3.iamabdus.com/digo/email-marketting/">Email Marketting</a></li>
+		<li id="menu-item-11037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11037"><a href="http://dev3.iamabdus.com/digo/social-media-marketing/">Social Media Marketing</a></li>
+		<li id="menu-item-11038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11038"><a href="http://dev3.iamabdus.com/digo/offline-seo/">Offline SEO</a></li>
+		<li id="menu-item-11036" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11036"><a href="http://dev3.iamabdus.com/digo/growth-hacking/">Growth Hacking</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-5608" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5608"><a href="#">Projects</a></li>
+<li id="menu-item-2852" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2852"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li id="menu-item-2853" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2853"><a href="http://dev3.iamabdus.com/digo/about-us/">About Us</a></li>
+	<li id="menu-item-3494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3494"><a href="http://dev3.iamabdus.com/digo/faq/">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25"><a href="#">Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-5125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5125"><a href="#">All News</a></li>
+	<li id="menu-item-5124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5124"><a href="#">Blog Packery</a></li>
+</ul>
+</li>
+<li id="menu-item-8032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8032"><a href="http://dev3.iamabdus.com/digo/contact/">Contact</a></li>
+</ul></nav>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ada30e2 elementor-hidden-phone bdt-navbar-parent-indicator-yes elementor-hidden-tablet elementor-widget elementor-widget-bdt-navbar" data-id="ada30e2" data-element_type="widget" data-widget_type="bdt-navbar.default">
+				<div class="elementor-widget-container">
+					<div id="" class="bdt-navbar-wrapper">
+			<nav class="bdt-navbar-container bdt-navbar bdt-navbar-transparent" bdt-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;delay-hide&quot;:500}">
+				<ul id="bdt-navmenu" class="bdt-navbar-nav"><li style="" data-id="3166" class=" bdt-parent"><a href="http://dev3.iamabdus.com/digo/">Home</a><div class="bdt-navbar-dropdown"><ul class="bdt-nav bdt-navbar-dropdown-nav"><li style="" data-id="8076"><a href="http://dev3.iamabdus.com/digo/home2/">Home2</a></li></ul></div></li><li style="" data-id="4719" class=" bdt-parent"><a href="#"  class=" seperator" data-type="separator-text">Services</a><div class="bdt-navbar-dropdown"><ul class="bdt-nav bdt-navbar-dropdown-nav"><li style="" data-id="11026" class=" bdt-parent"><a href="#"  class=" seperator" data-type="separator-text">Service Sample 1</a><div class="bdt-navbar-dropdown"><ul class="bdt-nav bdt-navbar-dropdown-nav"><li style="" data-id="11023" class=" bdt-parent"><a href="#"  class=" seperator" data-type="separator-text">Web-Development</a><div class="bdt-navbar-dropdown"><ul class="bdt-nav bdt-navbar-dropdown-nav"><li style="" data-id="10891"><a href="http://dev3.iamabdus.com/digo/content-marketing-strategy/">Content Marketing Strategy</a></li><li style="" data-id="10890"><a href="http://dev3.iamabdus.com/digo/web-design/">Web Design</a></li><li style="" data-id="10889"><a href="http://dev3.iamabdus.com/digo/mobile-marketing/">Mobile Marketing</a></li><li style="" data-id="10888"><a href="http://dev3.iamabdus.com/digo/digital-consultancy/">Digital Consultancy</a></li></ul></div></li><li style="" data-id="11024"><a href="#"  class=" seperator" data-type="header">Online Marketting</a></li><li style="" data-id="11025"><a href="#"  class=" seperator" data-type="header">Sales Optimization</a></li></ul></div></li><li style="" data-id="11027" class=" bdt-parent"><a href="#"  class=" seperator" data-type="separator-text">Service Sample 2</a><div class="bdt-navbar-dropdown"><ul class="bdt-nav bdt-navbar-dropdown-nav"><li style="" data-id="11039"><a href="http://dev3.iamabdus.com/digo/email-marketting/">Email Marketting</a></li><li style="" data-id="11037"><a href="http://dev3.iamabdus.com/digo/social-media-marketing/">Social Media Marketing</a></li><li style="" data-id="11038"><a href="http://dev3.iamabdus.com/digo/offline-seo/">Offline SEO</a></li><li style="" data-id="11036"><a href="http://dev3.iamabdus.com/digo/growth-hacking/">Growth Hacking</a></li></ul></div></li></ul></div></li><li style="" data-id="5608"><a href="#"  class=" seperator" data-type="header">Projects</a></li><li style="" data-id="2852" class=" bdt-parent"><a href="#"  class=" seperator" data-type="separator-text">Pages</a><div class="bdt-navbar-dropdown"><ul class="bdt-nav bdt-navbar-dropdown-nav"><li style="" data-id="2853"><a href="http://dev3.iamabdus.com/digo/about-us/">About Us</a></li><li style="" data-id="3494"><a href="http://dev3.iamabdus.com/digo/faq/">FAQ</a></li></ul></div></li><li style="" data-id="25" class=" bdt-parent"><a href="#"  class=" seperator" data-type="separator-text">Blog</a><div class="bdt-navbar-dropdown"><ul class="bdt-nav bdt-navbar-dropdown-nav"><li style="" data-id="5125"><a href="#"  class=" seperator" data-type="header">All News</a></li><li style="" data-id="5124"><a href="#"  class=" seperator" data-type="header">Blog Packery</a></li></ul></div></li><li style="" data-id="8032"><a href="http://dev3.iamabdus.com/digo/contact/">Contact</a></li></ul>			</nav>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-8f261e9 elementor-hidden-phone" data-id="8f261e9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6f6f224 elementor-align-left elementor-widget__width-auto elementor-absolute elementor-mobile-align-right elementor-widget elementor-widget-button" data-id="6f6f224" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-phone-alt"></i>			</span>
+						<span class="elementor-button-text">01 234 567 8900</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c2054f2 elementor-widget__width-auto elementor-align-left elementor-widget elementor-widget-bdt-modal" data-id="c2054f2" data-element_type="widget" data-widget_type="bdt-modal.default">
+				<div class="elementor-widget-container">
+					<div class="bdt-modal-wrapper">
+		    
+		    		<a class="bdt-modal-button elementor-button elementor-size-sm" bdt-toggle="target: #bdt-modal-c2054f2" href="javascript:void(0)">
+			<!-- <span > -->
+								<span class="elementor-button-text">Get  a Quote</span>
+			<!-- </span> -->
+		</a>
+			
+
+	        <div id="bdt-modal-c2054f2" class="bdt-modal-c2054f2 bdt-modal bdt-flex-top" bdt-modal="" data-settings="{&quot;id&quot;:&quot;bdt-modal-c2054f2&quot;,&quot;layout&quot;:&quot;default&quot;}">
+	            <div class="bdt-modal-dialog bdt-margin-auto-vertical">
+	                            
+	                	                	<button class="bdt-modal-close-default" type="button" bdt-close></button>
+	                	                
+	                	                    <div class="bdt-modal-header bdt-text-center">
+	                    	<h3 class="bdt-modal-title">Get  a Quote</h3>
+	                    </div>
+	                	                
+	                <div class="bdt-modal-body">
+	                			<div data-elementor-type="section" data-elementor-id="10684" class="elementor elementor-10684" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-129fe85 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="129fe85" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d12114" data-id="1d12114" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e3c674e elementor-widget elementor-widget-bdt-contact-form-7" data-id="e3c674e" data-element_type="widget" data-widget_type="bdt-contact-form-7.default">
+				<div class="elementor-widget-container">
+			<div role="form" class="wpcf7" id="wpcf7-f10686-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response" role="alert" aria-live="polite"></div>
+<form action="/digo/wp-content/uploads/2020/07/pricebox_bg.c3c0bcec.png#wpcf7-f10686-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="10686" />
+<input type="hidden" name="_wpcf7_version" value="5.2.2" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10686-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<div class="contact-us">
+<div class="row">
+<div class="col-md-12">
+    <span class="wpcf7-form-control-wrap text-225"><input type="text" name="text-225" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" /></span>
+  </div>
+<div class="col-md-12">
+    <span class="wpcf7-form-control-wrap email-449"><input type="email" name="email-449" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" /></span>
+  </div>
+<div class="col-md-12">
+    <span class="wpcf7-form-control-wrap tel-661"><input type="tel" name="tel-661" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone No" /></span>
+  </div>
+<div class="col-md-12">
+   <span class="wpcf7-form-control-wrap url-729"><input type="url" name="url-729" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-required wpcf7-validates-as-url" aria-required="true" aria-invalid="false" placeholder="Website" /></span>
+  </div>
+<div class="col-md-12">
+    <input type="submit" value="submit" class="wpcf7-form-control wpcf7-submit" />
+  </div>
+</p></div>
+</p></div>
+</div>
+<div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+			                </div>
+
+	                		        </div>
+		    </div>
+	    </div>
+
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+			</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			<section class="error-404 not-found">
+
+				<header class="error-404-main">
+					<h2 class="">404</h2>
+					<h3 class="">Oops!</h3>
+					<h4 class="page-title"> That page can&rsquo;t be found.</h4>
+					<a href="http://dev3.iamabdus.com/digo" class="error-btn"><i class="fa fa-angle-left"></i>Go Home</a>
+				</header><!-- .page-header -->
+
+				<div class="page-content">
+					
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer">
+			<div data-elementor-type="section" data-elementor-id="8631" class="elementor elementor-8631" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-946f39a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="946f39a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4b6c72f" data-id="4b6c72f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a937a54 elementor-absolute elementor-widget elementor-widget-image" data-id="a937a54" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1267" height="638" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201267%20638'%3E%3C/svg%3E" data-src="http://dev3.iamabdus.com/digo/wp-content/uploads/2020/09/footer-bg-left-1.png" class="attachment-full size-full lazy" alt="footer-bg-left" loading="lazy" data-srcset="http://dev3.iamabdus.com/digo/wp-content/uploads/2020/09/footer-bg-left-1.png 1267w, http://dev3.iamabdus.com/digo/wp-content/uploads/2020/09/footer-bg-left-1-300x151.png 300w, http://dev3.iamabdus.com/digo/wp-content/uploads/2020/09/footer-bg-left-1-1024x516.png 1024w, http://dev3.iamabdus.com/digo/wp-content/uploads/2020/09/footer-bg-left-1-768x387.png 768w" data-sizes="(max-width: 1267px) 100vw, 1267px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-946e150 elementor-widget elementor-widget-spacer" data-id="946e150" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-cdc21e2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cdc21e2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ed4306d" data-id="ed4306d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-61795d9 elementor-widget elementor-widget-cakelements-brand-logo cakelements-widget-image" data-id="61795d9" data-element_type="widget" data-widget_type="cakelements-brand-logo.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+											<a href="http://dev3.iamabdus.com/digo">
+							<img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20173%2048'%3E%3C/svg%3E" data-src="http://dev3.iamabdus.com/digo/wp-content/uploads/2020/08/digo.svg" title="" alt="" />								</a>
+											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e63fc5e elementor-widget elementor-widget-text-editor" data-id="e63fc5e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Digo have much planned for the future, working with great clients and continued software development.</p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9df94df bdt-ss-btns-view-icon bdt-ss-btns-style-framed bdt-ss-btns-shape-rounded bdt-ss-btns-align-left bdt-ep-grid-0 bdt-ss-btns-color-original elementor-widget elementor-widget-bdt-social-share" data-id="9df94df" data-element_type="widget" data-widget_type="bdt-social-share.default">
+				<div class="elementor-widget-container">
+					<div class="bdt-social-share bdt-ep-grid">
+							<div class="bdt-social-share-item bdt-ep-grid-item">
+					<div class="bdt-ss-btn bdt-ss-twitter" data-social="twitter">
+													<span class="bdt-ss-icon">
+								<i class="ep-twitter"></i>
+							</span>
+																	</div>
+				</div>
+								<div class="bdt-social-share-item bdt-ep-grid-item">
+					<div class="bdt-ss-btn bdt-ss-facebook" data-social="facebook">
+													<span class="bdt-ss-icon">
+								<i class="ep-facebook"></i>
+							</span>
+																	</div>
+				</div>
+								<div class="bdt-social-share-item bdt-ep-grid-item">
+					<div class="bdt-ss-btn bdt-ss-skype" data-social="skype">
+													<span class="bdt-ss-icon">
+								<i class="ep-skype"></i>
+							</span>
+																	</div>
+				</div>
+								<div class="bdt-social-share-item bdt-ep-grid-item">
+					<div class="bdt-ss-btn bdt-ss-pinterest" data-social="pinterest">
+													<span class="bdt-ss-icon">
+								<i class="ep-pinterest"></i>
+							</span>
+																	</div>
+				</div>
+								<div class="bdt-social-share-item bdt-ep-grid-item">
+					<div class="bdt-ss-btn bdt-ss-linkedin" data-social="linkedin">
+													<span class="bdt-ss-icon">
+								<i class="ep-linkedin"></i>
+							</span>
+																	</div>
+				</div>
+						</div>
+
+		
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3ac3d80" data-id="3ac3d80" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b27486a elementor-widget elementor-widget-heading" data-id="b27486a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Contacts</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-13b4eac elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="13b4eac" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+					<a href="#">						<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-phone-alt"></i>						</span>
+										<span class="elementor-icon-list-text">8 800 2563 123</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">						<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-envelope"></i>						</span>
+										<span class="elementor-icon-list-text">emil@yoursite.com</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">						<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+										<span class="elementor-icon-list-text">27 Division St, New York, NY 10002, United States</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5e85e27" data-id="5e85e27" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3a33843 elementor-widget elementor-widget-heading" data-id="3a33843" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Services</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a6cb515 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a6cb515" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">SEO Marketing</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">SEO Services</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">Pay Per Click</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">Social Media</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">SEO Audit</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-479fed9" data-id="479fed9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-726527a elementor-widget elementor-widget-heading" data-id="726527a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Community</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e13167b elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e13167b" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">Our Product</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">Documentation</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">Our Services</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">Company</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="#">					<span class="elementor-icon-list-text">What We Do?</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-90be2fc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="90be2fc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f4ed867" data-id="f4ed867" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-82d9fce elementor-widget elementor-widget-text-editor" data-id="82d9fce" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Copyright © 2020 Digo by Abdus &#8211; All Rights Reserved</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-97547fe" data-id="97547fe" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c21645e elementor-widget elementor-widget-spacer" data-id="c21645e" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<link rel="stylesheet" href="http://dev3.iamabdus.com/digo/wp-content/cache/minify/9f5af.css" media="all" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Nunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.1' type='text/css' media='all' />
+<link rel="stylesheet" href="http://dev3.iamabdus.com/digo/wp-content/cache/minify/21020.css" media="all" />
+
+
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/dev3.iamabdus.com\/digo\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script src="http://dev3.iamabdus.com/digo/wp-content/cache/minify/64e08.js"></script>
+
+<script type='text/javascript' src='https://use.fontawesome.com/7e3df837e7.js?ver=1.0.0' id='ewebot-font-awesome-js-old-js'></script>
+<script src="http://dev3.iamabdus.com/digo/wp-content/cache/minify/3a356.js"></script>
+
+<script type='text/javascript' id='bdt-uikit-js-extra'>
+/* <![CDATA[ */
+var element_pack_ajax_login_config = {"ajaxurl":"http:\/\/dev3.iamabdus.com\/digo\/wp-admin\/admin-ajax.php","loadingmessage":"Sending user info, please wait...","unknownerror":"Unknown error, make sure access is correct!"};
+var ElementPackConfig = {"ajaxurl":"http:\/\/dev3.iamabdus.com\/digo\/wp-admin\/admin-ajax.php","nonce":"bd5577caee","data_table":{"language":{"lengthMenu":"Show _MENU_ Entries","info":"Showing _START_ to _END_ of _TOTAL_ entries","search":"Search :","paginate":{"previous":"Previous","next":"Next"}}},"contact_form":{"sending_msg":"Sending message please wait...","captcha_nd":"Invisible captcha not defined!","captcha_nr":"Could not get invisible captcha response!"},"mailchimp":{"subscribing":"Subscribing you please wait..."},"elements_data":{"sections":[],"columns":[],"widgets":[]}};
+/* ]]> */
+</script>
+
+
+
+
+
+
+<script src="http://dev3.iamabdus.com/digo/wp-content/cache/minify/d92a7.js"></script>
+
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.11","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"http:\/\/dev3.iamabdus.com\/digo\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"Page not found &#8211; Digo","excerpt":""}};
+</script>
+
+
+
+
+
+<script src="http://dev3.iamabdus.com/digo/wp-content/cache/minify/6fbd8.js"></script>
+
+
+<script>window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="http://dev3.iamabdus.com/digo/wp-content/cache/minify/5c8f9.js"></script>
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced (Page is 404) 
+Lazy Loading
+Minified using disk
+
+Served from: dev3.iamabdus.com @ 2020-10-12 09:09:03 by W3 Total Cache
+-->
