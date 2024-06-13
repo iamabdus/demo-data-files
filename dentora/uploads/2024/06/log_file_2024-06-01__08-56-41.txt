@@ -1,0 +1,57 @@
+
+---Downloaded files---
+The import files for: Dentora Import were successfully downloaded!
+Initial max execution time = 1200
+Files info:
+Site URL = http://dento.local
+Data file = C:\Users\R\Local Sites\dento\app\public/wp-content/uploads/2024/06/demo-content-import-file_2024-06-01__08-56-41.xml
+Widget file = C:\Users\R\Local Sites\dento\app\public/wp-content/uploads/2024/06/demo-widgets-import-file_2024-06-01__08-56-41.json
+Customizer file = C:\Users\R\Local Sites\dento\app\public/wp-content/uploads/2024/06/demo-customizer-import-file_2024-06-01__08-56-41.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
