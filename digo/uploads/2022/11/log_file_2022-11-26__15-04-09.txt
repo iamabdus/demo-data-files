@@ -1,58 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Bot Verification</title>
-    <script>
-        function onSubmit() {
-            document.getElementById('lsrecaptcha-form').submit();
-        }
 
-        var onloadCallback = function() {
-            var cont = grecaptcha.render('recaptchadiv', {
-                'sitekey': '6Le6iOkhAAAAAEy2qFOqtynWjdr3vsIScExJ_Maz',
-                'callback': onSubmit,
-                'size': 'invisible'
-            });
-            grecaptcha.execute(cont);
-        };
-    </script>
-    <style>
-        body {
-        height: 100%;
-        }
-        .panel {
-        padding: 30px;
-        max-width: 425px;
-        margin: 10% auto;
-        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-        }
-        .title {
-        font-size: 1.5em;
-        font-weight: 100;
-        margin-top: 10px;
-        text-align: center;
-        }
-        .recaptcha-center {
-        margin-top: 35px;
-        margin-bottom: 20px;
-        margin-left: 13%;
-        margin-right: 13%;
-        display: block;
-        }
-    </style>
-</head>
-<body>
-    <div class="panel">
-        <h3 class="title">Verifying that you are not a robot...</h3>
-        <form id="lsrecaptcha-form" method="POST" action="/.lsrecap/recaptcha?">
-            <div id="recaptchadiv" class="recaptcha-center"></div>
-        </form>
-    </div>
-    <script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit"
-            async defer>
-    </script>
-</body>
-</html>
+---Downloaded files---
+The import files for: digo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://digo.iamabdus.com/v1.4
+Data file = /home/digoiamabdus/domains/digo.iamabdus.com/public_html/v1.4/wp-content/uploads/2022/11/demo-content-import-file_2022-11-26__15-04-09.xml
+Widget file = /home/digoiamabdus/domains/digo.iamabdus.com/public_html/v1.4/wp-content/uploads/2022/11/demo-widgets-import-file_2022-11-26__15-04-09.json
+Customizer file = /home/digoiamabdus/domains/digo.iamabdus.com/public_html/v1.4/wp-content/uploads/2022/11/demo-customizer-import-file_2022-11-26__15-04-09.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

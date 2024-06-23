@@ -1,0 +1,154 @@
+
+---Downloaded files---
+The import files for: digo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://digo.iamabdus.com/v1.4
+Data file = /home/digoiamabdus/domains/digo.iamabdus.com/public_html/v1.4/wp-content/uploads/2022/11/demo-content-import-file_2022-11-26__13-47-54.xml
+Widget file = /home/digoiamabdus/domains/digo.iamabdus.com/public_html/v1.4/wp-content/uploads/2022/11/demo-widgets-import-file_2022-11-26__13-47-54.json
+Customizer file = /home/digoiamabdus/domains/digo.iamabdus.com/public_html/v1.4/wp-content/uploads/2022/11/demo-customizer-import-file_2022-11-26__13-47-54.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[WARNING] Failed to import product_cat Book
+[WARNING] Failed to import product_cat Cosmetic
+[WARNING] Failed to import product_visibility exclude-from-catalog
+[WARNING] Failed to import product_visibility exclude-from-search
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import product_visibility featured
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import product_cat Isometric
+[WARNING] Failed to import product_cat Minimal
+[WARNING] Failed to import product_visibility outofstock
+[WARNING] Failed to import product_visibility rated-1
+[WARNING] Failed to import product_visibility rated-2
+[WARNING] Failed to import product_visibility rated-3
+[WARNING] Failed to import product_visibility rated-4
+[WARNING] Failed to import product_visibility rated-5
+[WARNING] Failed to import product_tag seo
+[WARNING] Failed to import product_tag Seo Book
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_cat Uncategorized
+[WARNING] Failed to import product_type variable
+
+
+------
+New AJAX call!
+[WARNING] Failed to import product_cat Book
+[WARNING] Failed to import product_cat Cosmetic
+[WARNING] Failed to import product_visibility exclude-from-catalog
+[WARNING] Failed to import product_visibility exclude-from-search
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import product_visibility featured
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import product_cat Isometric
+[WARNING] Failed to import product_cat Minimal
+[WARNING] Failed to import product_visibility outofstock
+[WARNING] Failed to import product_visibility rated-1
+[WARNING] Failed to import product_visibility rated-2
+[WARNING] Failed to import product_visibility rated-3
+[WARNING] Failed to import product_visibility rated-4
+[WARNING] Failed to import product_visibility rated-5
+[WARNING] Failed to import product_tag seo
+[WARNING] Failed to import product_tag Seo Book
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_cat Uncategorized
+[WARNING] Failed to import product_type variable
+
+
+------
+New AJAX call!
+[WARNING] Failed to import product_cat Book
+[WARNING] Failed to import product_cat Cosmetic
+[WARNING] Failed to import product_visibility exclude-from-catalog
+[WARNING] Failed to import product_visibility exclude-from-search
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import product_visibility featured
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import product_cat Isometric
+[WARNING] Failed to import product_cat Minimal
+[WARNING] Failed to import product_visibility outofstock
+[WARNING] Failed to import product_visibility rated-1
+[WARNING] Failed to import product_visibility rated-2
+[WARNING] Failed to import product_visibility rated-3
+[WARNING] Failed to import product_visibility rated-4
+[WARNING] Failed to import product_visibility rated-5
+[WARNING] Failed to import product_tag seo
+[WARNING] Failed to import product_tag Seo Book
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_cat Uncategorized
+[WARNING] Failed to import product_type variable
+
+
+------
+New AJAX call!
+[WARNING] Failed to import product_cat Book
+[WARNING] Failed to import product_cat Cosmetic
+[WARNING] Failed to import product_visibility exclude-from-catalog
+[WARNING] Failed to import product_visibility exclude-from-search
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import product_visibility featured
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import product_cat Isometric
+[WARNING] Failed to import product_cat Minimal
+[WARNING] Failed to import product_visibility outofstock
+[WARNING] Failed to import product_visibility rated-1
+[WARNING] Failed to import product_visibility rated-2
+[WARNING] Failed to import product_visibility rated-3
+[WARNING] Failed to import product_visibility rated-4
+[WARNING] Failed to import product_visibility rated-5
+[WARNING] Failed to import product_tag seo
+[WARNING] Failed to import product_tag Seo Book
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_cat Uncategorized
+[WARNING] Failed to import product_type variable
+
+
+------
+New AJAX call!
+[WARNING] Failed to import product_cat Book
+[WARNING] Failed to import product_cat Cosmetic
+[WARNING] Failed to import product_visibility exclude-from-catalog
+[WARNING] Failed to import product_visibility exclude-from-search
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import product_visibility featured
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import product_cat Isometric
+[WARNING] Failed to import product_cat Minimal
+[WARNING] Failed to import product_visibility outofstock
+[WARNING] Failed to import product_visibility rated-1
+[WARNING] Failed to import product_visibility rated-2
+[WARNING] Failed to import product_visibility rated-3
+[WARNING] Failed to import product_visibility rated-4
+[WARNING] Failed to import product_visibility rated-5
+[WARNING] Failed to import product_tag seo
+[WARNING] Failed to import product_tag Seo Book
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_cat Uncategorized
+[WARNING] Failed to import product_type variable
+
+
+---Importing widgets---
+Sidebar : 
+
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
