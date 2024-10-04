@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.6.2" created="2024-10-03 08:28" -->
+	<!-- generator="WordPress/6.6.2" created="2024-10-04 15:49" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>TransGo</title>
 	<link>https://transgo.iamabdus.com/v1-1</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Thu, 03 Oct 2024 08:28:06 +0000</pubDate>
+	<pubDate>Fri, 04 Oct 2024 15:49:23 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://transgo.iamabdus.com/v1-1</wp:base_site_url>
@@ -148,7 +148,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/slider_1_2/</link>
 		<pubDate>Mon, 14 Oct 2019 12:44:24 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/slider_1_2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/slider_1_2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -189,7 +189,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/slider_3/</link>
 		<pubDate>Mon, 14 Oct 2019 12:44:25 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/slider_3.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/slider_3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -230,7 +230,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/transgo-logo/</link>
 		<pubDate>Mon, 14 Oct 2019 13:05:27 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/transgo-logo.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/transgo-logo.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -271,7 +271,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/transgo-logo-white/</link>
 		<pubDate>Mon, 14 Oct 2019 13:07:39 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/transgo-logo-white.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/transgo-logo-white.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -312,7 +312,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/transparent-background-with-dots/</link>
 		<pubDate>Tue, 15 Oct 2019 12:08:10 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Transparent-background-with-dots.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Transparent-background-with-dots.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -349,7 +349,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/dreamstime_xxl_20955694-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:31 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/dreamstime_xxl_20955694-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/dreamstime_xxl_20955694-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -390,7 +390,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_44261036_subscription_monthly_xl-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:31 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_44261036_Subscription_Monthly_XL-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_44261036_Subscription_Monthly_XL-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -435,7 +435,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_54040023_subscription_monthly_m-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:32 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_54040023_Subscription_Monthly_M-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_54040023_Subscription_Monthly_M-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -476,7 +476,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_66820150_subscription_monthly_m-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:32 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_66820150_Subscription_Monthly_M-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_66820150_Subscription_Monthly_M-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -517,7 +517,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_70457153_subscription_monthly_m-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:33 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_70457153_Subscription_Monthly_M-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_70457153_Subscription_Monthly_M-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -558,7 +558,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_72572617_subscription_monthly_m-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:33 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_72572617_Subscription_Monthly_M-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_72572617_Subscription_Monthly_M-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -599,7 +599,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_77985301_subscription_monthly_m-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:34 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_77985301_Subscription_Monthly_M-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_77985301_Subscription_Monthly_M-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -640,7 +640,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_85388194_subscription_monthly_m-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:34 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_85388194_Subscription_Monthly_M-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_85388194_Subscription_Monthly_M-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -681,7 +681,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fotolia_91953311_subscription_monthly_m-255x170/</link>
 		<pubDate>Tue, 15 Oct 2019 12:23:35 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_91953311_Subscription_Monthly_M-255x170.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_91953311_Subscription_Monthly_M-255x170.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -722,7 +722,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/aeroplane/</link>
 		<pubDate>Tue, 15 Oct 2019 13:50:48 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/aeroplane.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/aeroplane.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -763,7 +763,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/truck_green/</link>
 		<pubDate>Wed, 16 Oct 2019 13:51:07 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/truck_green.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/truck_green.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -804,7 +804,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/parallax/</link>
 		<pubDate>Thu, 17 Oct 2019 05:31:43 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/parallax.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/parallax.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -841,7 +841,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/aramiz-1/</link>
 		<pubDate>Thu, 17 Oct 2019 07:54:37 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/aramiz-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/aramiz-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -882,7 +882,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/arcade-1/</link>
 		<pubDate>Thu, 17 Oct 2019 07:54:38 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/arcade-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/arcade-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -923,7 +923,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/edge-1/</link>
 		<pubDate>Thu, 17 Oct 2019 07:54:38 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/edge-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/edge-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -964,7 +964,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/kphone-1/</link>
 		<pubDate>Thu, 17 Oct 2019 07:54:39 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/kphone-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/kphone-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1005,7 +1005,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/primo-1/</link>
 		<pubDate>Thu, 17 Oct 2019 07:54:39 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/primo-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/primo-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1046,7 +1046,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/tvc-marketing-1/</link>
 		<pubDate>Thu, 17 Oct 2019 07:54:40 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/tvc-marketing-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/tvc-marketing-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1087,7 +1087,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/client-logo-1-320x320/</link>
 		<pubDate>Thu, 17 Oct 2019 08:01:48 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/client-logo-1-320x320.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/client-logo-1-320x320.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1128,7 +1128,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/client-logo-2-320x320/</link>
 		<pubDate>Thu, 17 Oct 2019 08:01:49 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/client-logo-2-320x320.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/client-logo-2-320x320.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1169,7 +1169,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/client-logo-3-320x320/</link>
 		<pubDate>Thu, 17 Oct 2019 08:01:49 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/client-logo-3-320x320.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/client-logo-3-320x320.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1210,7 +1210,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/client-logo-7-320x320/</link>
 		<pubDate>Thu, 17 Oct 2019 08:01:50 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/client-logo-7-320x320.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/client-logo-7-320x320.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1251,7 +1251,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/project-done/</link>
 		<pubDate>Thu, 17 Oct 2019 10:19:37 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/project-done.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/project-done.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1280,7 +1280,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/delivery-truck/</link>
 		<pubDate>Thu, 17 Oct 2019 10:41:09 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/delivery-truck.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/delivery-truck.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1309,7 +1309,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/delivery-truck-1/</link>
 		<pubDate>Thu, 17 Oct 2019 10:43:06 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/delivery-truck-1.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/delivery-truck-1.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1338,7 +1338,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork-3/</link>
 		<pubDate>Thu, 17 Oct 2019 10:52:51 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/teamwork-3.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/teamwork-3.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1367,7 +1367,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork/</link>
 		<pubDate>Thu, 17 Oct 2019 10:53:16 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/teamwork.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/teamwork.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1396,7 +1396,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork-1/</link>
 		<pubDate>Thu, 17 Oct 2019 10:53:17 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/teamwork-1.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/teamwork-1.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1425,7 +1425,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork-3-2/</link>
 		<pubDate>Thu, 17 Oct 2019 10:53:17 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/teamwork-3-1.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/teamwork-3-1.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1454,7 +1454,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork-4/</link>
 		<pubDate>Thu, 17 Oct 2019 10:53:18 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/teamwork-4.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/teamwork-4.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1483,7 +1483,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork-5/</link>
 		<pubDate>Thu, 17 Oct 2019 10:53:18 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/teamwork-5.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/teamwork-5.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1512,7 +1512,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/project/</link>
 		<pubDate>Thu, 17 Oct 2019 10:55:25 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/project.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/project.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1541,7 +1541,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/project-1/</link>
 		<pubDate>Thu, 17 Oct 2019 10:55:25 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/project-1.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/project-1.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1570,7 +1570,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/project-2/</link>
 		<pubDate>Thu, 17 Oct 2019 10:55:26 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/project-2.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/project-2.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1599,7 +1599,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/businessman-in-apresentation-with-a-graphic-on-a-board/</link>
 		<pubDate>Thu, 17 Oct 2019 10:55:26 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/businessman-in-apresentation-with-a-graphic-on-a-board.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/businessman-in-apresentation-with-a-graphic-on-a-board.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1628,7 +1628,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/businessman-in-apresentation-with-a-graphic-on-a-board-1/</link>
 		<pubDate>Thu, 17 Oct 2019 10:55:27 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/businessman-in-apresentation-with-a-graphic-on-a-board-1.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/businessman-in-apresentation-with-a-graphic-on-a-board-1.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1657,7 +1657,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/globalization/</link>
 		<pubDate>Thu, 17 Oct 2019 10:57:14 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/globalization.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/globalization.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1686,7 +1686,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/globalization-1/</link>
 		<pubDate>Thu, 17 Oct 2019 10:57:15 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/globalization-1.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/globalization-1.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1715,7 +1715,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/globalization-2/</link>
 		<pubDate>Thu, 17 Oct 2019 10:57:15 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/globalization-2.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/globalization-2.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1744,7 +1744,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/brand-logo/</link>
 		<pubDate>Thu, 17 Oct 2019 12:26:33 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/brand-logo.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/brand-logo.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1785,7 +1785,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/brand-logo-white/</link>
 		<pubDate>Thu, 17 Oct 2019 12:27:53 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/brand-logo-white.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/brand-logo-white.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1826,7 +1826,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/forklift/</link>
 		<pubDate>Sun, 20 Oct 2019 05:34:01 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/forklift.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/forklift.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1867,7 +1867,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/testimonial/steve-mcdonald/pexels-photo-1222271/</link>
 		<pubDate>Sun, 20 Oct 2019 09:52:28 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/pexels-photo-1222271.jpeg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/pexels-photo-1222271.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1908,7 +1908,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/testimonial/steve-mcdonald/unnamed/</link>
 		<pubDate>Sun, 20 Oct 2019 09:52:29 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/unnamed.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/unnamed.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1949,7 +1949,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/testimonial/362/pexels-photo-2/</link>
 		<pubDate>Sun, 20 Oct 2019 10:45:37 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/pexels-photo-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/pexels-photo-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1990,7 +1990,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/testimonial/362/testimonial-lady-img/</link>
 		<pubDate>Sun, 20 Oct 2019 10:45:46 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/testimonial-lady-img.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/testimonial-lady-img.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2031,7 +2031,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/shutterstock_147692165-tinted/</link>
 		<pubDate>Sun, 20 Oct 2019 10:49:44 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/shutterstock_147692165-tinted.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/shutterstock_147692165-tinted.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2068,7 +2068,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/cta-girl-1/</link>
 		<pubDate>Sun, 20 Oct 2019 10:55:54 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/cta-girl-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/cta-girl-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2109,7 +2109,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/2019/10/20/tianjin-port-came-to-a-halt-after-explosions/fotolia_43887394_subscription_monthly_m-600x377/</link>
 		<pubDate>Sun, 20 Oct 2019 12:38:40 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_43887394_Subscription_Monthly_M-600x377.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_43887394_Subscription_Monthly_M-600x377.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2150,7 +2150,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/2019/10/20/tianjin-port-came-to-a-halt-after-explosions/fotolia_77985301_subscription_monthly_m-600x377/</link>
 		<pubDate>Sun, 20 Oct 2019 12:38:41 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_77985301_Subscription_Monthly_M-600x377.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_77985301_Subscription_Monthly_M-600x377.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2191,7 +2191,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/2019/10/20/tianjin-port-came-to-a-halt-after-explosions/fotolia_86085293_subscription_monthly_m-600x377/</link>
 		<pubDate>Sun, 20 Oct 2019 12:38:42 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Fotolia_86085293_Subscription_Monthly_M-600x377.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Fotolia_86085293_Subscription_Monthly_M-600x377.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2232,7 +2232,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/forklift-2/</link>
 		<pubDate>Mon, 21 Oct 2019 05:10:47 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/forklift.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/forklift.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2265,7 +2265,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/package/</link>
 		<pubDate>Mon, 21 Oct 2019 05:10:47 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/package.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/package.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2298,7 +2298,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/cargo-ship/</link>
 		<pubDate>Mon, 21 Oct 2019 05:21:22 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/cargo-ship.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/cargo-ship.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2331,7 +2331,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/truck/</link>
 		<pubDate>Mon, 21 Oct 2019 05:21:22 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/truck.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/truck.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2364,7 +2364,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/placeholder-filled-point-1/</link>
 		<pubDate>Mon, 21 Oct 2019 09:20:54 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/placeholder-filled-point-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/placeholder-filled-point-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2405,7 +2405,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/placeholder-filled-point/</link>
 		<pubDate>Mon, 21 Oct 2019 09:20:55 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/placeholder-filled-point.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/placeholder-filled-point.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2446,7 +2446,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/truck_flipped_bckg/</link>
 		<pubDate>Thu, 24 Oct 2019 10:17:02 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/truck_flipped_bckg.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/truck_flipped_bckg.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2483,7 +2483,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/blue-background-with-trucks/</link>
 		<pubDate>Thu, 24 Oct 2019 11:38:59 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/Blue-background-with-trucks.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/Blue-background-with-trucks.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2520,7 +2520,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/air-freight/</link>
 		<pubDate>Thu, 24 Oct 2019 11:54:29 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/air-freight.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/air-freight.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2549,7 +2549,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/departures/</link>
 		<pubDate>Thu, 24 Oct 2019 11:55:34 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/departures.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/departures.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2578,7 +2578,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/air-freight-2/</link>
 		<pubDate>Thu, 24 Oct 2019 11:58:20 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/air-freight-2.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/air-freight-2.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2607,7 +2607,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/one-blue-truck/</link>
 		<pubDate>Sat, 26 Oct 2019 05:46:43 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/One-Blue-Truck.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/One-Blue-Truck.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2644,7 +2644,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/shutterstock_14173768/</link>
 		<pubDate>Sat, 26 Oct 2019 05:46:46 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/shutterstock_14173768.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/shutterstock_14173768.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2681,7 +2681,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/white-truck-on-top/</link>
 		<pubDate>Sat, 26 Oct 2019 05:46:48 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/White-truck-on-top.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/White-truck-on-top.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2718,7 +2718,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/life-insurance/</link>
 		<pubDate>Sat, 26 Oct 2019 06:14:57 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/10/life-insurance.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/10/life-insurance.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2747,7 +2747,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/banner-triangle/</link>
 		<pubDate>Mon, 25 Nov 2019 09:18:00 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/banner-triangle.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/banner-triangle.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2776,7 +2776,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/banner-bg-img/</link>
 		<pubDate>Mon, 25 Nov 2019 09:25:34 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/banner-bg-img.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/banner-bg-img.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2817,7 +2817,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/trans-go-logo/</link>
 		<pubDate>Mon, 25 Nov 2019 09:55:22 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/trans-go-logo.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/trans-go-logo.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2840,13 +2840,17 @@
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2019/11/trans-go-logo.svg]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_inline_svg]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" width="219" height="49" viewBox="0 0 219 49" fill="none"><path d="M65.545 35.9875C65.2994 35.9875 65.0873 35.9093 64.9087 35.753C64.7524 35.5968 64.6742 35.3958 64.6742 35.1502V18.0035H58.78C58.5344 18.0035 58.3223 17.9254 58.1437 17.7691C57.9874 17.6128 57.9093 17.4119 57.9093 17.1663V13.4154C57.9093 13.1698 57.9874 12.9689 58.1437 12.8126C58.3223 12.634 58.5344 12.5447 58.78 12.5447H76.9649C77.2105 12.5447 77.4115 12.634 77.5678 12.8126C77.7464 12.9689 77.8357 13.1698 77.8357 13.4154V17.1663C77.8357 17.4119 77.7464 17.6128 77.5678 17.7691C77.4115 17.9254 77.2105 18.0035 76.9649 18.0035H71.0708V35.1502C71.0708 35.3958 70.9815 35.5968 70.8028 35.753C70.6466 35.9093 70.4456 35.9875 70.2 35.9875H65.545Z" fill="#1D2C4D"></path><path d="M81.6122 35.9875C81.3889 35.9875 81.188 35.9093 81.0093 35.753C80.8531 35.5744 80.7749 35.3735 80.7749 35.1502V13.4154C80.7749 13.1698 80.8531 12.9689 81.0093 12.8126C81.1656 12.634 81.3666 12.5447 81.6122 12.5447H90.8218C93.7689 12.5447 96.0686 13.2145 97.7207 14.5541C99.3952 15.8937 100.232 17.7802 100.232 20.2138C100.232 21.7767 99.8641 23.1051 99.1273 24.1991C98.4128 25.2931 97.4193 26.1415 96.1467 26.7443L100.668 34.9158C100.735 35.0498 100.768 35.1726 100.768 35.2842C100.768 35.4628 100.701 35.6303 100.567 35.7865C100.433 35.9205 100.266 35.9875 100.065 35.9875H95.3429C94.6955 35.9875 94.2378 35.6861 93.9699 35.0833L90.286 27.816H87.071V35.1502C87.071 35.3958 86.9817 35.5968 86.8031 35.753C86.6468 35.9093 86.4458 35.9875 86.2003 35.9875H81.6122ZM90.7883 22.893C91.7484 22.893 92.474 22.6586 92.9652 22.1897C93.4787 21.6985 93.7354 21.0287 93.7354 20.1803C93.7354 19.3319 93.4787 18.651 92.9652 18.1375C92.474 17.624 91.7484 17.3672 90.7883 17.3672H87.071V22.893H90.7883Z" fill="#1D2C4D"></path><path d="M102.755 35.9875C102.576 35.9875 102.409 35.9205 102.252 35.7865C102.118 35.6303 102.051 35.4628 102.051 35.2842C102.051 35.1502 102.063 35.0498 102.085 34.9828L109.888 13.5159C110.111 12.8684 110.558 12.5447 111.228 12.5447H116.452C117.122 12.5447 117.568 12.8684 117.792 13.5159L125.595 34.9828C125.617 35.0498 125.628 35.1502 125.628 35.2842C125.628 35.4628 125.55 35.6303 125.394 35.7865C125.26 35.9205 125.103 35.9875 124.925 35.9875H120.571C120.035 35.9875 119.656 35.7419 119.433 35.2507L118.227 32.0022H109.453L108.247 35.2507C108.024 35.7419 107.644 35.9875 107.108 35.9875H102.755ZM110.859 26.9787H116.82L113.84 18.4389L110.859 26.9787Z" fill="#1D2C4D"></path><path d="M129.001 35.9875C128.778 35.9875 128.577 35.9093 128.399 35.753C128.242 35.5744 128.164 35.3735 128.164 35.1502V13.4154C128.164 13.1698 128.242 12.9689 128.399 12.8126C128.555 12.634 128.756 12.5447 129.001 12.5447H132.786C133.299 12.5447 133.679 12.7568 133.924 13.181L141.828 25.6726V13.4154C141.828 13.1698 141.906 12.9689 142.062 12.8126C142.219 12.634 142.42 12.5447 142.665 12.5447H146.918C147.164 12.5447 147.365 12.634 147.521 12.8126C147.677 12.9689 147.756 13.1698 147.756 13.4154V35.1167C147.756 35.3623 147.677 35.5744 147.521 35.753C147.365 35.9093 147.164 35.9875 146.918 35.9875H143.134C142.621 35.9875 142.241 35.7754 141.995 35.3512L134.125 23.3619V35.1502C134.125 35.3958 134.036 35.5968 133.857 35.753C133.701 35.9093 133.5 35.9875 133.255 35.9875H129.001Z" fill="#1D2C4D"></path><path d="M161.175 36.3224C159.009 36.3224 157.167 36.0098 155.649 35.3847C154.131 34.7595 152.981 33.9334 152.2 32.9064C151.418 31.8794 151.005 30.7631 150.961 29.5575C150.961 29.3565 151.028 29.1891 151.162 29.0551C151.318 28.9211 151.497 28.8542 151.697 28.8542H156.152C156.42 28.8542 156.632 28.8988 156.788 28.9881C156.967 29.0774 157.156 29.2337 157.357 29.457C157.647 29.9928 158.094 30.4393 158.697 30.7966C159.322 31.1315 160.148 31.2989 161.175 31.2989C162.381 31.2989 163.307 31.1203 163.955 30.7631C164.602 30.3835 164.926 29.87 164.926 29.2226C164.926 28.7537 164.758 28.3741 164.424 28.0839C164.089 27.7713 163.553 27.5034 162.816 27.2802C162.079 27.0346 161.019 26.7666 159.635 26.4764C156.933 25.9406 154.912 25.1256 153.573 24.0317C152.233 22.9377 151.564 21.3748 151.564 19.3431C151.564 17.9589 151.943 16.7309 152.702 15.6592C153.484 14.5652 154.578 13.7168 155.984 13.114C157.413 12.5112 159.065 12.2098 160.941 12.2098C162.905 12.2098 164.602 12.5558 166.031 13.248C167.482 13.9178 168.587 14.7662 169.347 15.7932C170.128 16.7979 170.541 17.7914 170.586 18.7738C170.586 18.9747 170.519 19.1533 170.385 19.3096C170.251 19.4436 170.083 19.5105 169.882 19.5105H165.194C164.703 19.5105 164.323 19.3096 164.055 18.9077C163.921 18.4389 163.575 18.0482 163.017 17.7356C162.459 17.4007 161.767 17.2332 160.941 17.2332C160.003 17.2332 159.277 17.4007 158.764 17.7356C158.25 18.0705 157.994 18.5617 157.994 19.2091C157.994 19.8566 158.328 20.3701 158.998 20.7497C159.668 21.1069 160.918 21.4753 162.749 21.8548C164.848 22.2344 166.511 22.7144 167.739 23.2949C168.989 23.853 169.905 24.5898 170.485 25.5052C171.088 26.3983 171.389 27.5369 171.389 28.9211C171.389 30.4393 170.954 31.7566 170.083 32.8729C169.213 33.9893 168.007 34.8488 166.466 35.4516C164.926 36.0321 163.162 36.3224 161.175 36.3224Z" fill="#1D2C4D"></path><path d="M184.45 36.3224C181.213 36.3224 178.679 35.5409 176.848 33.9781C175.017 32.3929 174.046 30.1379 173.934 27.2132C173.912 26.588 173.901 25.5722 173.901 24.1656C173.901 22.759 173.912 21.732 173.934 21.0846C174.024 18.2714 174.995 16.0946 176.848 14.5541C178.723 12.9912 181.257 12.2098 184.45 12.2098C186.593 12.2098 188.458 12.5558 190.043 13.248C191.65 13.9401 192.867 14.8331 193.693 15.9271C194.542 16.9988 194.988 18.104 195.033 19.2426C195.033 19.4436 194.955 19.6222 194.798 19.7785C194.664 19.9124 194.497 19.9794 194.296 19.9794H189.105C188.882 19.9794 188.703 19.9459 188.569 19.8789C188.458 19.7896 188.346 19.6668 188.234 19.5105C187.967 18.8854 187.531 18.3496 186.928 17.903C186.348 17.4565 185.522 17.2332 184.45 17.2332C181.86 17.2332 180.521 18.5728 180.431 21.252C180.409 21.8771 180.398 22.8372 180.398 24.1321C180.398 25.4271 180.409 26.3983 180.431 27.0457C180.521 29.8812 181.883 31.2989 184.517 31.2989C185.812 31.2989 186.839 30.9752 187.598 30.3277C188.357 29.6802 188.737 28.6979 188.737 27.3806V26.7778H185.756C185.511 26.7778 185.299 26.6997 185.12 26.5434C184.964 26.3648 184.886 26.1527 184.886 25.9071V23.2949C184.886 23.0493 184.964 22.8483 185.12 22.6921C185.299 22.5135 185.511 22.4241 185.756 22.4241H194.263C194.508 22.4241 194.709 22.5135 194.865 22.6921C195.044 22.8483 195.133 23.0493 195.133 23.2949V27.1797C195.133 29.0774 194.687 30.7184 193.794 32.1027C192.923 33.4646 191.684 34.5139 190.076 35.2507C188.469 35.9652 186.593 36.3224 184.45 36.3224Z" fill="#EC2552"></path><path d="M208.551 36.3224C205.381 36.3224 202.88 35.5521 201.05 34.0116C199.219 32.4711 198.248 30.2049 198.136 27.2132C198.114 26.588 198.102 25.628 198.102 24.3331C198.102 23.0381 198.114 22.0669 198.136 21.4195C198.225 18.4724 199.196 16.2062 201.05 14.621C202.925 13.0135 205.426 12.2098 208.551 12.2098C211.655 12.2098 214.133 13.0135 215.986 14.621C217.861 16.2062 218.844 18.4724 218.933 21.4195C218.978 22.7144 219 23.6856 219 24.3331C219 25.0029 218.978 25.9629 218.933 27.2132C218.821 30.2049 217.85 32.4711 216.019 34.0116C214.211 35.5521 211.722 36.3224 208.551 36.3224ZM208.551 31.2989C209.712 31.2989 210.639 30.9529 211.331 30.2607C212.023 29.5463 212.391 28.4635 212.436 27.0122C212.481 25.7173 212.503 24.7908 212.503 24.2326C212.503 23.6744 212.481 22.7702 212.436 21.5199C212.391 20.0687 212.023 18.997 211.331 18.3049C210.639 17.5905 209.712 17.2332 208.551 17.2332C207.368 17.2332 206.43 17.5905 205.738 18.3049C205.046 18.997 204.678 20.0687 204.633 21.5199C204.611 22.1451 204.599 23.0493 204.599 24.2326C204.599 25.4382 204.611 26.3648 204.633 27.0122C204.678 28.4635 205.046 29.5463 205.738 30.2607C206.43 30.9529 207.368 31.2989 208.551 31.2989Z" fill="#EC2552"></path><circle cx="24.4196" cy="24.4196" r="24.4196" fill="#EC2552"></circle><path d="M13.8723 34.5934V24.0462H22.8328L20.3126 26.9397L24.6995 31.1399L29.1798 26.9397H35.0601L24.6995 36.5535L17.7925 30.1132L13.8723 34.5934Z" fill="white"></path><path d="M34.9668 14.2457L34.9668 24.7929L26.0063 24.7929L28.5265 21.8994L24.1396 17.6992L19.6593 21.8994L13.779 21.8994L24.1396 12.2856L31.0466 18.7259L34.9668 14.2457Z" fill="white"></path></svg>]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Rectangle-tilt-shape]]></title>
 		<link>https://transgo.iamabdus.com/v1-1/rectangle-tilt-shape/</link>
 		<pubDate>Mon, 25 Nov 2019 13:57:52 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/Rectangle-tilt-shape.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/Rectangle-tilt-shape.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2875,7 +2879,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/transgo-footer-logo/</link>
 		<pubDate>Tue, 26 Nov 2019 04:56:36 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/transgo-footer-logo.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/transgo-footer-logo.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2904,7 +2908,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/air-freight-2-2/</link>
 		<pubDate>Tue, 26 Nov 2019 06:48:57 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/air-freight-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/air-freight-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2945,7 +2949,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/oceanfreight-1/</link>
 		<pubDate>Tue, 26 Nov 2019 06:49:26 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/oceanfreight-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/oceanfreight-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -2986,7 +2990,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/vanveenjf-ms2nggq6vo4-unsplash/</link>
 		<pubDate>Tue, 26 Nov 2019 07:11:52 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/vanveenjf-mS2ngGq6VO4-unsplash.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/vanveenjf-mS2ngGq6VO4-unsplash.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3023,7 +3027,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/banner-bg-cargo-3/</link>
 		<pubDate>Tue, 26 Nov 2019 12:48:18 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/banner-bg-cargo-3.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/banner-bg-cargo-3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3064,7 +3068,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/banner-bg-truck-2/</link>
 		<pubDate>Tue, 26 Nov 2019 12:48:49 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/banner-bg-truck-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/banner-bg-truck-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3105,7 +3109,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/businessman-in-apresentation-with-a-graphic-on-a-board-2/</link>
 		<pubDate>Tue, 26 Nov 2019 13:43:50 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/businessman-in-apresentation-with-a-graphic-on-a-board-2.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/businessman-in-apresentation-with-a-graphic-on-a-board-2.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3134,7 +3138,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/delivery-truck-1-2/</link>
 		<pubDate>Tue, 26 Nov 2019 14:06:37 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/delivery-truck-1.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/delivery-truck-1.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3163,7 +3167,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork-4-2/</link>
 		<pubDate>Tue, 26 Nov 2019 14:09:31 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/teamwork-4.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/teamwork-4.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3192,7 +3196,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/trans-maps-and-flags/</link>
 		<pubDate>Wed, 27 Nov 2019 06:11:29 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/trans-maps-and-flags.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/trans-maps-and-flags.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3233,7 +3237,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/fabicon/</link>
 		<pubDate>Wed, 27 Nov 2019 12:50:41 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/fabicon.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/fabicon.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3274,9 +3278,9 @@
 		<link>https://transgo.iamabdus.com/v1-1/cropped-fabicon-png/</link>
 		<pubDate>Wed, 27 Nov 2019 12:50:46 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/cropped-fabicon.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/cropped-fabicon.png</guid>
 		<description></description>
-		<content:encoded><![CDATA[https://ocdi.iamabdus.com/transgo/uploads/2019/11/cropped-fabicon.png]]></content:encoded>
+		<content:encoded><![CDATA[http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/cropped-fabicon.png]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1505</wp:post_id>
 		<wp:post_date><![CDATA[2019-11-27 12:50:46]]></wp:post_date>
@@ -3319,7 +3323,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/trango-white-truck-single/</link>
 		<pubDate>Thu, 28 Nov 2019 11:04:42 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/trango-White-Truck-single.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/trango-White-Truck-single.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3360,7 +3364,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/transgo-three-orange-scania-trucks/</link>
 		<pubDate>Thu, 28 Nov 2019 11:05:19 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/transgo-three-orange-Scania-trucks.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/transgo-three-orange-Scania-trucks.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3401,7 +3405,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/transgo-air-shutterstock/</link>
 		<pubDate>Thu, 28 Nov 2019 11:05:37 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/transgo-air-shutterstock.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/transgo-air-shutterstock.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3442,7 +3446,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/transgo-oceanfreight-640-480/</link>
 		<pubDate>Thu, 28 Nov 2019 11:09:26 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/transgo-oceanfreight-640-480.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/transgo-oceanfreight-640-480.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3483,7 +3487,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/client-logo-1-320x320-1/</link>
 		<pubDate>Sat, 30 Nov 2019 07:20:08 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/client-logo-1-320x320-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/client-logo-1-320x320-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3524,7 +3528,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/client-logo-3-320x320-2/</link>
 		<pubDate>Sat, 30 Nov 2019 07:20:09 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/client-logo-3-320x320-2.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/client-logo-3-320x320-2.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3565,7 +3569,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/project-management/</link>
 		<pubDate>Sat, 30 Nov 2019 09:30:49 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/project-management.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/project-management.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3594,7 +3598,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/world-wide-web/</link>
 		<pubDate>Sat, 30 Nov 2019 09:42:18 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/world-wide-web.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/world-wide-web.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3627,7 +3631,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/teamwork-3-3/</link>
 		<pubDate>Sat, 30 Nov 2019 09:43:55 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/teamwork-3.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/teamwork-3.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3656,7 +3660,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/collaboration/</link>
 		<pubDate>Sat, 30 Nov 2019 10:57:33 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/11/collaboration.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/11/collaboration.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3689,7 +3693,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/24-hours/</link>
 		<pubDate>Wed, 04 Dec 2019 07:06:06 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/24-hours.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/24-hours.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3722,7 +3726,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/delivery-truck-2/</link>
 		<pubDate>Wed, 04 Dec 2019 07:06:31 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/delivery-truck.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/delivery-truck.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3755,7 +3759,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-dark/security/</link>
 		<pubDate>Wed, 04 Dec 2019 07:08:17 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/security.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/security.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3788,7 +3792,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-grid/transgo-insurance-3/</link>
 		<pubDate>Wed, 04 Dec 2019 11:01:40 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-insurance-3.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-insurance-3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3829,7 +3833,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-grid/transgo-car-transporter/</link>
 		<pubDate>Wed, 04 Dec 2019 11:01:59 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-car-transporter.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-car-transporter.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3870,7 +3874,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-grid/transgo-multimodal-tp-2/</link>
 		<pubDate>Wed, 04 Dec 2019 11:02:18 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-multimodal-tp-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-multimodal-tp-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3911,7 +3915,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-grid/trango-wearhouse/</link>
 		<pubDate>Wed, 04 Dec 2019 11:03:02 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-wearhouse.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-wearhouse.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3952,7 +3956,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-grid/orientierung-autobox/</link>
 		<pubDate>Wed, 04 Dec 2019 11:03:20 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/orientierung-autobox.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/orientierung-autobox.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3993,7 +3997,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/services-grid/transgo-insurance-2/</link>
 		<pubDate>Wed, 04 Dec 2019 11:03:41 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-insurance-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-insurance-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4034,7 +4038,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/about-us/on-time/</link>
 		<pubDate>Wed, 04 Dec 2019 12:49:47 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/on-time.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/on-time.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4057,13 +4061,17 @@
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2019/12/on-time.svg]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_inline_svg]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512" width="512" height="512"><title>On time delivery</title><path d="M85,397.225v55.786a37.136,37.136,0,0,0-35.97,37.078A6.9,6.9,0,0,0,56,497H366.047a6.878,6.878,0,0,0,6.945-6.911A37.154,37.154,0,0,0,337,453.011V396.692c0-54.82-35.406-101.477-84.439-118.577a126.4,126.4,0,0,0,64.941-51.4A109.109,109.109,0,1,0,266.239,59H56a7.018,7.018,0,0,0-6.97,7.051A37.26,37.26,0,0,0,85,103.269v56.319a126,126,0,0,0,84.217,118.555A126.006,126.006,0,0,0,85,397.225ZM357.968,483H64.079A23.558,23.558,0,0,1,86.2,467H335.849A23.558,23.558,0,0,1,357.968,483ZM138.887,453l47.069-47.62a33.716,33.716,0,0,1,47.621-.271L280.924,453ZM353.927,28.822A95.074,95.074,0,1,1,258.853,123.9,95.181,95.181,0,0,1,353.927,28.822ZM64.079,73H257.427a130.207,130.207,0,0,0-6.948,16H86.2A23.557,23.557,0,0,1,64.079,73ZM99,159.533V103H246.812a115.394,115.394,0,0,0-1.959,20.93A110.817,110.817,0,0,0,260.8,181H100.966A116.77,116.77,0,0,1,99,159.533Zm32.864,79.141A113.23,113.23,0,0,1,104.605,195H270.971A107.182,107.182,0,0,0,304.5,221.223,111.778,111.778,0,0,1,211.521,271h-.8A110.805,110.805,0,0,1,131.864,238.674ZM210.526,285h.8C272.854,285,323,335.157,323,396.708V453H300.61L243.8,395.531l-.377-.382A47.733,47.733,0,0,0,176,395.54L119.2,453H99V397.209A111.895,111.895,0,0,1,210.526,285Z"></path><path d="M290.463,164.6l59.982,34.641a6.975,6.975,0,0,0,6.987,0L417.466,164.6A7.032,7.032,0,0,0,421,158.537V89.255a7.033,7.033,0,0,0-3.537-6.062L357.445,48.552a7.014,7.014,0,0,0-7.009,0L290.468,83.193A6.969,6.969,0,0,0,287,89.255v69.282A6.966,6.966,0,0,0,290.463,164.6ZM407,154.5l-46,26.558V127.932l46-26.558Zm-7.077-65.242-46,26.555-16.589-9.577,46-26.556Zm-46-26.556,15.407,8.895-46,26.556-15.407-8.895ZM301,101.374l46,26.558v53.121L301,154.5Z"></path></svg>]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[on-time-white]]></title>
 		<link>https://transgo.iamabdus.com/v1-1/about-us/on-time-white/</link>
 		<pubDate>Wed, 04 Dec 2019 12:52:22 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/on-time-white.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/on-time-white.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4096,7 +4104,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/about-us/protected/</link>
 		<pubDate>Wed, 04 Dec 2019 13:12:35 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/protected.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/protected.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4129,7 +4137,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/about-us/keep-dry-white/</link>
 		<pubDate>Wed, 04 Dec 2019 13:16:34 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/keep-dry-white.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/keep-dry-white.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4162,7 +4170,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/service-light/air-frieght-2-c/</link>
 		<pubDate>Thu, 05 Dec 2019 06:16:18 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/air-frieght-2-c.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/air-frieght-2-c.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4185,13 +4193,17 @@
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2019/12/air-frieght-2-c.svg]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_inline_svg]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.99928 511" width="512px" height="512px" class=""><g transform="matrix(-3.06162e-16 -1 1 -3.06162e-16 0.499634 511.5)"><path d="m241.21875 257.140625c-3.910156 3.898437-3.910156 10.230469 0 14.140625s10.238281 3.910156 14.140625 0c3.910156-3.910156 3.910156-10.242188 0-14.140625-3.902344-3.910156-10.230469-3.910156-14.140625 0zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m400.226562 29.753906c-17.160156 13.285156-21.835937 20.132813-82.695312 80.363282l-36.484375-5.941407 16.742187-16.742187c11.726563-11.726563 11.730469-30.699219 0-42.425782-11.722656-11.722656-30.707031-11.726562-42.429687 0l-47.289063 47.289063-165.382812-26.925781c-10.6875-1.734375-21.621094 1.800781-29.269531 9.449218-14.707031 14.707032-12.710938 39.039063 4.066406 51.179688l164.808594 119.351562-30.855469 30.859376c-10.574219 10.574218-21.703125 25.117187-33.140625 43.277343l-76.859375-22.601562c-11.34375-3.332031-23.59375-.210938-31.972656 8.152343-14.265625 14.265626-12.109375 37.957032 4.460937 49.433594l63.007813 43.617188c-10.96875 24.207031-17.636719 41.710937-17.945313 42.519531-1.398437 3.679687-.503906 7.839844 2.277344 10.621094 2.796875 2.796875 6.960937 3.667969 10.621094 2.277343.808593-.304687 18.3125-6.976562 42.519531-17.945312l43.621094 63.011719c11.496094 16.597656 35.1875 18.699219 49.4375 4.449219 8.359375-8.371094 11.480468-20.621094 8.144531-31.964844l-22.597656-76.855469c18.171875-11.445313 32.707031-22.574219 43.277343-33.140625l30.859376-30.859375 119.347656 164.808594c12.160156 16.804687 36.492187 18.757812 51.183594 4.066406 7.644531-7.644531 11.179687-18.585937 9.449218-29.277344l-26.925781-165.371093 47.285156-47.285157c11.726563-11.726562 11.726563-30.710937 0-42.433593-11.722656-11.726563-30.695312-11.726563-42.421875 0l-16.746094 16.742187-5.9375-36.484375c60.292969-60.921875 67.03125-65.488281 80.324219-82.648438.015625-.019531.035157-.042968.050781-.066406 30.84375-39.972656 38.0625-80.34375 17.949219-100.464844-20.117187-20.105468-60.492187-12.894531-100.480469 17.964844zm-130.726562 29.398438c3.90625-3.910156 10.238281-3.910156 14.148438 0 3.910156 3.910156 3.90625 10.226562 0 14.136718l-26.929688 26.925782-24.324219-3.960938zm-240.289062 50.644531c-6.84375-4.949219-7.628907-14.859375-1.648438-20.835937 3.113281-3.117188 7.574219-4.558594 11.917969-3.851563l260.625 42.433594-103.488281 103.484375zm-5.605469 209.390625c3.195312-3.191406 7.867187-4.386719 12.191406-3.113281l71.886719 21.140625c-7.351563 12.875-14.769532 27.097656-22.167969 42.492187l-60.203125-41.675781c-6.316406-4.375-7.144531-13.410156-1.707031-18.84375zm169.710937 169.703125c-5.390625 5.390625-14.4375 4.664063-18.847656-1.703125l-41.675781-60.207031c15.40625-7.40625 29.632812-14.828125 42.492187-22.164063l21.136719 71.882813c1.273437 4.328125.082031 9-3.105469 12.191406zm245.894532-260.039063c3.90625-3.90625 10.226562-3.910156 14.136718 0 3.910156 3.910157 3.90625 10.238282 0 14.148438l-37.105468 37.101562-3.957032-24.324218zm-11.824219 244.15625c.707031 4.355469-.734375 8.816407-3.847657 11.929688-5.949218 5.949219-15.867187 5.222656-20.839843-1.652344l-121.230469-167.402344 103.488281-103.488281zm-205.238281-126.089843c-11.003907 11.007812-27.109376 22.890625-47.867188 35.324219-26.984375 16.160156-58.917969 31.464843-87.722656 43.699218 12.566406-29.585937 28.160156-62.035156 44.667968-89.328125 12.074219-19.976562 23.632813-35.542969 34.355469-46.261719 244.273438-243.6875 229.800781-231.117187 244.625-242.972656 16.445313-1.050781 30.921875 3.832032 41 13.910156 10.078125 10.078126 14.964844 24.558594 13.914063 41-11.882813 14.859376.539062.527344-242.972656 244.628907zm260.085937-270.90625c-3.195313-11.023438-8.871094-20.851563-16.882813-28.863281-8.011718-8.007813-17.839843-13.6875-28.859374-16.882813 14.472656-7.339844 38.84375-15.558594 50.074218-4.335937 8.867188 8.871093 6.664063 28.398437-4.332031 50.082031zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m297.789062 200.570312-28.28125 28.277344c-3.90625 3.90625-3.90625 10.238282 0 14.144532s10.234376 3.902343 14.144532 0l28.277344-28.28125c3.90625-3.902344 3.90625-10.234376 0-14.140626s-10.234376-3.90625-14.140626 0zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m354.359375 144-28.292969 28.289062c-3.902344 3.90625-3.902344 10.238282 0 14.144532 3.910156 3.902344 10.238282 3.902344 14.144532 0l28.289062-28.289063c3.90625-3.90625 3.90625-10.238281 0-14.144531s-10.234375-3.90625-14.140625 0zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path></g></svg>]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[sea-freight-c]]></title>
 		<link>https://transgo.iamabdus.com/v1-1/service-light/sea-freight-c/</link>
 		<pubDate>Thu, 05 Dec 2019 06:17:50 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/sea-freight-c.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/sea-freight-c.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4214,13 +4226,17 @@
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2019/12/sea-freight-c.svg]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_inline_svg]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" height="512px" viewBox="0 -96 480.00375 480" width="512px"><g><path d="m472 272c-8.898438.230469-17.660156-2.210938-25.160156-7.007812-20.277344-11.988282-45.472656-11.988282-65.75 0-15.460938 9.339843-34.824219 9.339843-50.28125 0-20.273438-11.992188-45.472656-11.992188-65.746094 0-15.453125 9.339843-34.808594 9.339843-50.261719 0-9.855469-6.113282-21.277343-9.238282-32.871093-8.992188-11.589844-.242188-23 2.882812-32.851563 8.992188-7.484375 4.800781-16.238281 7.242187-25.125 7.007812-8.886719.230469-17.636719-2.207031-25.121094-7-9.851562-6.117188-21.265625-9.242188-32.855469-9-11.589843-.242188-23 2.882812-32.847656 8.992188-7.484375 4.800781-16.238281 7.242187-25.128906 7.007812-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8 11.59375.246094 23.007812-2.878906 32.855469-9 7.484375-4.789062 16.234375-7.226562 25.121093-7 8.886719-.230469 17.640626 2.210938 25.128907 7.011719 9.847656 6.109375 21.257812 9.234375 32.847656 8.988281 11.589844.242188 23-2.886719 32.847656-9 7.484375-4.792969 16.238281-7.234375 25.128907-7 8.890624-.226562 17.644531 2.214844 25.132812 7.011719 20.273438 11.988281 45.464844 11.988281 65.738281 0 15.453125-9.34375 34.816407-9.34375 50.269531 0 20.273438 11.988281 45.464844 11.988281 65.738282 0 15.472656-9.34375 34.847656-9.34375 50.320312 0 9.855469 6.109375 21.273438 9.234375 32.871094 8.988281 4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m0 248c0 4.421875 3.582031 8 8 8 11.574219.261719 22.976562-2.863281 32.800781-8.988281 7.515625-4.792969 16.289063-7.234375 25.199219-7.011719 8.929688-.207031 17.714844 2.257812 25.230469 7.082031 9.808593 6.0625 21.160156 9.160157 32.691406 8.917969 11.613281.238281 23.046875-2.890625 32.925781-9.007812 7.460938-4.804688 16.199219-7.242188 25.074219-6.992188 8.953125-.21875 17.769531 2.25 25.308594 7.082031 20.253906 11.917969 45.382812 11.882813 65.601562-.089843 7.464844-4.808594 16.210938-7.246094 25.089844-6.992188 8.953125-.21875 17.769531 2.25 25.308594 7.082031 20.25 11.925781 45.378906 11.898438 65.601562-.070312 7.507813-4.785157 16.269531-7.226563 25.167969-7.011719 1.734375 0 3.335938.066406 4.953125.21875 7.167969.601562 14.082031 2.933594 20.152344 6.800781 9.867187 6.109375 21.292969 9.230469 32.894531 8.980469 4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8-8.902344.238281-17.667969-2.199219-25.167969-7-4.808593-2.835938-9.9375-5.089844-15.28125-6.710938l47.601563-94.695312c1.246094-2.480469 1.117187-5.429688-.339844-7.792969s-4.035156-3.800781-6.8125-3.800781h-40v-112c0-4.417969-3.582031-8-8-8h-288c-4.417969 0-8 3.582031-8 8v136h-16v-120c0-4.417969-3.582031-8-8-8h-64c-3.949219.003906-7.304688 2.882812-7.902344 6.785156l-14.960937 97.214844h-9.136719c-4.417969 0-8 3.582031-8 8v72c0 1.453125.394531 2.878906 1.144531 4.121094l20.457031 34.097656c-4.421874 1.265625-9.003906 1.867188-13.601562 1.78125-4.417969 0-8 3.582031-8 8zm376-128c-1.730469 0-3.414062.5625-4.800781 1.601562l-29.863281 22.398438h-5.335938v-32h80v8zm-136 24v-32h80v32zm-96-80h80v32h-80zm272 32h-80v-32h80zm-96 0h-80v-32h80zm96-48h-80v-32h80zm-96 0h-80v-32h80zm-176-32h80v32h-80zm0 96h80v32h-80zm-97.136719-80h49.136719v100.691406l-10.34375-10.34375c-1.5-1.503906-3.535156-2.34375-5.65625-2.347656h-46.671875zm-30.863281 104h60.6875l21.65625 21.65625c1.5 1.503906 3.535156 2.34375 5.65625 2.34375h240c1.730469 0 3.414062-.558594 4.800781-1.597656l29.863281-22.402344h80.359376l-44.246094 88c-.273438 0-.503906 0-.800782 0-11.601562-.234375-23.023437 2.886719-32.886718 8.992188-15.503906 9.367187-34.925782 9.339843-50.402344-.070313-20.246094-11.925781-45.378906-11.898437-65.597656.070313-15.503906 9.367187-34.925782 9.339843-50.402344-.070313-9.832031-6.070313-21.214844-9.167969-32.765625-8.921875-11.578125-.261719-22.980469 2.863281-32.800781 8.992188-7.519532 4.789062-16.292969 7.230468-25.199219 7.007812-8.929687.210938-17.710937-2.253906-25.226563-7.078125-9.8125-6.0625-21.164062-9.160156-32.695312-8.921875-1.953125 0-3.769531.082031-5.511719.203125-.585937.039063-1.121093.109375-1.6875.167969-1.113281.109375-2.214843.222656-3.257812.375-.613281.097656-1.191407.199218-1.78125.3125-.914063.160156-1.800781.328125-2.65625.527344-.570313.128906-1.128907.273437-1.671875.414062-.800782.210938-1.601563.441406-2.402344.683594-.488281.148437-.984375.300781-1.457031.460937-.796875.273438-1.542969.5625-2.277344.855469-.386719.152344-.800781.296875-1.160156.457031-.890625.375-1.746094.761719-2.578125 1.160157l-.542969.25c-1 .488281-1.976563.984374-2.910156 1.480468l-20.105469-33.5625zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m72 40h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m72 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m112 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m152 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m192 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m232 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m272 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m312 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m352 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m392 192h8c4.417969 0 8-3.578125 8-8 0-4.417969-3.582031-8-8-8h-8c-4.417969 0-8 3.582031-8 8 0 4.421875 3.582031 8 8 8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path></g></svg>]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[road-freight-c]]></title>
 		<link>https://transgo.iamabdus.com/v1-1/service-light/road-freight-c/</link>
 		<pubDate>Thu, 05 Dec 2019 06:19:51 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/road-freight-c.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/road-freight-c.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4243,13 +4259,17 @@
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2019/12/road-freight-c.svg]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_inline_svg]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" height="512px" viewBox="0 -96 480 480" width="512px"><g><path d="m470.398438 127.199219-76.558594-76.558594c-7.085938-6.488281-16.238282-10.257813-25.839844-10.640625h-48v-32c0-4.417969-3.582031-8-8-8h-304c-4.417969 0-8 3.582031-8 8v216c0 4.417969 3.582031 8 8 8h56.71875c-3.300781 18.859375 4.917969 37.878906 20.917969 48.394531 16.003906 10.515625 36.722656 10.515625 52.726562 0 16-10.515625 24.21875-29.535156 20.917969-48.394531h177.4375c-3.300781 18.859375 4.917969 37.878906 20.917969 48.394531 16.003906 10.515625 36.722656 10.515625 52.726562 0 16-10.515625 24.21875-29.535156 20.917969-48.394531h16.71875c17.671875 0 32-14.328125 32-32v-49.519531c.003906-8.722657-3.449219-17.09375-9.601562-23.28125zm-102.398438-71.199219c5.347656.398438 10.429688 2.492188 14.503906 5.976562l66.023438 66.023438h-96.527344v-72zm-64-40v144h-288v-144zm-192 256c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32 32 14.328125 32 32-14.328125 32-32 32zm0-80c-17.125.023438-32.941406 9.167969-41.503906 24h-54.496094v-40h288v40h-150.496094c-8.5625-14.832031-24.378906-23.976562-41.503906-24zm272 80c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32 32 14.328125 32 32-14.328125 32-32 32zm80-72c0 8.835938-7.164062 16-16 16h-22.496094c-8.546875-14.847656-24.371094-24-41.503906-24s-32.957031 9.152344-41.503906 24h-22.496094v-160h16v80c0 4.417969 3.582031 8 8 8h118.671875c.867187 2.050781 1.320313 4.253906 1.328125 6.480469zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path></g></svg>]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[warehousing-c]]></title>
 		<link>https://transgo.iamabdus.com/v1-1/service-light/warehousing-c/</link>
 		<pubDate>Thu, 05 Dec 2019 06:20:08 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/warehousing-c.svg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/warehousing-c.svg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4272,13 +4292,17 @@
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2019/12/warehousing-c.svg]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_inline_svg]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<svg xmlns="http://www.w3.org/2000/svg" height="512px" viewBox="0 -56 480 480" width="512px"><g><path d="m288 272.050781c-17.671875 0-32 14.324219-32 32 0 17.671875 14.328125 32 32 32s32-14.328125 32-32c0-17.675781-14.328125-32-32-32zm0 48c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16s16 7.160157 16 16c0 8.835938-7.164062 16-16 16zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m112 320.050781c0 8.835938-7.164062 16-16 16s-16-7.164062-16-16c0-8.839843 7.164062-16 16-16s16 7.160157 16 16zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m472 312.050781h-88v-304c0-4.417969-3.582031-7.9999998-8-7.9999998s-8 3.5820308-8 7.9999998v312c0 4.417969 3.582031 8 8 8h96c4.417969 0 8-3.582031 8-8s-3.582031-8-8-8zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m351.351562 212.898438-71.824218-167.5625c-9.605469-26.6875-45.40625-45.2851568-71.527344-45.2851568h-88c-12.90625-.6015622-25.464844 4.2656248-34.601562 13.3984378-9.132813 9.136719-13.996094 21.695312-13.398438 34.601562v104h-32c-24.304688 0-40 18.839844-40 48v96c.234375 17.574219 14.425781 31.765625 32 32h16.71875c3.882812 23.085938 23.871094 39.992188 47.28125 39.992188s43.398438-16.90625 47.28125-39.992188h85.429688c11.523437 28.339844 41.488281 44.5625 71.519531 38.71875 30.027343-5.847656 51.71875-32.128906 51.769531-62.71875v-88c-.003906-1.085937-.226562-2.15625-.65625-3.152343zm-231.351562-196.847657h88c20.335938 0 49.441406 15.160157 56.648438 35.152344l67.222656 156.847656h-8.558594l-69.65625-69.65625c-.820312-.804687-1.800781-1.417969-2.878906-1.808593l10.878906-10.878907c3.03125-3.140625 2.988281-8.128906-.097656-11.214843-3.085938-3.085938-8.074219-3.128907-11.214844-.097657l-32 32c-2.078125 2.007813-2.914062 4.980469-2.179688 7.777344.730469 2.796875 2.914063 4.984375 5.710938 5.714844s5.773438-.101563 7.78125-2.179688l10.878906-10.882812c.390625 1.078125 1.007813 2.0625 1.808594 2.882812l58.34375 58.34375h-44.6875c-2.121094 0-4.15625.84375-5.65625 2.34375l-45.65625 45.65625h-28.6875v-56c-.640625-12.980469-11.019531-23.359375-24-24h-24c-4.109375-.671875-7.332031-3.890625-8-8v-40c-.640625-12.980469-11.019531-23.359375-24-24h-8v-56c-.703125-8.683593 2.441406-17.242187 8.601562-23.402343 6.160157-6.160157 14.714844-9.304688 23.398438-8.597657zm-32 144v-40h8c4.109375.667969 7.332031 3.890625 8 8v40c.640625 12.976563 11.019531 23.355469 24 24h24c4.109375.667969 7.332031 3.890625 8 8v8h-72zm-48 8h32v40h-56v-8c0-9.601562 2.335938-32 24-32zm56 184c-17.671875 0-32-14.328125-32-32 0-17.675781 14.328125-32 32-32s32 14.324219 32 32c0 17.671875-14.328125 32-32 32zm192 0c-26.507812 0-48-21.492187-48-48 0-26.511719 21.492188-48 48-48s48 21.488281 48 48c-.027344 26.496094-21.5 47.972657-48 48zm0-112c-18.398438-.109375-35.945312 7.753907-48.109375 21.558594s-17.757813 32.199219-15.339844 50.441406h-81.269531c-3.882812-23.085937-23.871094-39.992187-47.28125-39.992187s-43.398438 16.90625-47.28125 39.992187h-16.71875c-8.742188-.222656-15.777344-7.257812-16-16v-72h144v40c0 4.417969 3.582031 8 8 8h40c2.121094 0 4.15625-.84375 5.65625-2.34375l45.65625-45.65625h76.6875v37.804688c-12.109375-13.847657-29.605469-21.796875-48-21.804688zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m472 216.050781h-64c-4.417969 0-8 3.582031-8 8v64c0 4.417969 3.582031 8 8 8h64c4.417969 0 8-3.582031 8-8v-64c0-4.417969-3.582031-8-8-8zm-8 64h-48v-48h48zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m472 24.050781h-64c-4.417969 0-8 3.582031-8 8v64c0 4.417969 3.582031 8 8 8h64c4.417969 0 8-3.582031 8-8v-64c0-4.417969-3.582031-8-8-8zm-8 64h-48v-48h48zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path><path d="m472 120.050781h-64c-4.417969 0-8 3.582031-8 8v64c0 4.417969 3.582031 8 8 8h64c4.417969 0 8-3.582031 8-8v-64c0-4.417969-3.582031-8-8-8zm-8 64h-48v-48h48zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#ec2552"></path></g></svg>]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[cropped-truck-1]]></title>
 		<link>https://transgo.iamabdus.com/v1-1/single-service/cropped-truck-1/</link>
 		<pubDate>Thu, 05 Dec 2019 09:32:39 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/cropped-truck-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/cropped-truck-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4319,7 +4343,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/transgo-image-carousel-1/</link>
 		<pubDate>Thu, 05 Dec 2019 10:16:03 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4360,7 +4384,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/transgo-image-carousel-2/</link>
 		<pubDate>Thu, 05 Dec 2019 10:16:04 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4401,7 +4425,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/transgo-image-carousel-3/</link>
 		<pubDate>Thu, 05 Dec 2019 10:16:04 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-3.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4442,7 +4466,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/transgo-image-carousel-4/</link>
 		<pubDate>Thu, 05 Dec 2019 10:16:05 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-4.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-4.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4483,7 +4507,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/transgo-image-carousel-5/</link>
 		<pubDate>Thu, 05 Dec 2019 10:16:06 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-5.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-5.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4524,7 +4548,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/transgo-image-carousel-6/</link>
 		<pubDate>Thu, 05 Dec 2019 10:16:07 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-6.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-6.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4565,7 +4589,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/transgo-image-carousel-7/</link>
 		<pubDate>Thu, 05 Dec 2019 10:16:08 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-7.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-7.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4606,7 +4630,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/chauffeur-duim-gele-jas/</link>
 		<pubDate>Thu, 05 Dec 2019 10:48:32 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/Chauffeur-duim-gele-jas.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/Chauffeur-duim-gele-jas.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4647,7 +4671,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/two-workers-and-inspector-using-forklift-machine-in-storehouse/</link>
 		<pubDate>Thu, 05 Dec 2019 11:03:43 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/female-supervisor-to-check-the-logistics-warehouse-Stock-Photo-04.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/female-supervisor-to-check-the-logistics-warehouse-Stock-Photo-04.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[two workers and inspector using forklift machine in storehouse]]></excerpt:encoded>
@@ -4688,7 +4712,7 @@
 		<link>https://transgo.iamabdus.com/v1-1/single-service/trabajar-en-logistica/</link>
 		<pubDate>Thu, 05 Dec 2019 11:03:59 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trabajar-en-logistica.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trabajar-en-logistica.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[[ File # csp11485057, License # 2649034 ]
@@ -4735,7 +4759,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/transgo-muili-modal-img/</link>
 		<pubDate>Sat, 07 Dec 2019 06:31:58 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-muili-modal-img.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-muili-modal-img.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4776,7 +4800,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/transgo-team-600x540/</link>
 		<pubDate>Sat, 07 Dec 2019 09:28:02 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-team-600x540.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-team-600x540.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4817,7 +4841,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/transgo-team-2-600x540/</link>
 		<pubDate>Sat, 07 Dec 2019 09:54:53 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-team-2-600x540.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-team-2-600x540.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4858,7 +4882,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/transgo-team-3-600x540/</link>
 		<pubDate>Sat, 07 Dec 2019 09:56:27 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-team-3-600x540.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-team-3-600x540.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4899,7 +4923,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/partner-company-2/</link>
 		<pubDate>Sat, 07 Dec 2019 10:46:04 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/partner-company-2.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/partner-company-2.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4940,7 +4964,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/partner-company-3/</link>
 		<pubDate>Sat, 07 Dec 2019 10:46:05 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/partner-company-3.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/partner-company-3.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4981,7 +5005,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/partner-company-4/</link>
 		<pubDate>Sat, 07 Dec 2019 10:46:05 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/partner-company-4.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/partner-company-4.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5022,7 +5046,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/partner-company-5/</link>
 		<pubDate>Sat, 07 Dec 2019 10:46:06 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/partner-company-5.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/partner-company-5.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5063,7 +5087,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/partner-company-1/</link>
 		<pubDate>Sat, 07 Dec 2019 10:47:41 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/partner-company-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/partner-company-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5104,7 +5128,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/about-us/partner-company-1-2/</link>
 		<pubDate>Sat, 07 Dec 2019 10:48:01 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/partner-company-1-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/partner-company-1-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5145,7 +5169,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/our-team/staff-img-4/</link>
 		<pubDate>Sat, 07 Dec 2019 13:37:01 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/staff-img-4.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/staff-img-4.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5186,7 +5210,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/our-team/staff-img-5/</link>
 		<pubDate>Sat, 07 Dec 2019 13:37:02 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/staff-img-5.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/staff-img-5.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5227,7 +5251,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/our-team/staff-img-6/</link>
 		<pubDate>Sat, 07 Dec 2019 13:37:02 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/staff-img-6.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/staff-img-6.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5268,7 +5292,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/our-team/team2/</link>
 		<pubDate>Sat, 07 Dec 2019 13:37:03 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/team2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/team2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5309,7 +5333,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/our-team/team4/</link>
 		<pubDate>Sat, 07 Dec 2019 13:37:04 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/team4.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/team4.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5350,7 +5374,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/our-team/team-member-12/</link>
 		<pubDate>Sat, 07 Dec 2019 13:56:02 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/team-member-12.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/team-member-12.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5391,7 +5415,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/our-team/team-member-13/</link>
 		<pubDate>Sat, 07 Dec 2019 13:58:04 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/team-member-13.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/team-member-13.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5432,7 +5456,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/contacts/massage-icon/</link>
 		<pubDate>Sun, 08 Dec 2019 08:29:45 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/massage-icon.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/massage-icon.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5473,7 +5497,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/contacts/transgo-contact/</link>
 		<pubDate>Mon, 09 Dec 2019 06:50:24 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-contact.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-contact.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5514,7 +5538,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-2/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:23 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5555,7 +5579,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-3/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:24 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-3.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5596,7 +5620,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-4/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:25 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-4.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-4.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5637,7 +5661,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-5/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:26 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-5.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-5.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5678,7 +5702,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-sea-freight-gallery-1/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:30 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5731,7 +5755,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-sea-freight-gallery-2/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:30 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5784,7 +5808,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-sea-freight-gallery-3/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:31 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-3.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5837,7 +5861,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-sea-freight-gallery-6/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:34 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-6.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-6.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5890,7 +5914,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-wearhouse-gallery-1/</link>
 		<pubDate>Mon, 09 Dec 2019 07:26:34 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-wearhouse-gallery-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-wearhouse-gallery-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5943,7 +5967,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-1/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:39 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -5996,7 +6020,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-2/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:39 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-2.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6049,7 +6073,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-3/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:40 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-3.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6102,7 +6126,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-4/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:41 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-4.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-4.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6155,7 +6179,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-5/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:42 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-5.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-5.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6208,7 +6232,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-6/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:43 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-6.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-6.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6261,7 +6285,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-7/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:44 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-7.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-7.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6314,7 +6338,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-8/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:44 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-8.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-8.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6367,7 +6391,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-9/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:45 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-9.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-9.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6420,7 +6444,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-warehouse-10/</link>
 		<pubDate>Mon, 09 Dec 2019 08:06:46 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-10.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-10.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6473,7 +6497,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-5-2/</link>
 		<pubDate>Mon, 09 Dec 2019 08:25:01 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-5-1.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-5-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6526,7 +6550,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-8/</link>
 		<pubDate>Mon, 09 Dec 2019 08:25:01 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-8.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-8.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6579,7 +6603,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-6/</link>
 		<pubDate>Mon, 09 Dec 2019 08:25:29 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-6.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-6.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6632,7 +6656,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-freight-gallery-7/</link>
 		<pubDate>Mon, 09 Dec 2019 08:25:29 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-7.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-7.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6685,7 +6709,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-consult/</link>
 		<pubDate>Thu, 09 Jan 2020 09:59:10 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/transgo-consult.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/transgo-consult.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6738,7 +6762,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-consulting-with-client/</link>
 		<pubDate>Thu, 09 Jan 2020 10:09:02 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/transgo-consulting-with-client.jpg</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/transgo-consulting-with-client.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6791,7 +6815,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-loading/</link>
 		<pubDate>Wed, 15 Jan 2020 13:52:38 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/transgo-loading.gif</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/transgo-loading.gif</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6844,7 +6868,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-preloader/</link>
 		<pubDate>Thu, 16 Jan 2020 05:21:35 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/transgo-preloader.gif</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/transgo-preloader.gif</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6897,7 +6921,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/preloader-1/</link>
 		<pubDate>Thu, 16 Jan 2020 10:20:46 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/preloader-1.gif</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/preloader-1.gif</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6950,7 +6974,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/transgo-default-preloader/</link>
 		<pubDate>Thu, 16 Jan 2020 10:24:09 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/transgo-default-preloader.gif</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/transgo-default-preloader.gif</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7003,7 +7027,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/201-2013403_stopad-support-employee-customer-service/</link>
 		<pubDate>Sat, 18 Jan 2020 09:02:43 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/201-2013403_stopad-support-employee-customer-service.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/201-2013403_stopad-support-employee-customer-service.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7056,7 +7080,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/lorry/</link>
 		<pubDate>Sat, 18 Jan 2020 09:05:11 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/lorry.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/lorry.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7119,7 +7143,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/preloader-transgo-wp/</link>
 		<pubDate>Sat, 18 Jan 2020 11:24:08 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/preloader-transgo-wp.gif</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/preloader-transgo-wp.gif</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7172,7 +7196,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/freighter-640-480-1/</link>
 		<pubDate>Sat, 18 Jan 2020 14:04:16 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/freighter-640-480-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/freighter-640-480-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7225,7 +7249,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/trango-air-640-480-1/</link>
 		<pubDate>Sat, 18 Jan 2020 14:04:21 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/trango-air-640-480-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/trango-air-640-480-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7278,7 +7302,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/circular/</link>
 		<pubDate>Sun, 19 Jan 2020 07:01:08 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/circular.gif</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/circular.gif</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7331,7 +7355,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/banner-triangele-bg/</link>
 		<pubDate>Sun, 19 Jan 2020 10:10:31 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/banner-triangele-bg.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/banner-triangele-bg.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -8605,7 +8629,7 @@ Licensed through http://www.canstockphoto.com in accordance with the End User Li
 		<link>https://transgo.iamabdus.com/v1-1/banner-triangele-bg-2/</link>
 		<pubDate>Sun, 19 Jan 2020 10:11:24 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/banner-triangele-bg-1.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/banner-triangele-bg-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -8925,7 +8949,7 @@ input[type=submit].footer-newsletter-btn::before {
 		<link>https://transgo.iamabdus.com/v1-1/transgo-froklift-2/</link>
 		<pubDate>Thu, 23 Jan 2020 11:30:45 +0000</pubDate>
 		<dc:creator><![CDATA[abdus]]></dc:creator>
-		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2020/01/transgo-froklift-2.png</guid>
+		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/wp-content/uploads/2020/01/transgo-froklift-2.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -9018,9 +9042,9 @@ input[type=submit].footer-newsletter-btn::before {
 		<link>https://transgo.iamabdus.com/v1-1/?attachment_id=4423</link>
 		<pubDate>Mon, 09 Sep 2024 14:22:29 +0000</pubDate>
 		<dc:creator><![CDATA[faruqtaf]]></dc:creator>
-		<guid isPermaLink="false">https://transgo.iamabdus.com/v1-1/wp-content/uploads/2024/09/wp-programme-venous.zip</guid>
+		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2024/09/wp-programme-venous.zip</guid>
 		<description></description>
-		<content:encoded><![CDATA[https://transgo.iamabdus.com/v1-1/wp-content/uploads/2024/09/wp-programme-venous.zip]]></content:encoded>
+		<content:encoded><![CDATA[https://ocdi.iamabdus.com/transgo/uploads/2024/09/wp-programme-venous.zip]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>4423</wp:post_id>
 		<wp:post_date><![CDATA[2024-09-09 14:22:29]]></wp:post_date>
@@ -9036,7 +9060,7 @@ input[type=submit].footer-newsletter-btn::before {
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://transgo.iamabdus.com/v1-1/wp-content/uploads/2024/09/wp-programme-venous.zip]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://ocdi.iamabdus.com/transgo/uploads/2024/09/wp-programme-venous.zip]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/09/wp-programme-venous.zip]]></wp:meta_value>
@@ -9063,9 +9087,9 @@ input[type=submit].footer-newsletter-btn::before {
 		<link>https://transgo.iamabdus.com/v1-1/?attachment_id=4426</link>
 		<pubDate>Tue, 10 Sep 2024 12:13:06 +0000</pubDate>
 		<dc:creator><![CDATA[faruqtaf]]></dc:creator>
-		<guid isPermaLink="false">https://transgo.iamabdus.com/v1-1/wp-content/uploads/2024/09/twentyseven-1.zip</guid>
+		<guid isPermaLink="false">https://ocdi.iamabdus.com/transgo/uploads/2024/09/twentyseven-1.zip</guid>
 		<description></description>
-		<content:encoded><![CDATA[https://transgo.iamabdus.com/v1-1/wp-content/uploads/2024/09/twentyseven-1.zip]]></content:encoded>
+		<content:encoded><![CDATA[https://ocdi.iamabdus.com/transgo/uploads/2024/09/twentyseven-1.zip]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>4426</wp:post_id>
 		<wp:post_date><![CDATA[2024-09-10 12:13:06]]></wp:post_date>
@@ -9081,7 +9105,7 @@ input[type=submit].footer-newsletter-btn::before {
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://transgo.iamabdus.com/v1-1/wp-content/uploads/2024/09/twentyseven-1.zip]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://ocdi.iamabdus.com/transgo/uploads/2024/09/twentyseven-1.zip]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2024/09/twentyseven-1.zip]]></wp:meta_value>
@@ -11780,57 +11804,57 @@ For further information, please contact.
 		<guid isPermaLink="false">http://transgo.iamabdus.com/v1.1/?page_id=2699</guid>
 		<description></description>
 		<content:encoded><![CDATA[GALLERY GRIDGALLERY GRID <h2></h2>		
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-2-521x336.jpg" alt="transgo-image-carousel-2">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-2.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-2-521x336.jpg" alt="transgo-image-carousel-2">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-2.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-4.jpg" alt="transgo-image-carousel-4">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-4.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-4.jpg" alt="transgo-image-carousel-4">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-4.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-5.jpg" alt="transgo-image-carousel-5">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-5.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-5.jpg" alt="transgo-image-carousel-5">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-5.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-6.png" alt="transgo-image-carousel-6">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-image-carousel-6.png">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-6.png" alt="transgo-image-carousel-6">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-image-carousel-6.png">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-3-521x336.jpg" alt="trango-air-freight-gallery-3">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-3.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-3-521x336.jpg" alt="trango-air-freight-gallery-3">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-3.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-2.jpg" alt="trango-air-freight-gallery-2">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-2.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-2.jpg" alt="trango-air-freight-gallery-2">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-2.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-4.jpg" alt="trango-air-freight-gallery-4">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-4.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-4.jpg" alt="trango-air-freight-gallery-4">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-4.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-5.jpg" alt="trango-air-freight-gallery-5">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-air-freight-gallery-5.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-5.jpg" alt="trango-air-freight-gallery-5">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-air-freight-gallery-5.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-1.jpg" alt="trango-sea-freight-gallery-1">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-1.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-1.jpg" alt="trango-sea-freight-gallery-1">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-1.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-2-521x336.jpg" alt="trango-sea-freight-gallery-2">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-2.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-2-521x336.jpg" alt="trango-sea-freight-gallery-2">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-2.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-3.jpg" alt="trango-sea-freight-gallery-3">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-3.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-3.jpg" alt="trango-sea-freight-gallery-3">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-3.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-6-521x336.jpg" alt="trango-sea-freight-gallery-6">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trango-sea-freight-gallery-6.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-6-521x336.jpg" alt="trango-sea-freight-gallery-6">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trango-sea-freight-gallery-6.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trabajar-en-logistica.jpg" alt="[ File # csp11485057, License # 2649034 ]
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trabajar-en-logistica.jpg" alt="[ File # csp11485057, License # 2649034 ]
 Licensed through http://www.canstockphoto.com in accordance with the End User License Agreement (http://www.canstockphoto.com/legal.php)
 (c) Can Stock Photo Inc. / Leaf">
 							<a data-elementor-open-lightbox="no" data-caption="[ File # csp11485057, License # 2649034 ]
 Licensed through http://www.canstockphoto.com in accordance with the End User License Agreement (http://www.canstockphoto.com/legal.php)
-(c) Can Stock Photo Inc. / Leaf" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/trabajar-en-logistica.jpg">
+(c) Can Stock Photo Inc. / Leaf" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/trabajar-en-logistica.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-1.jpg" alt="transgo-warehouse-1">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-1.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-1.jpg" alt="transgo-warehouse-1">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-1.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/female-supervisor-to-check-the-logistics-warehouse-Stock-Photo-04.jpg" alt="two workers and inspector using forklift machine in storehouse">
-							<a data-elementor-open-lightbox="no" data-caption="two workers and inspector using forklift machine in storehouse" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/female-supervisor-to-check-the-logistics-warehouse-Stock-Photo-04.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/female-supervisor-to-check-the-logistics-warehouse-Stock-Photo-04.jpg" alt="two workers and inspector using forklift machine in storehouse">
+							<a data-elementor-open-lightbox="no" data-caption="two workers and inspector using forklift machine in storehouse" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/female-supervisor-to-check-the-logistics-warehouse-Stock-Photo-04.jpg">
 															</a>
-			<img src="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-2.jpg" alt="transgo-warehouse-2">
-							<a data-elementor-open-lightbox="no" data-caption="" href="https://ocdi.iamabdus.com/transgo/uploads/2019/12/transgo-warehouse-2.jpg">
+			<img src="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-2.jpg" alt="transgo-warehouse-2">
+							<a data-elementor-open-lightbox="no" data-caption="" href="http://transgo.iamabdus.com/v1.1/wp-content/uploads/2019/12/transgo-warehouse-2.jpg">
 															</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2699</wp:post_id>
