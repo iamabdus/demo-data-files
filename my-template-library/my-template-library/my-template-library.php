@@ -1165,6 +1165,16 @@ function mtl_direct_kit_import_handler() {
                         $json_data['title'] = $$names_var[$file_id];
                     }
                     
+                    // Check for thumbnail in manifest data
+                    if (!empty($manifest_data) && isset($manifest_data['content'][$type][$file_id]['thumbnail'])) {
+                        $thumbnail_url = $manifest_data['content'][$type][$file_id]['thumbnail'];
+                        if (!empty($thumbnail_url)) {
+                            mtl_debug_log("Found thumbnail URL in manifest for {$type} ID {$file_id}: {$thumbnail_url}");
+                            // Add to the JSON data
+                            $json_data['thumbnail'] = $thumbnail_url;
+                        }
+                    }
+                    
                     // Create the content based on type
                     $content_id = null;
                     if ($type === 'page') {
@@ -1200,48 +1210,53 @@ function mtl_direct_kit_import_handler() {
                                 $taxonomy = $term['taxonomy'];
                                 $term_slug = $term['slug'];
                                 
-                                // Find the term by slug
-                                $existing_term = get_term_by('slug', $term_slug, $taxonomy);
-                                
-                                if ($existing_term) {
-                                    // Attach the term to the post
-                                    wp_set_object_terms($content_id, $existing_term->term_id, $taxonomy, true);
-                                    mtl_debug_log("Attached term {$term_slug} ({$taxonomy}) to {$type} ID {$content_id}");
-                                } else {
-                                    mtl_debug_log("Term {$term_slug} ({$taxonomy}) not found");
+                                // Find the term in our mapping
+                                if (isset($taxonomy_term_mapping[$taxonomy][$term['term_id']])) {
+                                    $term_id = $taxonomy_term_mapping[$taxonomy][$term['term_id']];
+                                    wp_set_object_terms($content_id, $term_id, $taxonomy, true);
+                                    mtl_debug_log("Attached term ID {$term_id} ({$taxonomy}) to {$type} ID {$content_id}");
                                 }
                             }
                         }
                         
-                        // Set featured image if available
-                        if (isset($_POST['set_featured_image']) && $_POST['set_featured_image'] === 'true' && 
-                            isset($post_data['thumbnail']) && !empty($post_data['thumbnail'])) {
+                        // Process featured image if thumbnail URL exists in manifest
+                        if (isset($post_data['thumbnail']) && !empty($post_data['thumbnail']) && 
+                            isset($_POST['set_featured_image']) && $_POST['set_featured_image'] === 'true') {
                             
-                            // Get the thumbnail URL
-                            $thumbnail_url = $post_data['thumbnail'];
+                            mtl_debug_log('Processing featured image from manifest thumbnail URL: ' . $post_data['thumbnail']);
                             
-                            // Extract the filename from the URL
-                            $thumbnail_filename = basename($thumbnail_url);
-                            
-                            // Find the attachment by filename
-                            $attachment_args = array(
-                                'post_type' => 'attachment',
-                                'post_status' => 'inherit',
-                                'posts_per_page' => 1,
-                                's' => $thumbnail_filename
-                            );
-                            
-                            $attachment_query = new WP_Query($attachment_args);
-                            
-                            if ($attachment_query->have_posts()) {
-                                $attachment = $attachment_query->posts[0];
-                                $attachment_id = $attachment->ID;
+                            // Check if post already has a featured image
+                            if (!has_post_thumbnail($content_id)) {
+                                // Import the featured image from the thumbnail URL
+                                $attachment_id = mtl_download_and_import_image($post_data['thumbnail']);
                                 
-                                // Set as featured image
-                                set_post_thumbnail($content_id, $attachment_id);
-                                mtl_debug_log("Set featured image (ID: {$attachment_id}) for {$type} ID {$content_id}");
+                                if (!is_wp_error($attachment_id)) {
+                                    // Set as featured image
+                                    $result = set_post_thumbnail($content_id, $attachment_id);
+                                    
+                                    if ($result) {
+                                        mtl_debug_log("Set featured image for {$type} ID {$content_id} from manifest thumbnail URL");
+                                    } else {
+                                        mtl_debug_log("Failed to set featured image for {$type} ID {$content_id}");
+                                    }
+                                } else {
+                                    mtl_debug_log("Failed to import featured image for {$type} ID {$content_id}: " . $attachment_id->get_error_message());
+                                }
                             } else {
-                                mtl_debug_log("Featured image not found for {$type} ID {$content_id}");
+                                mtl_debug_log("Post already has a featured image, skipping import for {$type} ID {$content_id}");
+                            }
+                        }
+                        
+                        // Check if we need to process Elementor data
+                        if (function_exists('update_post_meta') && function_exists('get_post_meta')) {
+                            $elementor_data = get_post_meta($content_id, '_elementor_data', true);
+                            
+                            if (!empty($elementor_data)) {
+                                mtl_debug_log("Processing Elementor data for {$type} ID {$content_id}");
+                                
+                                // This would require a more complex implementation to map old image IDs to new ones
+                                // For now, we'll just log that we found Elementor data
+                                mtl_debug_log("Found Elementor data for {$type} ID {$content_id}");
                             }
                         }
                     }
@@ -1651,94 +1666,45 @@ function mtl_post_process_import_handler() {
                                 }
                             }
                             
-                            // Set featured image if available
-                            if (isset($_POST['set_featured_images']) && $_POST['set_featured_images'] === 'true' && 
-                                isset($post_data['thumbnail']) && !empty($post_data['thumbnail'])) {
+                            // Process featured image if thumbnail URL exists in manifest
+                            if (isset($post_data['thumbnail']) && !empty($post_data['thumbnail'])) {
+                                mtl_debug_log('Processing featured image from thumbnail URL: ' . $post_data['thumbnail']);
                                 
-                                // Get the thumbnail URL
-                                $thumbnail_url = $post_data['thumbnail'];
-                                
-                                // Extract the filename from the URL
-                                $thumbnail_filename = basename($thumbnail_url);
-                                
-                                // Find the attachment by filename
-                                $attachment_args = array(
-                                    'post_type' => 'attachment',
-                                    'post_status' => 'inherit',
-                                    'posts_per_page' => 1,
-                                    's' => $thumbnail_filename
-                                );
-                                
-                                $attachment_query = new WP_Query($attachment_args);
-                                
-                                if ($attachment_query->have_posts()) {
-                                    $attachment = $attachment_query->posts[0];
-                                    $attachment_id = $attachment->ID;
+                                // Check if post already has a featured image
+                                if (!has_post_thumbnail($local_post_id)) {
+                                    // Import the featured image from the thumbnail URL
+                                    $attachment_id = mtl_download_and_import_image($post_data['thumbnail']);
                                     
-                                    // Set as featured image
-                                    $set_thumbnail_result = set_post_thumbnail($local_post_id, $attachment_id);
-                                    
-                                    if ($set_thumbnail_result) {
-                                        $results['success'][] = sprintf(
-                                            'Set featured image for %s (ID: %d)',
-                                            $post_data['title'],
-                                            $local_post_id
-                                        );
-                                        mtl_debug_log("Set featured image (ID: {$attachment_id}) for {$content_type} ID {$local_post_id}");
-                                    } else {
-                                        $results['errors'][] = sprintf(
-                                            'Failed to set featured image for %s',
-                                            $post_data['title']
-                                        );
-                                        mtl_debug_log("Failed to set featured image for {$content_type} ID {$local_post_id}");
-                                    }
-                                } else {
-                                    // Try to find by URL pattern
-                                    $url_pattern = preg_replace('/\.[^.]+$/', '', $thumbnail_filename);
-                                    
-                                    $attachment_args = array(
-                                        'post_type' => 'attachment',
-                                        'post_status' => 'inherit',
-                                        'posts_per_page' => 1,
-                                        'meta_query' => array(
-                                            array(
-                                                'key' => '_wp_attached_file',
-                                                'value' => $url_pattern,
-                                                'compare' => 'LIKE'
-                                            )
-                                        )
-                                    );
-                                    
-                                    $attachment_query = new WP_Query($attachment_args);
-                                    
-                                    if ($attachment_query->have_posts()) {
-                                        $attachment = $attachment_query->posts[0];
-                                        $attachment_id = $attachment->ID;
-                                        
+                                    if (!is_wp_error($attachment_id)) {
                                         // Set as featured image
-                                        $set_thumbnail_result = set_post_thumbnail($local_post_id, $attachment_id);
+                                        $result = set_post_thumbnail($local_post_id, $attachment_id);
                                         
-                                        if ($set_thumbnail_result) {
+                                        if ($result) {
                                             $results['success'][] = sprintf(
-                                                'Set featured image for %s (ID: %d) using URL pattern',
+                                                'Set featured image for %s (ID: %d) from %s',
+                                                $post_data['title'],
+                                                $local_post_id,
+                                                $post_data['thumbnail']
+                                            );
+                                            mtl_debug_log("Set featured image for {$content_type} ID {$local_post_id} from {$post_data['thumbnail']}");
+                                        } else {
+                                            $results['errors'][] = sprintf(
+                                                'Failed to set featured image for %s (ID: %d)',
                                                 $post_data['title'],
                                                 $local_post_id
                                             );
-                                            mtl_debug_log("Set featured image (ID: {$attachment_id}) for {$content_type} ID {$local_post_id} using URL pattern");
-                                        } else {
-                                            $results['errors'][] = sprintf(
-                                                'Failed to set featured image for %s using URL pattern',
-                                                $post_data['title']
-                                            );
-                                            mtl_debug_log("Failed to set featured image for {$content_type} ID {$local_post_id} using URL pattern");
+                                            mtl_debug_log("Failed to set featured image for {$content_type} ID {$local_post_id}");
                                         }
                                     } else {
                                         $results['errors'][] = sprintf(
-                                            'Featured image not found for %s',
-                                            $post_data['title']
+                                            'Failed to import featured image for %s: %s',
+                                            $post_data['title'],
+                                            $attachment_id->get_error_message()
                                         );
-                                        mtl_debug_log("Featured image not found for {$content_type} ID {$local_post_id}");
+                                        mtl_debug_log("Failed to import featured image for {$content_type} ID {$local_post_id}: " . $attachment_id->get_error_message());
                                     }
+                                } else {
+                                    mtl_debug_log("Post already has a featured image, skipping import for {$content_type} ID {$local_post_id}");
                                 }
                             }
                             
@@ -2507,7 +2473,25 @@ function mtl_create_post_from_template($template_data) {
     
     // Set featured image if available
     if (isset($template_data['featured_image'])) {
-        // TODO: Handle featured image import
+        // Import the featured image from URL
+        $attachment_id = mtl_download_and_import_image($template_data['featured_image']);
+        if (!is_wp_error($attachment_id)) {
+            set_post_thumbnail($post_id, $attachment_id);
+            mtl_debug_log('Set featured image for post: ' . $title . ' (ID: ' . $post_id . ', Image ID: ' . $attachment_id . ')');
+        } else {
+            mtl_debug_log('Failed to set featured image for post: ' . $title . ' - ' . $attachment_id->get_error_message());
+        }
+    } 
+    // Check for thumbnail if featured_image is not set
+    else if (isset($template_data['thumbnail']) && !empty($template_data['thumbnail'])) {
+        // Import the featured image from thumbnail URL
+        $attachment_id = mtl_download_and_import_image($template_data['thumbnail']);
+        if (!is_wp_error($attachment_id)) {
+            set_post_thumbnail($post_id, $attachment_id);
+            mtl_debug_log('Set featured image from thumbnail for post: ' . $title . ' (ID: ' . $post_id . ', Image ID: ' . $attachment_id . ')');
+        } else {
+            mtl_debug_log('Failed to set featured image from thumbnail for post: ' . $title . ' - ' . $attachment_id->get_error_message());
+        }
     }
     
     // Set categories if available
