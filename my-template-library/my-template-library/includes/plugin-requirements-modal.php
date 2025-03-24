@@ -504,6 +504,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event handler for the direct import button
     if (applyImportBtn) {
+        /* Removing this event listener to fix the issue - this was causing the import progress modal
+           to show immediately when clicking apply-import-btn instead of showing the confirmation dialog first.
+           The correct flow should be:
+           1. Click apply-import-btn -> Show confirmation modal
+           2. Click apply-import-confirm-btn -> Start import and show progress modal
+        */
+        /* Original code removed:
         applyImportBtn.addEventListener('click', (e) => {
             e.preventDefault();
             
@@ -548,261 +555,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     actionInput.type = 'hidden';
                     actionInput.name = 'action';
                     actionInput.value = 'mtl_post_process_import';
-                    postProcessForm.appendChild(actionInput);
-                    
-                    const nonceInput = document.createElement('input');
-                    nonceInput.type = 'hidden';
-                    nonceInput.name = 'nonce';
-                    nonceInput.value = mtl_plugin_vars.nonce;
-                    postProcessForm.appendChild(nonceInput);
-                    
-                    const kitUrlInput = document.createElement('input');
-                    kitUrlInput.type = 'hidden';
-                    kitUrlInput.name = 'kit_url';
-                    kitUrlInput.value = kitUrlDisplay.value;
-                    postProcessForm.appendChild(kitUrlInput);
-                    
-                    // Add specific parameters for taxonomy and attachment handling
-                    const processManifestTermsInput = document.createElement('input');
-                    processManifestTermsInput.type = 'hidden';
-                    processManifestTermsInput.name = 'process_manifest_terms';
-                    processManifestTermsInput.value = 'true';
-                    postProcessForm.appendChild(processManifestTermsInput);
-                    
-                    const setPostTermRelationshipsInput = document.createElement('input');
-                    setPostTermRelationshipsInput.type = 'hidden';
-                    setPostTermRelationshipsInput.name = 'set_post_term_relationships';
-                    setPostTermRelationshipsInput.value = 'true';
-                    postProcessForm.appendChild(setPostTermRelationshipsInput);
-                    
-                    const useWpSetObjectTermsInput = document.createElement('input');
-                    useWpSetObjectTermsInput.type = 'hidden';
-                    useWpSetObjectTermsInput.name = 'use_wp_set_object_terms';
-                    useWpSetObjectTermsInput.value = 'true';
-                    postProcessForm.appendChild(useWpSetObjectTermsInput);
-                    
-                    // Add specific parameters for featured image attachment
-                    const setFeaturedImagesInput = document.createElement('input');
-                    setFeaturedImagesInput.type = 'hidden';
-                    setFeaturedImagesInput.name = 'set_featured_images';
-                    setFeaturedImagesInput.value = 'true';
-                    postProcessForm.appendChild(setFeaturedImagesInput);
-                    
-                    // Add specific parameters for product gallery attachment
-                    const setProductGalleriesInput = document.createElement('input');
-                    setProductGalleriesInput.type = 'hidden';
-                    setProductGalleriesInput.name = 'set_product_galleries';
-                    setProductGalleriesInput.value = 'true';
-                    postProcessForm.appendChild(setProductGalleriesInput);
-                    
-                    // Add specific parameters for portfolio gallery attachment
-                    const setPortfolioGalleriesInput = document.createElement('input');
-                    setPortfolioGalleriesInput.type = 'hidden';
-                    setPortfolioGalleriesInput.name = 'set_portfolio_galleries';
-                    setPortfolioGalleriesInput.value = 'true';
-                    postProcessForm.appendChild(setPortfolioGalleriesInput);
-                    
-                    // Add specific parameters for Elementor data processing
-                    const processElementorDataInput = document.createElement('input');
-                    processElementorDataInput.type = 'hidden';
-                    processElementorDataInput.name = 'process_elementor_data';
-                    processElementorDataInput.value = 'true';
-                    postProcessForm.appendChild(processElementorDataInput);
-                    
-                    // Add parameter to set homepage
-                    const setHomepageInput = document.createElement('input');
-                    setHomepageInput.type = 'hidden';
-                    setHomepageInput.name = 'set_homepage';
-                    setHomepageInput.value = 'true';
-                    postProcessForm.appendChild(setHomepageInput);
-                    
-                    // Add a callback to handle the response
-                    const xhr = new XMLHttpRequest();
-                    xhr.open('POST', ajaxurl);
-                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                    xhr.onload = function() {
-                        if (xhr.status === 200) {
-                            try {
-                                const response = JSON.parse(xhr.responseText);
-                                if (response.success) {
-                                    console.log('Post-processing successful:', response.data.message);
-                                    if (response.data.results && response.data.results.success) {
-                                        response.data.results.success.forEach(function(message) {
-                                            addLogEntry(message, 'success');
-                                        });
-                                    }
-                                    if (response.data.results && response.data.results.errors) {
-                                        response.data.results.errors.forEach(function(message) {
-                                            addLogEntry(message, 'error');
-                                        });
-                                    }
-                                } else {
-                                    console.error('Post-processing failed:', response.data ? response.data.message : 'Unknown error');
-                                    addLogEntry('Error in post-processing: ' + (response.data ? response.data.message : 'Unknown error'), 'error');
-                                }
-                            } catch (e) {
-                                console.error('Error parsing post-processing response:', e, xhr.responseText);
-                                addLogEntry('Error parsing post-processing response: ' + e.message, 'error');
-                            }
-                        } else {
-                            console.error('Post-processing request failed with status:', xhr.status);
-                            addLogEntry('Post-processing request failed with status: ' + xhr.status, 'error');
-                        }
-                    };
-                    xhr.onerror = function() {
-                        console.error('Post-processing request failed');
-                        addLogEntry('Post-processing request failed', 'error');
-                    };
-                    
-                    // Prepare the form data
-                    const formData = new FormData(postProcessForm);
-                    const urlEncodedData = new URLSearchParams();
-                    for (const pair of formData) {
-                        urlEncodedData.append(pair[0], pair[1]);
-                    }
-                    
-                    // Send the request
-                    console.log('Sending post-processing request for taxonomy and featured image attachment...');
-                    console.log('AJAX URL:', ajaxurl);
-                    console.log('Request data:', urlEncodedData.toString());
-                    addLogEntry('Processing taxonomy and featured image attachment...', 'info');
-                    xhr.send(urlEncodedData.toString());
-                    
-                    // Show the import actions after a short delay
-                    setTimeout(() => {
-                        // Update progress to 100%
-                        updateProgress(100, 'Import completed successfully!');
-                        
-                        // Show success icon
-                        document.querySelector('.step-icon .dashicons').classList.remove('dashicons-update', 'spinning');
-                        document.querySelector('.step-icon .dashicons').classList.add('dashicons-yes');
-                        document.querySelector('.current-step').style.borderLeftColor = '#46b450';
-                        
-                        // Show the action buttons
-                        importActions.style.display = 'flex';
-                        importActions.style.justifyContent = 'center';
-                        
-                        // Add final success message
-                        addLogEntry('Template kit has been successfully imported with all taxonomies and images properly attached to their content!', 'success');
-                    }, 3000);
-                    
-                } catch (error) {
-                    console.error('Error in post-import processing:', error);
-                    addLogEntry('Error in post-processing: ' + error.message, 'error');
-                }
-            };
-            
-            // Clear any existing dynamic inputs
-            const existingDynamicInputs = importForm.querySelectorAll('.dynamic-input');
-            existingDynamicInputs.forEach(input => input.remove());
-            
-            // Add parameter to directly use the manifest.json structure
-            const useManifestInput = document.createElement('input');
-            useManifestInput.type = 'hidden';
-            useManifestInput.name = 'direct_manifest_import';
-            useManifestInput.value = 'true';
-            useManifestInput.className = 'dynamic-input';
-            importForm.appendChild(useManifestInput);
-            
-            // Add parameter to process terms from manifest
-            const processManifestTermsInput = document.createElement('input');
-            processManifestTermsInput.type = 'hidden';
-            processManifestTermsInput.name = 'process_manifest_terms';
-            processManifestTermsInput.value = 'true';
-            processManifestTermsInput.className = 'dynamic-input';
-            importForm.appendChild(processManifestTermsInput);
-            
-            // Add parameter to set post-to-term relationships
-            const setPostTermRelationshipsInput = document.createElement('input');
-            setPostTermRelationshipsInput.type = 'hidden';
-            setPostTermRelationshipsInput.name = 'set_post_term_relationships';
-            setPostTermRelationshipsInput.value = 'true';
-            setPostTermRelationshipsInput.className = 'dynamic-input';
-            importForm.appendChild(setPostTermRelationshipsInput);
-            
-            // Add parameter to set featured images from manifest
-            const setFeaturedImagesInput = document.createElement('input');
-            setFeaturedImagesInput.type = 'hidden';
-            setFeaturedImagesInput.name = 'set_featured_images_from_manifest';
-            setFeaturedImagesInput.value = 'true';
-            setFeaturedImagesInput.className = 'dynamic-input';
-            importForm.appendChild(setFeaturedImagesInput);
-            
-            // Add parameter for product gallery images
-            const setProductGalleriesInput = document.createElement('input');
-            setProductGalleriesInput.type = 'hidden';
-            setProductGalleriesInput.name = 'set_product_galleries';
-            setProductGalleriesInput.value = 'true';
-            setProductGalleriesInput.className = 'dynamic-input';
-            importForm.appendChild(setProductGalleriesInput);
-            
-            // Add parameter for portfolio gallery images
-            const setPortfolioGalleriesInput = document.createElement('input');
-            setPortfolioGalleriesInput.type = 'hidden';
-            setPortfolioGalleriesInput.name = 'set_portfolio_galleries';
-            setPortfolioGalleriesInput.value = 'true';
-            setPortfolioGalleriesInput.className = 'dynamic-input';
-            importForm.appendChild(setPortfolioGalleriesInput);
-            
-            // Add parameter for processing Elementor data
-            const processElementorDataInput = document.createElement('input');
-            processElementorDataInput.type = 'hidden';
-            processElementorDataInput.name = 'process_elementor_data';
-            processElementorDataInput.value = 'true';
-            processElementorDataInput.className = 'dynamic-input';
-            importForm.appendChild(processElementorDataInput);
-            
-            // Add parameter to set homepage
-            const setHomepageInput = document.createElement('input');
-            setHomepageInput.type = 'hidden';
-            setHomepageInput.name = 'set_homepage';
-            setHomepageInput.value = 'true';
-            setHomepageInput.className = 'dynamic-input';
-            importForm.appendChild(setHomepageInput);
-            
-            // Add parameter to use direct term assignment
-            const useDirectTermAssignmentInput = document.createElement('input');
-            useDirectTermAssignmentInput.type = 'hidden';
-            useDirectTermAssignmentInput.name = 'use_direct_term_assignment';
-            useDirectTermAssignmentInput.value = 'true';
-            useDirectTermAssignmentInput.className = 'dynamic-input';
-            importForm.appendChild(useDirectTermAssignmentInput);
-            
-            // Add parameter to use wp_set_object_terms function
-            const useWpSetObjectTermsInput = document.createElement('input');
-            useWpSetObjectTermsInput.type = 'hidden';
-            useWpSetObjectTermsInput.name = 'use_wp_set_object_terms';
-            useWpSetObjectTermsInput.value = 'true';
-            useWpSetObjectTermsInput.className = 'dynamic-input';
-            importForm.appendChild(useWpSetObjectTermsInput);
-            
-            // Add parameter to preserve term relationships during import
-            const preserveTermRelationshipsInput = document.createElement('input');
-            preserveTermRelationshipsInput.type = 'hidden';
-            preserveTermRelationshipsInput.name = 'preserve_term_relationships';
-            preserveTermRelationshipsInput.value = 'true';
-            preserveTermRelationshipsInput.className = 'dynamic-input';
-            importForm.appendChild(preserveTermRelationshipsInput);
-            
-            // Add parameter to use manifest relationships
-            const useManifestRelationshipsInput = document.createElement('input');
-            useManifestRelationshipsInput.type = 'hidden';
-            useManifestRelationshipsInput.name = 'use_manifest_relationships';
-            useManifestRelationshipsInput.value = 'true';
-            useManifestRelationshipsInput.className = 'dynamic-input';
-            importForm.appendChild(useManifestRelationshipsInput);
-            
-            // Add parameter to force term assignment
-            const forceTermAssignmentInput = document.createElement('input');
-            forceTermAssignmentInput.type = 'hidden';
-            forceTermAssignmentInput.name = 'force_term_assignment';
-            forceTermAssignmentInput.value = 'true';
-            forceTermAssignmentInput.className = 'dynamic-input';
-            importForm.appendChild(forceTermAssignmentInput);
-            
-            // Submit the form
-            importForm.submit();
-        });
+        */
     }
 
     // Event handlers for the import progress modal
@@ -1691,7 +1444,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .import-actions button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .plugins-section, .existing-plugins-section {
