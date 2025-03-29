@@ -152,10 +152,35 @@ if (!defined('WPINC')) {
                 <span class="dashicons dashicons-warning"></span>
                 <p>This process will add new content to your site. It's recommended to run this on a fresh WordPress installation.</p>
             </div>
-            
+        </div>
             <div class="apply-import-actions">
                 <button id="apply-import-cancel-btn" class="button button-secondary">Cancel</button>
                 <button id="apply-import-confirm-btn" class="button button-primary">Start Import</button>
+            </div>
+    </div>
+</div>
+
+<!-- Pre-Import Confirmation Modal -->
+<div id="pre-import-confirmation-modal" class="modal pre-import-confirmation-wrapper" style="display: none;">
+    <div class="modal-header">
+        <h2>Confirm Import Preparation</h2>
+        <button class="close-pre-import-modal">
+            <span class="dashicons dashicons-no-alt"></span>
+        </button>
+    </div>
+    <div class="modal-content">
+        <div class="pre-import-content">
+            <h3>Before You Proceed</h3>
+            <p>You are about to prepare a template kit for importing to your website. This will guide you through setting up important import options.</p>
+            
+            <div class="warning-message">
+                <span class="dashicons dashicons-info"></span>
+                <p>Please ensure you have backed up your website before proceeding with any template imports.</p>
+            </div>
+            
+            <div class="pre-import-actions">
+                <button id="pre-import-cancel-btn" class="button button-secondary">Cancel</button>
+                <button id="pre-import-confirm-btn" class="button button-primary">Continue to Import Options</button>
             </div>
         </div>
     </div>
@@ -266,6 +291,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const applyImportCancelBtn = document.getElementById('apply-import-cancel-btn');
     const applyImportConfirmBtn = document.getElementById('apply-import-confirm-btn');
     const modalOverlay = document.querySelector('.modal-overlay');
+    
+    // Pre-Import Confirmation modal elements
+    const preImportModal = document.getElementById('pre-import-confirmation-modal');
+    const closePreImportModalBtn = document.querySelector('.close-pre-import-modal');
+    const preImportCancelBtn = document.getElementById('pre-import-cancel-btn');
+    const preImportConfirmBtn = document.getElementById('pre-import-confirm-btn');
     
     // Direct import functionality
     const directImportUrl = document.getElementById('direct-import-url');
@@ -504,58 +535,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event handler for the direct import button
     if (applyImportBtn) {
-        /* Removing this event listener to fix the issue - this was causing the import progress modal
-           to show immediately when clicking apply-import-btn instead of showing the confirmation dialog first.
-           The correct flow should be:
-           1. Click apply-import-btn -> Show confirmation modal
-           2. Click apply-import-confirm-btn -> Start import and show progress modal
-        */
-        /* Original code removed:
-        applyImportBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            // Get the kit URL from the apply-kit-modal
-            const kitUrlDisplay = document.getElementById('kit-url-display');
-            if (kitUrlDisplay && kitUrlDisplay.value) {
-                directImportUrl.value = kitUrlDisplay.value;
+        applyImportBtn.addEventListener('click', function() {
+            if (!applyImportBtn.disabled) {
+                // Show pre-import confirmation modal first
+                preImportModal.style.display = 'block';
+                modalOverlay.style.display = 'block';
+                
+                // Reset scroll position to the top
+                if (preImportModal.querySelector('.modal-content')) {
+                    preImportModal.querySelector('.modal-content').scrollTop = 0;
+                }
+                
+                // Set the kit URL in the hidden field - try multiple sources
+                let kitUrl = '';
+                
+                // Try to get from the closest demo card
+                const demoCard = applyImportBtn.closest('.demo-card');
+                if (demoCard && demoCard.getAttribute('data-kit-url')) {
+                    kitUrl = demoCard.getAttribute('data-kit-url');
+                } 
+                
+                // If not found, try the active demo card
+                if (!kitUrl) {
+                    const activeCard = document.querySelector('.demo-card.active');
+                    if (activeCard && activeCard.getAttribute('data-kit-url')) {
+                        kitUrl = activeCard.getAttribute('data-kit-url');
+                    }
+                }
+                
+                // If not found, try the kit URL display element
+                if (!kitUrl) {
+                    const kitUrlDisplay = document.getElementById('kit-url-display');
+                    if (kitUrlDisplay && kitUrlDisplay.value) {
+                        kitUrl = kitUrlDisplay.value;
+                    }
+                }
+                
+                // Set the hidden kit URL field
+                if (kitUrl) {
+                    document.getElementById('hidden-kit-url').value = kitUrl;
+                    document.getElementById('direct-import-url').value = kitUrl;
+                    console.log('Kit URL set to:', kitUrl);
+                } else {
+                    console.warn('Could not find kit URL from any source');
+                }
             }
-            
-            // Show the import progress modal
-            showModal(importProgressModal);
-            
-            // Start the import process visualization
-            processImport();
-            
-            // Actually submit the form to perform the real import
-            const importForm = document.getElementById('direct-import-hidden-form');
-            
-            // Create a hidden iframe to handle the form submission
-            const iframe = document.createElement('iframe');
-            iframe.name = 'import-frame';
-            iframe.style.display = 'none';
-            document.body.appendChild(iframe);
-            
-            // Set the form target to the iframe
-            importForm.target = 'import-frame';
-            
-            // Add a callback function to handle post-import processing
-            iframe.onload = function() {
-                try {
-                    // This will run after the import is complete
-                    console.log('Import completed, processing post-import tasks...');
-                    
-                    // Create a new form for post-processing
-                    const postProcessForm = document.createElement('form');
-                    postProcessForm.method = 'post';
-                    postProcessForm.action = ajaxurl;
-                    postProcessForm.style.display = 'none';
-                    
-                    // Add necessary fields
-                    const actionInput = document.createElement('input');
-                    actionInput.type = 'hidden';
-                    actionInput.name = 'action';
-                    actionInput.value = 'mtl_post_process_import';
-        */
+        });
     }
 
     // Event handlers for the import progress modal
@@ -605,57 +630,40 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // Apply Import button click handler
-    if (applyImportBtn) {
-        applyImportBtn.addEventListener('click', function() {
-            if (!applyImportBtn.disabled) {
-                applyImportModal.style.display = 'block';
-                modalOverlay.style.display = 'block';
-                
-                // Reset scroll position to the top
-                if (applyImportModal.querySelector('.modal-content')) {
-                    applyImportModal.querySelector('.modal-content').scrollTop = 0;
-                }
-                
-                // Set the kit URL in the hidden field - try multiple sources
-                let kitUrl = '';
-                
-                // Try to get from the closest demo card
-                const demoCard = applyImportBtn.closest('.demo-card');
-                if (demoCard && demoCard.getAttribute('data-kit-url')) {
-                    kitUrl = demoCard.getAttribute('data-kit-url');
-                } 
-                
-                // If not found, try the active demo card
-                if (!kitUrl) {
-                    const activeCard = document.querySelector('.demo-card.active');
-                    if (activeCard && activeCard.getAttribute('data-kit-url')) {
-                        kitUrl = activeCard.getAttribute('data-kit-url');
-                    }
-                }
-                
-                // If not found, try the kit URL display element
-                if (!kitUrl) {
-                    const kitUrlDisplay = document.getElementById('kit-url-display');
-                    if (kitUrlDisplay && kitUrlDisplay.value) {
-                        kitUrl = kitUrlDisplay.value;
-                    }
-                }
-                
-                // Set the hidden kit URL field
-                    if (kitUrl) {
-                        document.getElementById('hidden-kit-url').value = kitUrl;
-                    document.getElementById('direct-import-url').value = kitUrl;
-                    console.log('Kit URL set to:', kitUrl);
-                } else {
-                    console.warn('Could not find kit URL from any source');
-                }
-                
-                // Focus the first checkbox for better accessibility
-                const firstCheckbox = document.getElementById('import-content');
-                if (firstCheckbox) {
-                    firstCheckbox.focus();
-                }
+    // Close Pre-Import Confirmation modal
+    if (closePreImportModalBtn) {
+        closePreImportModalBtn.addEventListener('click', function() {
+            preImportModal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+        });
+    }
+    
+    // Cancel button in Pre-Import Confirmation modal
+    if (preImportCancelBtn) {
+        preImportCancelBtn.addEventListener('click', function() {
+            preImportModal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+        });
+    }
+    
+    // Confirm button in Pre-Import Confirmation modal
+    if (preImportConfirmBtn) {
+        preImportConfirmBtn.addEventListener('click', function() {
+            // Hide Pre-Import Confirmation modal
+            preImportModal.style.display = 'none';
+            
+            // Show Apply Import modal
+            applyImportModal.style.display = 'block';
+            
+            // Reset scroll position to the top
+            if (applyImportModal.querySelector('.modal-content')) {
+                applyImportModal.querySelector('.modal-content').scrollTop = 0;
+            }
+            
+            // Focus the first checkbox for better accessibility
+            const firstCheckbox = document.getElementById('import-content');
+            if (firstCheckbox) {
+                firstCheckbox.focus();
             }
         });
     }
@@ -1470,9 +1478,6 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 /* Apply Import Modal Styles */
-.apply-import-wrapper {
-    border-radius: 4px;
-}
 
 .apply-import-content {
     padding: 20px 0;
@@ -1534,12 +1539,14 @@ document.addEventListener('DOMContentLoaded', function() {
     position: sticky;
     bottom: 0;
     background-color: #fff;
-    padding: 15px 0;
+    padding: 15px 50px;
     border-top: 1px solid #e5e5e5;
     z-index: 100;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.05);
 }
-
+.import-options h3{
+    padding: 0 20px;
+}
 #apply-import-confirm-btn {
     background-color: #2271b1;
     color: white;
@@ -1764,6 +1771,50 @@ document.addEventListener('DOMContentLoaded', function() {
 .import-modal-wrapper .processing-message p.error {
     color: #dc3232;
     font-weight: 500;
+}
+
+/* Pre-Import Confirmation Modal Styles */
+.pre-import-content,
+.apply-import-content{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pre-import-content {
+    padding: 20px;
+}
+
+.pre-import-content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #23282d;
+}
+
+.pre-import-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.pre-import-actions {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.pre-import-actions button {
+    margin-left: 10px;
+}
+
+#pre-import-confirm-btn {
+    background-color: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+#pre-import-confirm-btn:hover {
+    background-color: #006291;
+    border-color: #006291;
 }
 </style>
 
