@@ -119,6 +119,243 @@ function mtl_init() {
 
 mtl_init();
 
+// Register AJAX handlers
+add_action('wp_ajax_mtl_upload_site_logo', 'mtl_ajax_upload_site_logo');
+add_action('wp_ajax_mtl_upload_site_icon', 'mtl_ajax_upload_site_icon');
+add_action('wp_ajax_mtl_finalize_branding', 'mtl_ajax_finalize_branding');
+add_action('wp_ajax_mtl_direct_customizer_update', 'mtl_ajax_direct_customizer_update');
+
+/**
+ * AJAX handler for finalizing branding settings (logo and site icon)
+ */
+function mtl_ajax_finalize_branding() {
+    // Check nonce
+    if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'mtl_plugin_installation_nonce')) {
+        wp_send_json_error(['message' => 'Security check failed. Please refresh the page and try again.']);
+    }
+    
+    // Check if user has permission
+    if (!current_user_can('edit_theme_options')) {
+        wp_send_json_error(['message' => 'You do not have permission to modify theme settings.']);
+    }
+    
+    $has_logo = isset($_POST['has_logo']) && $_POST['has_logo'] === 'true';
+    $has_icon = isset($_POST['has_icon']) && $_POST['has_icon'] === 'true';
+    $apply_immediately = isset($_POST['apply_immediately']) && $_POST['apply_immediately'] === 'true';
+    $logo_width = isset($_POST['logo_width']) ? intval($_POST['logo_width']) : 0;
+    $logo_height = isset($_POST['logo_height']) ? intval($_POST['logo_height']) : 0;
+    $icon_width = isset($_POST['icon_width']) ? intval($_POST['icon_width']) : 0;
+    $icon_height = isset($_POST['icon_height']) ? intval($_POST['icon_height']) : 0;
+    
+    $success = true;
+    $messages = [];
+    
+    // Handle logo finalization
+    if ($has_logo) {
+        $logo_id = get_theme_mod('custom_logo');
+        if ($logo_id) {
+            // Re-apply the logo to ensure it's properly set
+            set_theme_mod('custom_logo', $logo_id);
+            $messages[] = 'Logo setting finalized.';
+            
+            // If we have dimensions, update the attachment metadata too
+            if ($logo_width > 0 && $logo_height > 0) {
+                $metadata = wp_get_attachment_metadata($logo_id);
+                if (is_array($metadata)) {
+                    $metadata['width'] = $logo_width;
+                    $metadata['height'] = $logo_height;
+                    wp_update_attachment_metadata($logo_id, $metadata);
+                    $messages[] = "Updated logo metadata with dimensions: {$logo_width}x{$logo_height}";
+                }
+            }
+            
+            // If immediate application is requested, use more direct methods
+            if ($apply_immediately) {
+                // Make sure to set the logo for the current active theme
+                $active_theme = get_option('stylesheet');
+                
+                // Get current theme mods
+                $theme_mods = get_option('theme_mods_' . $active_theme, []);
+                
+                // If the theme mods are already an array, update them
+                if (is_array($theme_mods)) {
+                    $theme_mods['custom_logo'] = $logo_id;
+                    update_option('theme_mods_' . $active_theme, $theme_mods);
+                } 
+                // Otherwise, create a new array with the logo
+                else {
+                    update_option('theme_mods_' . $active_theme, ['custom_logo' => $logo_id]);
+                }
+                
+                $messages[] = 'Logo immediately applied to active theme.';
+                
+                // Try direct database update if we have wpdb
+                global $wpdb;
+                if (isset($wpdb)) {
+                    $result = $wpdb->update(
+                        $wpdb->options,
+                        ['option_value' => maybe_serialize($theme_mods)],
+                        ['option_name' => 'theme_mods_' . $active_theme]
+                    );
+                    
+                    if ($result !== false) {
+                        $messages[] = 'Logo applied via direct database update.';
+                    }
+                }
+                
+                // Try to force WordPress to flush its caches
+                wp_cache_flush();
+                $messages[] = 'Cache flushed for logo.';
+                
+                // Use WP_Customize_Manager
+                if (class_exists('WP_Customize_Manager')) {
+                    try {
+                        $wp_customize = new WP_Customize_Manager();
+                        $wp_customize->set_post_value('custom_logo', $logo_id);
+                        $wp_customize->save_changeset_post(['status' => 'publish']);
+                        $messages[] = 'Logo applied via WP_Customize_Manager.';
+                    } catch (Exception $e) {
+                        $messages[] = 'Error with WP_Customize_Manager: ' . $e->getMessage();
+                    }
+                }
+            }
+        } else {
+            // Try to get from option as fallback
+            $logo_id = get_option('_mtl_user_uploaded_logo_id');
+            if ($logo_id) {
+                set_theme_mod('custom_logo', $logo_id);
+                $messages[] = 'Logo setting restored from backup.';
+                
+                // If immediate application is requested
+                if ($apply_immediately) {
+                    // Get current theme
+                    $active_theme = get_option('stylesheet');
+                    
+                    // Get current theme mods
+                    $theme_mods = get_option('theme_mods_' . $active_theme, []);
+                    
+                    // If the theme mods are already an array, update them
+                    if (is_array($theme_mods)) {
+                        $theme_mods['custom_logo'] = $logo_id;
+                        update_option('theme_mods_' . $active_theme, $theme_mods);
+                    } 
+                    // Otherwise, create a new array with the logo
+                    else {
+                        update_option('theme_mods_' . $active_theme, ['custom_logo' => $logo_id]);
+                    }
+                    
+                    $messages[] = 'Logo from backup immediately applied to theme mods.';
+                    
+                    // Try to force WordPress to flush its caches
+                    wp_cache_flush();
+                    $messages[] = 'Cache flushed for logo from backup.';
+                }
+            } else {
+                $success = false;
+                $messages[] = 'Could not finalize logo: No logo ID found.';
+            }
+        }
+    }
+    
+    // Handle site icon finalization
+    if ($has_icon) {
+        $icon_id = get_option('site_icon');
+        if ($icon_id) {
+            // Re-apply the site icon to ensure it's properly set
+            update_option('site_icon', $icon_id);
+            $messages[] = 'Site icon setting finalized.';
+            
+            // If we have dimensions, update the attachment metadata too
+            if ($icon_width > 0 && $icon_height > 0) {
+                $metadata = wp_get_attachment_metadata($icon_id);
+                if (is_array($metadata)) {
+                    $metadata['width'] = $icon_width;
+                    $metadata['height'] = $icon_height;
+                    wp_update_attachment_metadata($icon_id, $metadata);
+                    $messages[] = "Updated icon metadata with dimensions: {$icon_width}x{$icon_height}";
+                }
+            }
+            
+            // If immediate application is requested
+            if ($apply_immediately) {
+                // Make sure all icon sizes are generated
+                if (function_exists('delete_option')) {
+                    delete_option('site_icon_meta'); // Force WP to regenerate site icon images
+                }
+                
+                // Try direct database update
+                global $wpdb;
+                if (isset($wpdb)) {
+                    $result = $wpdb->update(
+                        $wpdb->options,
+                        ['option_value' => $icon_id],
+                        ['option_name' => 'site_icon']
+                    );
+                    
+                    if ($result !== false) {
+                        $messages[] = 'Site icon applied via direct database update.';
+                    }
+                }
+                
+                // Try to force WordPress to flush its caches
+                wp_cache_flush();
+                $messages[] = 'Cache flushed for site icon.';
+                
+                // Use WP_Customize_Manager
+                if (class_exists('WP_Customize_Manager')) {
+                    try {
+                        $wp_customize = new WP_Customize_Manager();
+                        $wp_customize->set_post_value('site_icon', $icon_id);
+                        $wp_customize->save_changeset_post(['status' => 'publish']);
+                        $messages[] = 'Site icon applied via WP_Customize_Manager.';
+                    } catch (Exception $e) {
+                        $messages[] = 'Error with WP_Customize_Manager: ' . $e->getMessage();
+                    }
+                }
+            }
+        } else {
+            // Try to get from option as fallback
+            $icon_id = get_option('_mtl_user_uploaded_icon_id');
+            if ($icon_id) {
+                update_option('site_icon', $icon_id);
+                $messages[] = 'Site icon setting restored from backup.';
+                
+                // If immediate application is requested
+                if ($apply_immediately) {
+                    // Try to force WordPress to flush its caches
+                    wp_cache_flush();
+                    $messages[] = 'Cache flushed for site icon from backup.';
+                }
+            } else {
+                $success = false;
+                $messages[] = 'Could not finalize site icon: No icon ID found.';
+            }
+        }
+    }
+    
+    // Final immediate refresh for all customizer settings
+    if ($apply_immediately && ($has_logo || $has_icon)) {
+        // Call our thorough function that ensures all settings are properly applied
+        mtl_ensure_customizer_settings();
+        $messages[] = 'Applied thorough customizer settings update.';
+    }
+    
+    // Log the process
+    mtl_debug_log('Finalize branding settings: ' . implode(' | ', $messages));
+    
+    if ($success) {
+        wp_send_json_success([
+            'message' => 'Branding settings finalized.',
+            'details' => $messages
+        ]);
+    } else {
+        wp_send_json_error([
+            'message' => 'There were issues finalizing some branding settings.',
+            'details' => $messages
+        ]);
+    }
+}
+
 /**
  * Create a page from template data
  */
@@ -1434,6 +1671,13 @@ function mtl_direct_kit_import_handler() {
     }
     
     exit;
+    
+    // At the very end, add:
+    
+    // Apply custom logo and site icon settings if they've been uploaded
+    do_action('mtl_after_import_complete');
+    
+    // Redirect to success page or display success message
 }
 add_action('admin_post_mtl_direct_kit_import', 'mtl_direct_kit_import_handler');
 
@@ -3602,8 +3846,52 @@ function mtl_ajax_upload_site_logo() {
     // Get attachment URL
     $attachment_url = wp_get_attachment_url($attachment_id);
     
-    // Set as custom logo
+    // Get current theme
+    $theme = wp_get_theme();
+    
+    // Set as custom logo using multiple methods for reliability
     set_theme_mod('custom_logo', $attachment_id);
+    
+    // Store the attachment ID in a separate option for backup
+    update_option('_mtl_user_uploaded_logo_id', $attachment_id);
+    
+    // Force update using direct database approach for all available themes
+    $available_themes = wp_get_themes();
+    foreach ($available_themes as $theme_key => $theme_obj) {
+        $theme_mods = get_option('theme_mods_' . $theme_key, []);
+        if (is_array($theme_mods)) {
+            $theme_mods['custom_logo'] = $attachment_id;
+            update_option('theme_mods_' . $theme_key, $theme_mods);
+        }
+    }
+    
+    // Also update for the active theme specifically
+    $active_theme = get_option('stylesheet');
+    if ($active_theme) {
+        $active_theme_mods = get_option('theme_mods_' . $active_theme, []);
+        if (is_array($active_theme_mods)) {
+            $active_theme_mods['custom_logo'] = $attachment_id;
+            update_option('theme_mods_' . $active_theme, $active_theme_mods);
+        }
+    }
+    
+    // If WP Customizer is available, try to use it directly
+    if (class_exists('WP_Customize_Manager')) {
+        try {
+            global $wp_customize;
+            if (!$wp_customize) {
+                $wp_customize = new WP_Customize_Manager();
+            }
+            $wp_customize->set_post_value('custom_logo', $attachment_id);
+            $wp_customize->save_changeset_post(['status' => 'publish']);
+        } catch (Exception $e) {
+            mtl_debug_log('Error using WP_Customize_Manager for logo: ' . $e->getMessage());
+        }
+    }
+    
+    // Try to force WordPress to flush its caches
+    wp_cache_delete('alloptions', 'options');
+    wp_cache_delete('theme_mods_' . $theme->get_stylesheet(), 'options');
     
     // Set flag to indicate user uploaded logo
     update_option('_mtl_user_uploaded_logo', true);
@@ -3690,8 +3978,50 @@ function mtl_ajax_upload_site_icon() {
     // Get attachment URL
     $attachment_url = wp_get_attachment_url($attachment_id);
     
-    // Set as site icon
+    // Set as site icon using multiple methods for reliability
     update_option('site_icon', $attachment_id);
+    
+    // Store the attachment ID in a separate option for backup
+    update_option('_mtl_user_uploaded_icon_id', $attachment_id);
+    
+    // If this is a multisite, update the network option too
+    if (is_multisite()) {
+        update_network_option(get_current_network_id(), 'site_icon', $attachment_id);
+    }
+    
+    // Try the direct theme mod approach in addition to the option
+    $active_theme = get_option('stylesheet');
+    if ($active_theme) {
+        $theme_mods = get_option('theme_mods_' . $active_theme, []);
+        if (is_array($theme_mods)) {
+            $theme_mods['site_icon'] = $attachment_id;
+            update_option('theme_mods_' . $active_theme, $theme_mods);
+        }
+    }
+    
+    // Try using the Customizer API directly
+    if (class_exists('WP_Customize_Manager')) {
+        try {
+            global $wp_customize;
+            if (!$wp_customize) {
+                $wp_customize = new WP_Customize_Manager();
+            }
+            $wp_customize->set_post_value('site_icon', $attachment_id);
+            $wp_customize->save_changeset_post(['status' => 'publish']);
+        } catch (Exception $e) {
+            mtl_debug_log('Error using WP_Customize_Manager for site icon: ' . $e->getMessage());
+        }
+    }
+    
+    // Additionally use the WP Site Icon API if available
+    if (function_exists('has_site_icon') && function_exists('update_option')) {
+        update_option('site_icon', $attachment_id);
+        // Force refresh any caches
+        delete_option('site_icon_meta');
+    }
+    
+    // Try to force WordPress to flush its caches
+    wp_cache_delete('alloptions', 'options');
     
     // Set flag to indicate user uploaded icon
     update_option('_mtl_user_uploaded_icon', true);
@@ -3703,6 +4033,202 @@ function mtl_ajax_upload_site_icon() {
     wp_send_json_success([
         'attachment_id' => $attachment_id,
         'attachment_url' => $attachment_url,
-        'message' => 'Site icon uploaded successfully.'
+        'message' => 'Site icon uploaded successfully and set as your site favicon.'
     ]);
 }
+
+/**
+ * AJAX handler for direct updates to the customizer settings
+ * This provides a more forceful approach to setting the customizer values
+ */
+function mtl_ajax_direct_customizer_update() {
+    // Check nonce
+    if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'mtl_plugin_installation_nonce')) {
+        wp_send_json_error(['message' => 'Security check failed. Please refresh the page and try again.']);
+    }
+    
+    // Check if user has permission
+    if (!current_user_can('edit_theme_options')) {
+        wp_send_json_error(['message' => 'You do not have permission to modify theme settings.']);
+    }
+    
+    $update_logo = isset($_POST['update_logo']) && $_POST['update_logo'] === 'true';
+    $update_icon = isset($_POST['update_icon']) && $_POST['update_icon'] === 'true';
+    $success = true;
+    $messages = [];
+    
+    // Get the current theme
+    $theme = wp_get_theme();
+    
+    // Handle logo direct update
+    if ($update_logo) {
+        // First try to get from theme mod
+        $logo_id = get_theme_mod('custom_logo');
+        
+        // If not found, try to get from options
+        if (!$logo_id) {
+            $logo_id = get_option('_mtl_user_uploaded_logo_id');
+        }
+        
+        // If we have a logo ID, apply it to the customizer directly
+        if ($logo_id) {
+            // Force update using direct database approach
+            update_option('theme_mods_' . $theme->get_stylesheet(), array_merge(
+                get_option('theme_mods_' . $theme->get_stylesheet(), []),
+                ['custom_logo' => $logo_id]
+            ));
+            
+            // Also set the theme mod directly
+            set_theme_mod('custom_logo', $logo_id);
+            
+            // For extra insurance, save to the database
+            $GLOBALS['wp_customize'] = new WP_Customize_Manager();
+            $GLOBALS['wp_customize']->set_post_value('custom_logo', $logo_id);
+            $GLOBALS['wp_customize']->save_changeset_post();
+            
+            $messages[] = 'Logo applied using direct database approach.';
+        } else {
+            $success = false;
+            $messages[] = 'No logo ID found for direct update.';
+        }
+    }
+    
+    // Handle icon direct update
+    if ($update_icon) {
+        // First try to get from option
+        $icon_id = get_option('site_icon');
+        
+        // If not found, try to get from backup
+        if (!$icon_id) {
+            $icon_id = get_option('_mtl_user_uploaded_icon_id');
+        }
+        
+        // If we have an icon ID, apply it directly
+        if ($icon_id) {
+            // Force update via direct option
+            update_option('site_icon', $icon_id);
+            
+            // For extra insurance, save to the database
+            if (isset($GLOBALS['wp_customize'])) {
+                $GLOBALS['wp_customize']->set_post_value('site_icon', $icon_id);
+                $GLOBALS['wp_customize']->save_changeset_post();
+            } else {
+                $GLOBALS['wp_customize'] = new WP_Customize_Manager();
+                $GLOBALS['wp_customize']->set_post_value('site_icon', $icon_id);
+                $GLOBALS['wp_customize']->save_changeset_post();
+            }
+            
+            $messages[] = 'Site icon applied using direct database approach.';
+        } else {
+            $success = false;
+            $messages[] = 'No site icon ID found for direct update.';
+        }
+    }
+    
+    // Log the process
+    mtl_debug_log('Direct customizer update: ' . implode(' | ', $messages));
+    
+    if ($success) {
+        wp_send_json_success([
+            'message' => 'Direct customizer update completed.',
+            'details' => $messages
+        ]);
+    } else {
+        wp_send_json_error([
+            'message' => 'There were issues with the direct customizer update.',
+            'details' => $messages
+        ]);
+    }
+}
+
+/**
+ * Ensures that the logo and site icon are properly set in the customizer
+ * This function forces WordPress to update all related settings and flush caches
+ */
+function mtl_ensure_customizer_settings() {
+    // Force the site to refresh customizer settings
+    
+    // For logo
+    $logo_id = get_option('_mtl_user_uploaded_logo_id');
+    if ($logo_id) {
+        mtl_debug_log('Ensuring custom logo is set with ID: ' . $logo_id);
+        
+        // Set for current theme
+        set_theme_mod('custom_logo', $logo_id);
+        
+        // Set for all available themes
+        $available_themes = wp_get_themes();
+        foreach ($available_themes as $theme_key => $theme_obj) {
+            $theme_mods = get_option('theme_mods_' . $theme_key, []);
+            if (is_array($theme_mods)) {
+                $theme_mods['custom_logo'] = $logo_id;
+                update_option('theme_mods_' . $theme_key, $theme_mods);
+            }
+        }
+        
+        // Set specifically for active theme
+        $active_theme = get_option('stylesheet');
+        if ($active_theme) {
+            $theme_mods = get_option('theme_mods_' . $active_theme, []);
+            if (is_array($theme_mods)) {
+                $theme_mods['custom_logo'] = $logo_id;
+                update_option('theme_mods_' . $active_theme, $theme_mods);
+            }
+        }
+        
+        // Try direct database access as last resort
+        global $wpdb;
+        $wpdb->update(
+            $wpdb->options,
+            ['option_value' => maybe_serialize(['custom_logo' => $logo_id])],
+            ['option_name' => 'theme_mods_' . $active_theme],
+            ['%s'],
+            ['%s']
+        );
+    }
+    
+    // For site icon
+    $icon_id = get_option('_mtl_user_uploaded_icon_id');
+    if ($icon_id) {
+        mtl_debug_log('Ensuring site icon is set with ID: ' . $icon_id);
+        
+        // Set the site icon
+        update_option('site_icon', $icon_id);
+        
+        // Force refresh site icon meta
+        delete_option('site_icon_meta');
+        
+        // Set in all theme mods too
+        $active_theme = get_option('stylesheet');
+        if ($active_theme) {
+            $theme_mods = get_option('theme_mods_' . $active_theme, []);
+            if (is_array($theme_mods)) {
+                $theme_mods['site_icon'] = $icon_id;
+                update_option('theme_mods_' . $active_theme, $theme_mods);
+            }
+        }
+        
+        // Try direct database access
+        global $wpdb;
+        $wpdb->update(
+            $wpdb->options,
+            ['option_value' => $icon_id],
+            ['option_name' => 'site_icon'],
+            ['%s'],
+            ['%s']
+        );
+    }
+    
+    // Flush all caches
+    wp_cache_flush();
+    
+    // If running on a server with object caching, try to flush that too
+    if (function_exists('wp_cache_flush')) {
+        wp_cache_flush();
+    }
+    
+    return true;
+}
+
+// Add a hook to ensure the customizer settings are applied after the import
+add_action('mtl_after_import_complete', 'mtl_ensure_customizer_settings', 10);

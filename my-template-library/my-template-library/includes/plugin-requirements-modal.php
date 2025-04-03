@@ -173,6 +173,41 @@ if (!defined('WPINC')) {
             <h3>Before You Proceed</h3>
             <p>You are about to prepare a template kit for importing to your website. This will guide you through setting up important import options.</p>
             
+            <div class="custom-upload-section">
+                <h3>Customize Your Site</h3>
+                <p>Upload your logo and site icon to personalize your site during import.</p>
+                
+                <div class="logo-upload-option">
+                    <label for="site-logo-upload">Site Logo</label>
+                    <p class="description">The logo will be used in your site header and other branding locations.</p>
+                    <div class="logo-upload-container">
+                        <div class="logo-preview" id="logo-preview">
+                            <!-- Preview will be shown here -->
+                        </div>
+                        <div class="logo-actions">
+                            <input type="file" id="site-logo-upload" class="logo-file-input" accept="image/*">
+                            <button type="button" id="select-logo-btn" class="button">Select Logo</button>
+                            <button type="button" id="remove-logo-btn" class="button" style="display: none;">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="icon-upload-option">
+                    <label for="site-icon-upload">Site Icon (Favicon)</label>
+                    <p class="description">The site icon appears in browser tabs, bookmarks, and mobile apps when users add your site to their home screen.</p>
+                    <div class="icon-upload-container">
+                        <div class="icon-preview" id="icon-preview">
+                            <!-- Preview will be shown here -->
+                        </div>
+                        <div class="icon-actions">
+                            <input type="file" id="site-icon-upload" class="icon-file-input" accept="image/*">
+                            <button type="button" id="select-icon-btn" class="button">Select Icon</button>
+                            <button type="button" id="remove-icon-btn" class="button" style="display: none;">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="warning-message">
                 <span class="dashicons dashicons-info"></span>
                 <p>Please ensure you have backed up your website before proceeding with any template imports.</p>
@@ -244,6 +279,24 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
     
+    // Logo and Site Icon upload variables
+    let siteLogoDataUrl = '';
+    let siteIconDataUrl = '';
+    let siteLogoFile = null;
+    let siteIconFile = null;
+    
+    // Logo upload elements
+    const siteLogoUpload = document.getElementById('site-logo-upload');
+    const logoPreview = document.getElementById('logo-preview');
+    const selectLogoBtn = document.getElementById('select-logo-btn');
+    const removeLogoBtn = document.getElementById('remove-logo-btn');
+    
+    // Site icon upload elements
+    const siteIconUpload = document.getElementById('site-icon-upload');
+    const iconPreview = document.getElementById('icon-preview');
+    const selectIconBtn = document.getElementById('select-icon-btn');
+    const removeIconBtn = document.getElementById('remove-icon-btn');
+    
     // Try to get kit URL from URL parameters or data attributes
     function getKitUrl() {
         // Check URL parameters first
@@ -309,6 +362,203 @@ document.addEventListener('DOMContentLoaded', function() {
     const viewSiteBtn = document.getElementById('view-site-btn');
     const closeImportBtn = document.getElementById('close-import-btn');
     const importProgressCloseBtn = importProgressModal.querySelector('.close-modal');
+
+    // Logo upload functionality
+    if (selectLogoBtn && siteLogoUpload) {
+        selectLogoBtn.addEventListener('click', function() {
+            siteLogoUpload.click();
+        });
+        
+        siteLogoUpload.addEventListener('change', function(e) {
+            if (e.target.files && e.target.files[0]) {
+                const file = e.target.files[0];
+                siteLogoFile = file;
+                
+                if (file.type.match('image.*')) {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        siteLogoDataUrl = e.target.result;
+                        
+                        // Display preview
+                        const img = document.createElement('img');
+                        img.src = siteLogoDataUrl;
+                        logoPreview.innerHTML = '';
+                        logoPreview.appendChild(img);
+                        logoPreview.classList.add('has-image');
+                        
+                        // Show remove button
+                        removeLogoBtn.style.display = 'block';
+                    };
+                    
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Please select an image file for your logo.');
+                }
+            }
+        });
+        
+        removeLogoBtn.addEventListener('click', function() {
+            // Clear the logo preview
+            logoPreview.innerHTML = '';
+            logoPreview.classList.remove('has-image');
+            
+            // Clear the file input
+            siteLogoUpload.value = '';
+            siteLogoDataUrl = '';
+            siteLogoFile = null;
+            
+            // Hide the remove button
+            removeLogoBtn.style.display = 'none';
+        });
+    }
+    
+    // Site icon upload functionality
+    if (selectIconBtn && siteIconUpload) {
+        selectIconBtn.addEventListener('click', function() {
+            siteIconUpload.click();
+        });
+        
+        siteIconUpload.addEventListener('change', function(e) {
+            if (e.target.files && e.target.files[0]) {
+                const file = e.target.files[0];
+                siteIconFile = file;
+                
+                if (file.type.match('image.*')) {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        siteIconDataUrl = e.target.result;
+                        
+                        // Display preview
+                        const img = document.createElement('img');
+                        img.src = siteIconDataUrl;
+                        iconPreview.innerHTML = '';
+                        iconPreview.appendChild(img);
+                        iconPreview.classList.add('has-image');
+                        
+                        // Show remove button
+                        removeIconBtn.style.display = 'block';
+                    };
+                    
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Please select an image file for your site icon.');
+                }
+            }
+        });
+        
+        removeIconBtn.addEventListener('click', function() {
+            // Clear the icon preview
+            iconPreview.innerHTML = '';
+            iconPreview.classList.remove('has-image');
+            
+            // Clear the file input
+            siteIconUpload.value = '';
+            siteIconDataUrl = '';
+            siteIconFile = null;
+            
+            // Hide the remove button
+            removeIconBtn.style.display = 'none';
+        });
+    }
+    
+    // Upload logo and site icon to the server before proceeding
+    async function uploadCustomAssets() {
+        try {
+            updateProgress(3, 'Processing uploaded assets...');
+            
+            if (siteLogoDataUrl || siteIconDataUrl) {
+                addLogEntry('Processing uploaded branding assets...', 'info');
+                
+                // Handle logo upload
+                if (siteLogoDataUrl) {
+                    addLogEntry('Preparing to process logo...', 'info');
+                    await uploadLogo();
+                }
+                
+                // Handle site icon upload
+                if (siteIconDataUrl) {
+                    addLogEntry('Preparing to process site icon...', 'info');
+                    await uploadSiteIcon();
+                }
+            }
+            
+            return true;
+        } catch (error) {
+            console.error('Error uploading assets:', error);
+            addLogEntry('Error processing uploads: ' + error.message, 'error');
+            return false;
+        }
+    }
+    
+    // Upload logo to server
+    async function uploadLogo() {
+        if (!siteLogoDataUrl) return false;
+        
+        updateProgress(4, 'Uploading site logo...');
+        addLogEntry('Uploading site logo...', 'info');
+        
+        const formData = new FormData();
+        formData.append('action', 'mtl_upload_site_logo');
+        formData.append('nonce', mtl_plugin_vars.nonce);
+        formData.append('logo', siteLogoFile);
+        
+        try {
+            const response = await fetch(ajaxurl, {
+                method: 'POST',
+                body: formData,
+                credentials: 'same-origin'
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                addLogEntry('Logo processed successfully!', 'success');
+                return true;
+            } else {
+                throw new Error(result.data?.message || 'Unknown error processing logo');
+            }
+        } catch (error) {
+            console.error('Logo upload error:', error);
+            addLogEntry('Logo upload failed: ' + error.message, 'error');
+            return false;
+        }
+    }
+    
+    // Upload site icon to server
+    async function uploadSiteIcon() {
+        if (!siteIconDataUrl) return false;
+        
+        updateProgress(5, 'Uploading site icon...');
+        addLogEntry('Uploading site icon...', 'info');
+        
+        const formData = new FormData();
+        formData.append('action', 'mtl_upload_site_icon');
+        formData.append('nonce', mtl_plugin_vars.nonce);
+        formData.append('icon', siteIconFile);
+        
+        try {
+            const response = await fetch(ajaxurl, {
+                method: 'POST',
+                body: formData,
+                credentials: 'same-origin'
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                addLogEntry('Site icon processed successfully!', 'success');
+                return true;
+            } else {
+                throw new Error(result.data?.message || 'Unknown error processing site icon');
+            }
+        } catch (error) {
+            console.error('Site icon upload error:', error);
+            addLogEntry('Site icon upload failed: ' + error.message, 'error');
+            return false;
+        }
+    }
 
     // Function to check and update the direct import button state
     function updateDirectImportButtonState() {
@@ -648,12 +898,40 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Confirm button in Pre-Import Confirmation modal
     if (preImportConfirmBtn) {
-        preImportConfirmBtn.addEventListener('click', function() {
+        preImportConfirmBtn.addEventListener('click', async function() {
             // Hide Pre-Import Confirmation modal
             preImportModal.style.display = 'none';
             
-            // Show Apply Import modal
+            // Only show Apply Import modal - don't show progress modal for uploads
             applyImportModal.style.display = 'block';
+            modalOverlay.style.display = 'block';
+            
+            // Process uploads silently in the background
+            if (siteLogoDataUrl || siteIconDataUrl) {
+                // Create a hidden notification element for debugging only
+                const hiddenNotification = document.createElement('div');
+                hiddenNotification.style.display = 'none';
+                document.body.appendChild(hiddenNotification);
+                
+                // Upload assets silently in the background
+                try {
+                    if (siteLogoDataUrl) {
+                        await uploadLogo();
+                    }
+                    
+                    if (siteIconDataUrl) {
+                        await uploadSiteIcon();
+                    }
+                    
+                    // If uploads were processed, immediately make sure they are applied
+                    if (siteLogoDataUrl || siteIconDataUrl) {
+                        await finalizeCustomizerSettings();
+                    }
+                } catch (error) {
+                    console.error('Silent upload error:', error);
+                    // Continue anyway - don't disturb the user experience
+                }
+            }
             
             // Reset scroll position to the top
             if (applyImportModal.querySelector('.modal-content')) {
@@ -800,6 +1078,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     await new Promise(resolve => setTimeout(resolve, 300));
                 }
                 
+                // Add logo and site icon data if they exist
+                if (siteLogoDataUrl) {
+                    formData.append('import_logo', 'true');
+                    formData.append('process_logo', 'true');
+                }
+                
+                if (siteIconDataUrl) {
+                    formData.append('import_site_icon', 'true');
+                    formData.append('process_site_icon', 'true');
+                }
+                
                 // Update progress message
                 updateProgress(40, 'Starting import process...');
                 addLogEntry('Preparing to submit import request...', 'info');
@@ -847,10 +1136,36 @@ document.addEventListener('DOMContentLoaded', function() {
                     { percent: 89, text: 'Processing post featured images...', message: 'Specifically fixing post type featured images...', delay: 1000 },
                     { percent: 91, text: 'Attaching featured images...', message: 'Connecting media to posts and pages...', delay: 900 },
                     { percent: 93, text: 'Setting up menus...', message: 'Creating navigation menus and structure...', delay: 800 },
-                    { percent: 95, text: 'Importing widgets...', message: 'Setting up sidebar and footer widgets...', delay: 700 },
-                    { percent: 97, text: 'Processing relationships...', message: 'Finalizing content relationships and structure...', delay: 800 },
-                    { percent: 98, text: 'Finalizing import...', message: 'Applying final touches and cleaning up...', delay: 1000 }
                 ];
+                
+                // Add customizer steps if logo or site icon were uploaded
+                if (siteLogoDataUrl || siteIconDataUrl) {
+                    importSteps.push(
+                        { percent: 95, text: 'Setting up site branding...', message: 'Applying site logo and icon to customizer...', delay: 800 }
+                    );
+                    
+                    if (siteLogoDataUrl) {
+                        importSteps.push(
+                            { percent: 96, text: 'Setting site logo...', message: 'Applying uploaded logo to site header...', delay: 700 }
+                        );
+                    }
+                    
+                    if (siteIconDataUrl) {
+                        importSteps.push(
+                            { percent: 97, text: 'Setting site icon...', message: 'Setting browser favicon and app icon...', delay: 700 }
+                        );
+                    }
+                    
+                    importSteps.push(
+                        { percent: 98, text: 'Finalizing customizer settings...', message: 'Saving and applying branding changes...', delay: 700 }
+                    );
+                } else {
+                    importSteps.push(
+                        { percent: 95, text: 'Importing widgets...', message: 'Setting up sidebar and footer widgets...', delay: 700 },
+                        { percent: 97, text: 'Processing relationships...', message: 'Finalizing content relationships and structure...', delay: 800 },
+                        { percent: 98, text: 'Finalizing import...', message: 'Applying final touches and cleaning up...', delay: 1000 }
+                    );
+                }
                 
                 // Submit the form
                 form.submit();
@@ -942,6 +1257,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     updateProgress(100, 'Import completed successfully!');
                     addLogEntry('Template kit has been successfully imported!', 'success');
                     addLogEntry('All content, settings, and customizations have been applied.', 'success');
+                    
+                    // Add feedback if logo was uploaded and set
+                    if (siteLogoDataUrl) {
+                        addLogEntry('✓ Custom logo has been successfully set as your site logo!', 'success');
+                    }
+                    
+                    // Add feedback if site icon was uploaded and set
+                    if (siteIconDataUrl) {
+                        addLogEntry('✓ Custom site icon has been successfully set as your browser favicon!', 'success');
+                    }
+                    
+                    // Ensure branding settings are finalized if logo or site icon were uploaded
+                    if (siteLogoDataUrl || siteIconDataUrl) {
+                        // Try to finalize customizer settings again to ensure they're properly set
+                        finalizeCustomizerSettings().then(success => {
+                            if (success) {
+                                addLogEntry('✓ Logo and site icon successfully applied to customizer!', 'success');
+                            }
+                        });
+                    }
                     
                     // One final check for taxonomy and featured image assignment
                     processTaxonomyAndFeaturedImageFixes();
@@ -1094,6 +1429,97 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.disabled = false;
             }
         });
+    }
+
+    // Function to ensure branding images are properly applied to customizer
+    async function finalizeCustomizerSettings() {
+        const brandingData = new FormData();
+        brandingData.append('action', 'mtl_finalize_branding');
+        brandingData.append('nonce', mtl_plugin_vars.nonce);
+        
+        // Get logo details from preview
+        let logoWidth = 0, logoHeight = 0, logoSrc = '';
+        if (siteLogoDataUrl && logoPreview && logoPreview.querySelector('img')) {
+            const logoImg = logoPreview.querySelector('img');
+            logoWidth = logoImg.naturalWidth || 0;
+            logoHeight = logoImg.naturalHeight || 0;
+            logoSrc = logoImg.src || '';
+            
+            brandingData.append('has_logo', 'true');
+            brandingData.append('apply_immediately', 'true');
+            brandingData.append('logo_width', logoWidth);
+            brandingData.append('logo_height', logoHeight);
+            // We don't send the full data URL for performance reasons
+        }
+        
+        // Get site icon details from preview
+        let iconWidth = 0, iconHeight = 0, iconSrc = '';
+        if (siteIconDataUrl && iconPreview && iconPreview.querySelector('img')) {
+            const iconImg = iconPreview.querySelector('img');
+            iconWidth = iconImg.naturalWidth || 0;
+            iconHeight = iconImg.naturalHeight || 0;
+            iconSrc = iconImg.src || '';
+            
+            brandingData.append('has_icon', 'true');
+            brandingData.append('apply_immediately', 'true');
+            brandingData.append('icon_width', iconWidth);
+            brandingData.append('icon_height', iconHeight);
+            // We don't send the full data URL for performance reasons
+        }
+        
+        // Add current timestamp to force update
+        brandingData.append('timestamp', Date.now());
+        
+        try {
+            const response = await fetch(mtl_plugin_vars.ajax_url, {
+                method: 'POST',
+                body: brandingData,
+                credentials: 'same-origin'
+            });
+            
+            const result = await response.json();
+            
+            if (!result.success) {
+                console.warn('Customizer settings warning:', result);
+                // Try direct setting method as fallback
+                return await directCustomizerUpdate();
+            }
+            
+            return true;
+        } catch (error) {
+            console.error('Customizer settings error:', error);
+            // Try direct setting method as fallback
+            return await directCustomizerUpdate();
+        }
+    }
+
+    // Direct method to update customizer settings as fallback
+    async function directCustomizerUpdate() {
+        const directUpdateData = new FormData();
+        directUpdateData.append('action', 'mtl_direct_customizer_update');
+        directUpdateData.append('nonce', mtl_plugin_vars.nonce);
+        
+        if (siteLogoDataUrl) {
+            directUpdateData.append('update_logo', 'true');
+        }
+        
+        if (siteIconDataUrl) {
+            directUpdateData.append('update_icon', 'true');
+        }
+        
+        try {
+            const response = await fetch(mtl_plugin_vars.ajax_url, {
+                method: 'POST',
+                body: directUpdateData,
+                credentials: 'same-origin'
+            });
+            
+            const result = await response.json();
+            return result.success;
+        } catch (error) {
+            console.error('Direct customizer update error:', error);
+            return false;
+        }
     }
 });
 </script>
@@ -1774,10 +2200,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 /* Pre-Import Confirmation Modal Styles */
-.pre-import-content,
-.apply-import-content{
-    max-width: 700px;
-    margin: 0 auto;
+.pre-import-confirmation-wrapper {
+    max-width: 500px;
 }
 
 .pre-import-content {
@@ -1815,6 +2239,115 @@ document.addEventListener('DOMContentLoaded', function() {
 #pre-import-confirm-btn:hover {
     background-color: #006291;
     border-color: #006291;
+}
+
+/* Custom Upload Section Styles */
+.custom-upload-section {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.custom-upload-section h3 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+.logo-upload-option,
+.icon-upload-option {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.icon-upload-option {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.logo-upload-option label,
+.icon-upload-option label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.logo-upload-container,
+.icon-upload-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.logo-preview,
+.icon-preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    transition: all 0.3s ease;
+}
+
+.logo-preview {
+    width: 200px;
+    height: 80px;
+}
+
+.icon-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.logo-preview::before,
+.icon-preview::before {
+    content: "No image";
+    position: absolute;
+    color: #999;
+    font-size: 12px;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.logo-preview img,
+.icon-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-preview.has-image,
+.icon-preview.has-image {
+    border-style: solid;
+    border-color: #0073aa;
+    background-color: #fff;
+}
+
+.logo-actions,
+.icon-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.logo-file-input,
+.icon-file-input {
+    display: none;
+}
+
+.description {
+    color: #666;
+    font-size: 13px;
+    margin-top: 4px;
+    font-style: italic;
 }
 </style>
 
