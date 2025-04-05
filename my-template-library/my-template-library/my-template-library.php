@@ -637,6 +637,19 @@ function mtl_direct_kit_import_handler() {
         wp_die('No kit URL provided.');
     }
     
+    // Handle site title and tagline if provided in the form submission
+    if (isset($_POST['site_title']) && !empty($_POST['site_title'])) {
+        $site_title = sanitize_text_field($_POST['site_title']);
+        update_option('blogname', $site_title);
+        mtl_debug_log('Set site title from direct import: ' . $site_title);
+    }
+    
+    if (isset($_POST['site_tagline']) && !empty($_POST['site_tagline'])) {
+        $site_tagline = sanitize_text_field($_POST['site_tagline']);
+        update_option('blogdescription', $site_tagline);
+        mtl_debug_log('Set site tagline from direct import: ' . $site_tagline);
+    }
+    
     // Process site logo ID if available (from AJAX upload)
     if (isset($_POST['site_logo_id']) && !empty($_POST['site_logo_id'])) {
         $logo_id = intval($_POST['site_logo_id']);
@@ -936,8 +949,52 @@ function mtl_direct_kit_import_handler() {
         if (file_exists($inc_dir) && is_dir($inc_dir)) {
             $dat_files = glob($inc_dir . '/*.dat');
             
+            // Create variable to store site title and tagline for client-side use
+            $site_title = '';
+            $site_tagline = '';
+            
             foreach ($dat_files as $dat_file) {
                 try {
+                    // Extract site title and tagline for JavaScript use before import
+                    $raw_data = file_get_contents($dat_file);
+                    $data = @unserialize($raw_data);
+                    
+                    if (is_array($data) && isset($data['options'])) {
+                        if (isset($data['options']['blogname'])) {
+                            $site_title = $data['options']['blogname'];
+                            mtl_debug_log('Extracted site title for JavaScript: ' . $site_title);
+                        }
+                        
+                        if (isset($data['options']['blogdescription'])) {
+                            $site_tagline = $data['options']['blogdescription'];
+                            mtl_debug_log('Extracted site tagline for JavaScript: ' . $site_tagline);
+                        }
+                    } else if (is_array($data)) {
+                        // If not found in options, try to extract from XML files
+                        $base_dir = dirname(dirname($dat_file));
+                        $xml_files = glob($base_dir . '/wp-content/*/*.xml');
+                        
+                        foreach ($xml_files as $xml_file) {
+                            if (file_exists($xml_file)) {
+                                $xml_content = file_get_contents($xml_file);
+                                
+                                // Extract site title
+                                if (empty($site_title) && preg_match('/<title>(.*?)<\/title>/', $xml_content, $title_matches)) {
+                                    $site_title = trim($title_matches[1]);
+                                    mtl_debug_log('Found site title in XML file: ' . $site_title);
+                                    break;
+                                }
+                                
+                                // Extract site description/tagline
+                                if (empty($site_tagline) && preg_match('/<description>(.*?)<\/description>/', $xml_content, $desc_matches)) {
+                                    $site_tagline = trim($desc_matches[1]);
+                                    mtl_debug_log('Found site tagline in XML file: ' . $site_tagline);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    
                     // Use the new customizer import function
                     $result = mtl_import_customizer_data($dat_file);
                     
@@ -963,6 +1020,7 @@ function mtl_direct_kit_import_handler() {
                         
                         echo '</div>';
                     }
+                    
                 } catch (Exception $e) {
                     mtl_debug_log('Error importing customizer data: ' . $e->getMessage());
                     echo '<div class="theme-mods-results">';
@@ -970,6 +1028,17 @@ function mtl_direct_kit_import_handler() {
                     echo '<p class="result-item error">❌ Error importing customizer data: ' . $e->getMessage() . '</p>';
                     echo '</div>';
                 }
+            }
+            
+            // Output JavaScript with site title and tagline data
+            if (!empty($site_title) || !empty($site_tagline)) {
+                echo '<script type="text/javascript">
+                    window.templateData = {
+                        siteTitle: ' . json_encode($site_title) . ',
+                        siteTagline: ' . json_encode($site_tagline) . '
+                    };
+                </script>';
+                mtl_debug_log('Added site title and tagline to JavaScript templateData');
             }
         }
         
@@ -3095,12 +3164,91 @@ function mtl_import_customizer_data($customizer_file) {
         mtl_debug_log('Customizer options keys: ' . print_r(array_keys($data['options']), true));
     }
     
-    // FORCE SITE TITLE AND TAGLINE - these are critical
-    update_option('blogname', 'Digo - Digital Marketing Agency WordPress Theme');
-    update_option('blogdescription', 'Digital Marketing WordPress Theme');
-    mtl_debug_log('Forced site title and tagline to default values');
+    // Extract site title and tagline from data file
+    $site_title = '';
+    $site_tagline = '';
     
-    // FORCE SITE ICON - Handle based on the known value from digo-kit
+    // Check for site title and tagline in options
+    if (isset($data['options']) && is_array($data['options'])) {
+        if (isset($data['options']['blogname'])) {
+            $site_title = $data['options']['blogname'];
+            mtl_debug_log('Found site title in options: ' . $site_title);
+        }
+        
+        if (isset($data['options']['blogdescription'])) {
+            $site_tagline = $data['options']['blogdescription'];
+            mtl_debug_log('Found site tagline in options: ' . $site_tagline);
+        }
+    }
+    
+    // If not found in options, try to extract from XML files in the same directory
+    if (empty($site_title) || empty($site_tagline)) {
+        // Get the base directory of the customizer file
+        $base_dir = dirname(dirname($customizer_file));
+        $xml_files = glob($base_dir . '/wp-content/*/*.xml');
+        
+        foreach ($xml_files as $xml_file) {
+            if (file_exists($xml_file)) {
+                $xml_content = file_get_contents($xml_file);
+                
+                // Extract site title
+                if (empty($site_title) && preg_match('/<title>(.*?)<\/title>/', $xml_content, $title_matches)) {
+                    $site_title = trim($title_matches[1]);
+                    mtl_debug_log('Found site title in XML file: ' . $site_title);
+                }
+                
+                // Extract site description/tagline
+                if (empty($site_tagline) && preg_match('/<description>(.*?)<\/description>/', $xml_content, $desc_matches)) {
+                    $site_tagline = trim($desc_matches[1]);
+                    mtl_debug_log('Found site tagline in XML file: ' . $site_tagline);
+                }
+                
+                // Break if we found both
+                if (!empty($site_title) && !empty($site_tagline)) {
+                    break;
+                }
+            }
+        }
+    }
+    
+    // If we found site title and tagline, use them
+    if (!empty($site_title)) {
+        update_option('blogname', $site_title);
+        mtl_debug_log('Updated site title to: ' . $site_title);
+    }
+    
+    if (!empty($site_tagline)) {
+        update_option('blogdescription', $site_tagline);
+        mtl_debug_log('Updated site tagline to: ' . $site_tagline);
+    }
+    
+    // If site title and tagline are still not found, use the filename or fallback defaults
+    if (empty($site_title)) {
+        // Extract theme name from filename as fallback
+        $filename = basename($customizer_file, '.dat');
+        $theme_name = str_replace('-child-export', '', $filename);
+        $theme_name = str_replace('-export', '', $theme_name);
+        $theme_name = ucwords(str_replace('-', ' ', $theme_name));
+        
+        update_option('blogname', $theme_name);
+        mtl_debug_log('Set site title from filename: ' . $theme_name);
+    } else {
+        // Always update the site title if found in the imported data
+        update_option('blogname', $site_title);
+        mtl_debug_log('Updated site title to: ' . $site_title);
+    }
+    
+    if (empty($site_tagline)) {
+        // Set default tagline if none found in imported data
+        update_option('blogdescription', 'WordPress Theme');
+        mtl_debug_log('Set default site tagline');
+    } else {
+        // Always update the site tagline if found in the imported data
+        update_option('blogdescription', $site_tagline);
+        mtl_debug_log('Updated site tagline to: ' . $site_tagline);
+    }
+    
+    // FORCE SITE ICON - Handle based on the known value from data file
     if (isset($data['options']['site_icon']) && !empty($data['options']['site_icon'])) {
         $site_icon_id = intval($data['options']['site_icon']);
         mtl_debug_log('Found site icon ID in options: ' . $site_icon_id);
@@ -3631,7 +3779,7 @@ function mtl_download_and_import_image($url) {
 }
 
 /**
- * Hook for theme activation to apply pending customizer data
+ * Hook for theme activation to apply pending customizer import
  */
 function mtl_apply_pending_customizer_import() {
     $pending_import = get_option('mtl_pending_customizer_import', false);
@@ -3648,6 +3796,23 @@ function mtl_apply_pending_customizer_import() {
     
     if ($current_theme === $theme) {
         mtl_debug_log('Applying pending customizer import for theme: ' . $theme);
+        
+        // Handle site title and tagline from options first
+        if (isset($data['options']) && is_array($data['options'])) {
+            // Check for site title in options
+            if (isset($data['options']['blogname'])) {
+                $site_title = $data['options']['blogname'];
+                update_option('blogname', $site_title);
+                mtl_debug_log('Applied site title from pending import: ' . $site_title);
+            }
+            
+            // Check for site tagline in options
+            if (isset($data['options']['blogdescription'])) {
+                $site_tagline = $data['options']['blogdescription'];
+                update_option('blogdescription', $site_tagline);
+                mtl_debug_log('Applied site tagline from pending import: ' . $site_tagline);
+            }
+        }
         
         // Simulate a direct import
         if (isset($data['mods'])) {
@@ -4054,11 +4219,41 @@ function mtl_ajax_direct_customizer_update() {
     
     $update_logo = isset($_POST['update_logo']) && $_POST['update_logo'] === 'true';
     $update_icon = isset($_POST['update_icon']) && $_POST['update_icon'] === 'true';
+    $update_site_title = isset($_POST['site_title']) && !empty($_POST['site_title']);
+    $update_site_tagline = isset($_POST['site_tagline']) && !empty($_POST['site_tagline']);
+    
     $success = true;
     $messages = [];
     
     // Get the current theme
     $theme = wp_get_theme();
+    
+    // Handle site title and tagline updates
+    if ($update_site_title) {
+        $site_title = sanitize_text_field($_POST['site_title']);
+        update_option('blogname', $site_title);
+        $messages[] = 'Site title updated to: ' . $site_title;
+        
+        // For extra insurance, use WP_Customize_Manager
+        if (!isset($GLOBALS['wp_customize'])) {
+            $GLOBALS['wp_customize'] = new WP_Customize_Manager();
+        }
+        $GLOBALS['wp_customize']->set_post_value('blogname', $site_title);
+        $GLOBALS['wp_customize']->save_changeset_post();
+    }
+    
+    if ($update_site_tagline) {
+        $site_tagline = sanitize_text_field($_POST['site_tagline']);
+        update_option('blogdescription', $site_tagline);
+        $messages[] = 'Site tagline updated to: ' . $site_tagline;
+        
+        // For extra insurance, use WP_Customize_Manager
+        if (!isset($GLOBALS['wp_customize'])) {
+            $GLOBALS['wp_customize'] = new WP_Customize_Manager();
+        }
+        $GLOBALS['wp_customize']->set_post_value('blogdescription', $site_tagline);
+        $GLOBALS['wp_customize']->save_changeset_post();
+    }
     
     // Handle logo direct update
     if ($update_logo) {
@@ -4082,7 +4277,9 @@ function mtl_ajax_direct_customizer_update() {
             set_theme_mod('custom_logo', $logo_id);
             
             // For extra insurance, save to the database
-            $GLOBALS['wp_customize'] = new WP_Customize_Manager();
+            if (!isset($GLOBALS['wp_customize'])) {
+                $GLOBALS['wp_customize'] = new WP_Customize_Manager();
+            }
             $GLOBALS['wp_customize']->set_post_value('custom_logo', $logo_id);
             $GLOBALS['wp_customize']->save_changeset_post();
             
@@ -4109,14 +4306,11 @@ function mtl_ajax_direct_customizer_update() {
             update_option('site_icon', $icon_id);
             
             // For extra insurance, save to the database
-            if (isset($GLOBALS['wp_customize'])) {
-                $GLOBALS['wp_customize']->set_post_value('site_icon', $icon_id);
-                $GLOBALS['wp_customize']->save_changeset_post();
-            } else {
+            if (!isset($GLOBALS['wp_customize'])) {
                 $GLOBALS['wp_customize'] = new WP_Customize_Manager();
-                $GLOBALS['wp_customize']->set_post_value('site_icon', $icon_id);
-                $GLOBALS['wp_customize']->save_changeset_post();
             }
+            $GLOBALS['wp_customize']->set_post_value('site_icon', $icon_id);
+            $GLOBALS['wp_customize']->save_changeset_post();
             
             $messages[] = 'Site icon applied using direct database approach.';
         } else {

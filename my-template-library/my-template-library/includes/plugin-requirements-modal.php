@@ -217,7 +217,7 @@ if (!defined('WPINC')) {
             
             <div class="pre-import-actions">
                 <button id="pre-import-cancel-btn" class="button button-secondary">Cancel</button>
-                <button id="pre-import-confirm-btn" class="button button-primary">Continue to Import Options</button>
+                <button id="pre-import-confirm-btn" class="button button-primary">Upload & Continue</button>
             </div>
         </div>
     </div>
@@ -1091,6 +1091,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     formData.append('process_site_icon', 'true');
                 }
                 
+                // Add site title and tagline if they exist in window.templateData
+                if (window.templateData && window.templateData.siteTitle) {
+                    formData.append('site_title', window.templateData.siteTitle);
+                    console.log('Adding site title to import: ' + window.templateData.siteTitle);
+                }
+                
+                if (window.templateData && window.templateData.siteTagline) {
+                    formData.append('site_tagline', window.templateData.siteTagline);
+                    console.log('Adding site tagline to import: ' + window.templateData.siteTagline);
+                }
+                
                 // Update progress message
                 updateProgress(40, 'Starting import process...');
                 addLogEntry('Preparing to submit import request...', 'info');
@@ -1507,6 +1518,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (siteIconDataUrl) {
             directUpdateData.append('update_icon', 'true');
+        }
+        
+        // Pass site title and tagline if they exist in window.templateData
+        if (window.templateData && window.templateData.siteTitle) {
+            directUpdateData.append('site_title', window.templateData.siteTitle);
+        }
+        
+        if (window.templateData && window.templateData.siteTagline) {
+            directUpdateData.append('site_tagline', window.templateData.siteTagline);
         }
         
         try {
@@ -2395,6 +2415,202 @@ document.addEventListener('DOMContentLoaded', function() {
     color: #666;
     font-style: italic;
     font-size: 13px;
+}
+
+/* Custom Button Styles for Plugin Requirements Modal */
+#plugin-requirements-modal .button {
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    min-height: 40px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#plugin-requirements-modal .button-primary {
+    background-color: #e9c3f4;
+    color: #333;
+    border: 1px solid #d4a6e3;
+}
+
+#plugin-requirements-modal .button-primary:hover {
+    background-color: #dfb1ed;
+    border-color: #c990d8;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+#plugin-requirements-modal .button-secondary {
+    background-color: #f9f1fc;
+    border: 1px solid #e9c3f4;
+    color: #333;
+}
+
+#plugin-requirements-modal .button-secondary:hover {
+    background-color: #f0dcf7;
+    border-color: #d4a6e3;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+#install-activate-plugins-btn {
+    min-width: 180px;
+}
+
+#apply-import-btn {
+    background-color: #d4a6e3;
+    border-color: #c990d8;
+}
+
+#apply-import-btn:hover {
+    background-color: #c990d8;
+    border-color: #b97ad3;
+}
+
+/* Apply the same styles to other modals */
+#apply-import-modal .button-primary,
+#pre-import-confirmation-modal .button-primary,
+#import-progress-modal .button-primary {
+    background-color: #e9c3f4;
+    color: #333;
+    border: 1px solid #d4a6e3;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 40px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#apply-import-modal .button-primary:hover,
+#pre-import-confirmation-modal .button-primary:hover,
+#import-progress-modal .button-primary:hover {
+    background-color: #dfb1ed;
+    border-color: #c990d8;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+#apply-import-modal .button-secondary,
+#pre-import-confirmation-modal .button-secondary,
+#import-progress-modal .button-secondary {
+    background-color: #f9f1fc;
+    border: 1px solid #e9c3f4;
+    color: #333;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 40px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#apply-import-modal .button-secondary:hover,
+#pre-import-confirmation-modal .button-secondary:hover,
+#import-progress-modal .button-secondary:hover {
+    background-color: #f0dcf7;
+    border-color: #d4a6e3;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Enhance modal actions area */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.right-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Make buttons in all modals stand out */
+.select-logo-btn,
+.remove-logo-btn,
+#select-icon-btn,
+#remove-icon-btn,
+#pre-import-confirm-btn,
+#pre-import-cancel-btn,
+#apply-import-confirm-btn,
+#apply-import-cancel-btn {
+    background-color: #e9c3f4;
+    color: #333;
+    border: 1px solid #d4a6e3;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.select-logo-btn:hover,
+.remove-logo-btn:hover,
+#select-icon-btn:hover,
+#remove-icon-btn:hover,
+#pre-import-confirm-btn:hover,
+#pre-import-cancel-btn:hover,
+#apply-import-confirm-btn:hover,
+#apply-import-cancel-btn:hover {
+    background-color: #dfb1ed;
+    border-color: #c990d8;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Style Checkbox in Import Options */
+.import-option input[type="checkbox"] {
+    border-color: #d4a6e3;
+}
+
+.import-option input[type="checkbox"]:checked {
+    background-color: #e9c3f4;
+    border-color: #d4a6e3;
+}
+
+/* Hide scrollbars but keep scrolling functionality */
+.modal-content,
+.plugins-list,
+.existing-plugins-list,
+.log-container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.modal-content::-webkit-scrollbar,
+.plugins-list::-webkit-scrollbar,
+.existing-plugins-list::-webkit-scrollbar,
+.log-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none; /* Safari and Chrome */
+}
+
+/* For webkit browsers that might still show scrollbars */
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ensure that all scrollable containers maintain auto overflow behavior */
+.modal-content {
+    overflow-y: auto;
+}
+
+.plugins-list, 
+.existing-plugins-list {
+    overflow-y: auto;
+}
+
+.log-container {
+    overflow-y: auto;
 }
 </style>
 

@@ -34,7 +34,7 @@ wp_enqueue_script('jszip', 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/
             <h2>Import Selected Template Kit</h2>
             <p>You are about to import the selected template kit to your website.</p>
             <div class="import-buttons">
-                <button id="required-plugins-checking-btn" class="button button-primary">Install & Activate Plugins</button>
+                <button id="required-plugins-checking-btn" class="button button-primary">Import Template Kit</button>
             </div>
         </div>
     </div>
@@ -119,6 +119,7 @@ wp_enqueue_script('jszip', 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/
     padding: 15px;
     background: #f9f9f9;
     border-radius: 5px;
+    display: none; /* Hide the template-info section */
 }
 
 .form-field {
@@ -192,6 +193,23 @@ wp_enqueue_script('jszip', 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/
     background-color: #2271b1;
     color: white;
     border: 1px solid #2271b1;
+}
+
+/* Custom button style for required plugins check button */
+#required-plugins-checking-btn {
+    background-color: #e9c3f4;
+    color: #333;
+    border: 1px solid #d4a6e3;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 48px;
+    transition: all 0.3s ease;
+}
+
+#required-plugins-checking-btn:hover {
+    background-color: #dfb1ed;
+    border-color: #c990d8;
 }
 
 .button-secondary {
@@ -513,10 +531,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="checkbox-column">
                     <input type="checkbox" ${status === PLUGIN_STATUS.ACTIVE ? 'disabled' : ''} checked>
                 </div>
-                <div class="name-column">
-                    ${plugin.name}
-                    ${mtl_plugin_vars.is_admin ? `<button class="toggle-debug-info" style="font-size: 10px; padding: 2px 5px; margin-left: 5px;">Show Debug Info</button>` : ''}
-                </div>
+                <div class="name-column">${plugin.name}</div>
                 <div class="status-column" data-status="${status}">${status}</div>
                 <div class="version-column">${versionLink}</div>
                 ${debugInfo}

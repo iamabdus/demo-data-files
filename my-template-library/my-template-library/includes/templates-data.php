@@ -10,7 +10,7 @@ function get_template_data() {
             'title' => 'Gardener Template',
             'image' => MTL_PLUGIN_URL . 'assets/images/template1.png',
             'demo_url' => 'https://gardener.iamabdus.com/v1-2/',
-            'kit_url' => 'https://ocdi.iamabdus.com/kit-library/gardener-kit.zip',
+            'kit_url' => 'https://ocdi.iamabdus.com/kit-library/cryptoz.zip',
             'type' => 'Business'
         ],
         [
