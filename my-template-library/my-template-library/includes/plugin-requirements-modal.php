@@ -34,6 +34,7 @@ if (!defined('WPINC')) {
 
     <div class="plugins-section">
         <h3>Plugins to add:</h3>
+        <p class="section-description">Includes plugins that need to be installed or activated (installed but not active)</p>
         <div class="plugins-table">
             <div class="table-header">
                 <div class="checkbox-column"></div>
@@ -49,6 +50,7 @@ if (!defined('WPINC')) {
 
     <div class="existing-plugins-section">
         <h3>Plugins you already have:</h3>
+        <p class="section-description">Only includes plugins that are both installed and activated</p>
         <div class="existing-plugins-table">
             <div class="table-header">
                 <div class="checkbox-column"></div>
@@ -1668,10 +1670,47 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .status-column {
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px 10px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.status-column[data-status="Active"] {
+    color: #2e7d32;
+    background-color: #e8f5e9;
+}
+
+.status-column[data-status="Installed (Not Active)"] {
+    color: #f57c00;
+    background-color: #fff3e0;
+}
+
+.status-column[data-status="Not Installed"] {
+    color: #616161;
+    background-color: #f5f5f5;
+}
+
+.status-column[data-status="Installing..."],
+.status-column[data-status="Activating..."] {
+    color: #0277bd;
+    background-color: #e1f5fe;
+}
+
+.status-column[data-status="Error: Installation failed"] {
+    color: #c62828;
+    background-color: #ffebee;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
 }
 
 /* Plugin Item Styles */
@@ -2200,9 +2239,9 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 /* Pre-Import Confirmation Modal Styles */
-.pre-import-confirmation-wrapper {
+/* .pre-import-confirmation-wrapper {
     max-width: 500px;
-}
+} */
 
 .pre-import-content {
     padding: 20px;
@@ -2348,6 +2387,14 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 13px;
     margin-top: 4px;
     font-style: italic;
+}
+
+.section-description {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: #666;
+    font-style: italic;
+    font-size: 13px;
 }
 </style>
 

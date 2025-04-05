@@ -23,6 +23,11 @@ class Template_Kit_Plugin_Manager {
     private $log = [];
 
     public function __construct() {
+        // Make sure we have access to WordPress plugin functions
+        if (!function_exists('get_plugin_data')) {
+            require_once ABSPATH . 'wp-admin/includes/plugin.php';
+        }
+        
         $this->skin = new WP_Ajax_Upgrader_Skin();
         $this->upgrader = new Plugin_Upgrader($this->skin);
     }
@@ -139,33 +144,104 @@ class Template_Kit_Plugin_Manager {
      * Activate plugin
      */
     private function activate_plugin($plugin_data) {
-        // Get the correct plugin path
-        $plugin_path = $plugin_data['path'];
-        if (!file_exists(WP_PLUGIN_DIR . '/' . $plugin_path)) {
-            // Try to find the plugin file
-            $plugin_dir = dirname($plugin_path);
-            $plugin_files = glob(WP_PLUGIN_DIR . '/' . $plugin_dir . '/*.php');
+        try {
+            // Get the correct plugin path
+            $plugin_path = $plugin_data['path'];
             
-            if (empty($plugin_files)) {
-                throw new Exception('Plugin files not found after installation');
+            $this->log_message("Attempting to activate plugin: " . $plugin_data['name'] . " with path: " . $plugin_path);
+            
+            // First, try the direct path
+            if (file_exists(WP_PLUGIN_DIR . '/' . $plugin_path)) {
+                $this->log_message("Direct path exists: " . WP_PLUGIN_DIR . '/' . $plugin_path);
+                
+                if (is_plugin_active($plugin_path)) {
+                    $this->log_message("Plugin is already active using direct path.");
+                    return $this->success_response('Plugin is already active', 'active');
+                } else {
+                    $this->log_message("Plugin exists but is not active. Trying to activate with direct path.");
+                    $direct_activation = activate_plugin($plugin_path);
+                    
+                    if (!is_wp_error($direct_activation)) {
+                        $this->log_message("Plugin activated successfully with direct path.");
+                        return $this->success_response('Plugin activated successfully', 'active');
+                    } else {
+                        $this->log_message("Failed to activate with direct path. Error: " . $direct_activation->get_error_message());
+                        // We'll continue to try finding the main plugin file below
+                    }
+                }
+            } else {
+                $this->log_message("Direct path does not exist: " . WP_PLUGIN_DIR . '/' . $plugin_path);
             }
             
-            // Use the first PHP file found
-            $plugin_path = str_replace(WP_PLUGIN_DIR . '/', '', $plugin_files[0]);
+            // If direct path doesn't exist or plugin is not active, we need to find the main plugin file
+            $plugin_dir = dirname($plugin_path);
+            $plugin_dir_path = WP_PLUGIN_DIR . '/' . $plugin_dir;
+            
+            $this->log_message("Looking for plugin files in directory: " . $plugin_dir_path);
+            
+            if (!file_exists($plugin_dir_path)) {
+                throw new Exception('Plugin directory not found: ' . $plugin_dir);
+            }
+            
+            // Get all PHP files in the plugin directory
+            $plugin_files = glob($plugin_dir_path . '/*.php');
+            $this->log_message("Found " . count($plugin_files) . " PHP files in plugin directory");
+            
+            if (empty($plugin_files)) {
+                throw new Exception('No PHP files found in plugin directory: ' . $plugin_dir);
+            }
+            
+            // Check each PHP file for a valid plugin header
+            $main_plugin_file = null;
+            foreach ($plugin_files as $file) {
+                $plugin_data_from_file = get_plugin_data($file, false, false);
+                
+                $this->log_message("Checking file: " . basename($file) . " - " . 
+                    (empty($plugin_data_from_file['Name']) ? "No plugin name found" : "Plugin name: " . $plugin_data_from_file['Name']));
+                
+                // If this file has a Name in the header, it's likely the main plugin file
+                if (!empty($plugin_data_from_file['Name'])) {
+                    $main_plugin_file = $file;
+                    break;
+                }
+            }
+            
+            // If we couldn't find a file with a valid header, fall back to the first PHP file
+            if ($main_plugin_file === null && !empty($plugin_files)) {
+                $main_plugin_file = $plugin_files[0];
+                $this->log_message("Warning: No file with valid plugin header found. Using first PHP file: " . basename($main_plugin_file));
+            } elseif ($main_plugin_file === null) {
+                throw new Exception('No valid plugin file found in directory: ' . $plugin_dir);
+            } else {
+                $this->log_message("Found main plugin file: " . basename($main_plugin_file));
+            }
+            
+            // Get the relative path for WordPress
+            $relative_path = str_replace(WP_PLUGIN_DIR . '/', '', $main_plugin_file);
+            $this->log_message("Using relative path for activation: " . $relative_path);
+            
+            // Check if already active
+            if (is_plugin_active($relative_path)) {
+                $this->log_message("Plugin is already active with path: " . $relative_path);
+                return $this->success_response('Plugin is already active', 'active');
+            }
+            
+            // Try to activate the plugin
+            $this->log_message("Attempting to activate plugin with path: " . $relative_path);
+            $result = activate_plugin($relative_path);
+            
+            if (is_wp_error($result)) {
+                $error_message = $result->get_error_message();
+                $this->log_message("Activation failed: " . $error_message);
+                throw new Exception('Activation failed: ' . $error_message);
+            }
+            
+            $this->log_message("Successfully activated plugin: " . $plugin_data['name'] . " (" . $relative_path . ")");
+            return $this->success_response('Plugin activated successfully', 'active');
+        } catch (Exception $e) {
+            $this->log_message("Error in activate_plugin: " . $e->getMessage());
+            throw $e;
         }
-
-        if (is_plugin_active($plugin_path)) {
-            return $this->success_response('Plugin is already active', 'active');
-        }
-
-        $result = activate_plugin($plugin_path);
-        
-        if (is_wp_error($result)) {
-            throw new Exception('Activation failed: ' . $result->get_error_message());
-        }
-
-        $this->log_message("Successfully activated plugin: " . $plugin_data['name']);
-        return $this->success_response('Plugin activated successfully', 'active');
     }
 
     /**
@@ -260,6 +336,8 @@ class Template_Kit_Plugin_Manager {
 // Ajax handlers
 add_action('wp_ajax_mtl_install_and_activate_plugin', 'mtl_install_and_activate_plugin');
 function mtl_install_and_activate_plugin() {
+    global $wp_version;
+    
     // Verify nonce
     if (!check_ajax_referer('mtl_plugin_installation_nonce', 'security', false)) {
         wp_send_json_error(['message' => 'Security check failed']);
@@ -276,6 +354,14 @@ function mtl_install_and_activate_plugin() {
         wp_send_json_error(['message' => 'No plugin data provided']);
     }
 
+    // Debug log
+    if (defined('WP_DEBUG') && WP_DEBUG) {
+        error_log('Attempting to install/activate plugin:');
+        error_log(print_r($plugin_data, true));
+        error_log('WordPress version: ' . $wp_version);
+        error_log('PHP version: ' . PHP_VERSION);
+    }
+
     // Sanitize plugin data
     $plugin_data = array_map('sanitize_text_field', $plugin_data);
 
@@ -283,18 +369,31 @@ function mtl_install_and_activate_plugin() {
     $plugin_manager = new Template_Kit_Plugin_Manager();
 
     // Install and activate plugin
-    $result = $plugin_manager->install_and_activate_plugin($plugin_data);
+    try {
+        $result = $plugin_manager->install_and_activate_plugin($plugin_data);
 
-    if ($result['success']) {
-        wp_send_json_success($result);
-    } else {
-        wp_send_json_error($result);
+        if ($result['success']) {
+            wp_send_json_success($result);
+        } else {
+            $error_data = array_merge($result, ['plugin_info' => $plugin_data]);
+            wp_send_json_error($error_data);
+        }
+    } catch (Exception $e) {
+        $error_data = [
+            'success' => false,
+            'status' => 'error',
+            'message' => $e->getMessage(),
+            'plugin_info' => $plugin_data
+        ];
+        wp_send_json_error($error_data);
     }
 }
 
 // Add status check handler
 add_action('wp_ajax_mtl_check_plugin_status', 'mtl_check_plugin_status');
 function mtl_check_plugin_status() {
+    global $wp_version;
+    
     // Verify nonce
     if (!check_ajax_referer('mtl_plugin_installation_nonce', 'security', false)) {
         wp_send_json_error(['message' => 'Security check failed']);
@@ -303,6 +402,28 @@ function mtl_check_plugin_status() {
     // Check user capabilities
     if (!current_user_can('install_plugins')) {
         wp_send_json_error(['message' => 'You do not have permission to check plugin status']);
+    }
+    
+    // Make sure the plugin.php file is loaded
+    if (!function_exists('is_plugin_active')) {
+        require_once ABSPATH . 'wp-admin/includes/plugin.php';
+    }
+    
+    if (!function_exists('is_plugin_active')) {
+        error_log('Critical Error: is_plugin_active function not available');
+        wp_send_json_error(['message' => 'WordPress plugin functions not available']);
+        return;
+    }
+
+    // Log system information for debugging
+    if (defined('WP_DEBUG') && WP_DEBUG) {
+        error_log('WP Version: ' . $wp_version);
+        error_log('PHP Version: ' . PHP_VERSION);
+        error_log('ABSPATH: ' . ABSPATH);
+        error_log('WP_PLUGIN_DIR: ' . WP_PLUGIN_DIR);
+        
+        $all_active_plugins = get_option('active_plugins', []);
+        error_log('All Active Plugins: ' . print_r($all_active_plugins, true));
     }
 
     // Get plugins data from request
@@ -321,12 +442,71 @@ function mtl_check_plugin_status() {
         // Check if plugin is installed
         $installed = file_exists(WP_PLUGIN_DIR . '/' . dirname($path));
         
-        // Check if plugin is active
-        $active = is_plugin_active($path);
+        // Debug info
+        $debug_info = array(
+            'slug' => $slug,
+            'path' => $path,
+            'full_path' => WP_PLUGIN_DIR . '/' . $path,
+            'dirname' => dirname($path),
+            'dir_exists' => $installed
+        );
+        
+        // Check if plugin is active - make sure we have a valid path
+        $active = false;
+        
+        if ($installed) {
+            // First try the direct path
+            if (file_exists(WP_PLUGIN_DIR . '/' . $path)) {
+                $active = is_plugin_active($path);
+                
+                // Also check for network activation if this is a multisite
+                if (!$active && function_exists('is_plugin_active_for_network') && is_multisite()) {
+                    $active = is_plugin_active_for_network($path);
+                    $debug_info['network_active'] = $active;
+                }
+                
+                $debug_info['direct_path_exists'] = true;
+                $debug_info['direct_path_active'] = $active;
+            } else {
+                $debug_info['direct_path_exists'] = false;
+                
+                // If direct path doesn't exist, try to find the main plugin file
+                $plugin_dir = WP_PLUGIN_DIR . '/' . dirname($path);
+                $plugin_files = glob($plugin_dir . '/*.php');
+                
+                if (!empty($plugin_files)) {
+                    // Try each PHP file in the directory
+                    foreach ($plugin_files as $plugin_file) {
+                        $relative_path = str_replace(WP_PLUGIN_DIR . '/', '', $plugin_file);
+                        $test_active = is_plugin_active($relative_path);
+                        
+                        // Also check for network activation
+                        if (!$test_active && function_exists('is_plugin_active_for_network') && is_multisite()) {
+                            $test_active = is_plugin_active_for_network($relative_path);
+                            $debug_info['network_active_' . basename($plugin_file)] = $test_active;
+                        }
+                        
+                        $debug_info['tested_path_' . basename($plugin_file)] = $test_active;
+                        
+                        if ($test_active) {
+                            $active = true;
+                            $path = $relative_path; // Update path to the correct one
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Log the debug info
+        if (defined('WP_DEBUG') && WP_DEBUG) {
+            error_log('Plugin Status Check - ' . $slug . ': ' . print_r($debug_info, true));
+        }
         
         $statuses[$slug] = [
             'is_installed' => $installed,
-            'is_active' => $active
+            'is_active' => $active,
+            'debug' => $debug_info
         ];
     }
 
@@ -342,5 +522,6 @@ function mtl_enqueue_plugin_scripts() {
     wp_localize_script('jquery', 'mtl_plugin_vars', [
         'ajax_url' => admin_url('admin-ajax.php'),
         'nonce' => wp_create_nonce('mtl_plugin_installation_nonce'),
+        'is_admin' => current_user_can('manage_options'),
     ]);
 }

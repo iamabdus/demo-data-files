@@ -320,6 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
         INSTALLING: 'Installing...',
         ACTIVATING: 'Activating...',
         ACTIVE: 'Active',
+        INSTALLED_NOT_ACTIVE: 'Installed (Not Active)',
         ERROR: 'Error: Installation failed'
     };
 
@@ -396,24 +397,26 @@ document.addEventListener('DOMContentLoaded', function() {
             return status === PLUGIN_STATUS.ACTIVE;
         });
 
-        const hasUninstalledPlugins = pluginItems.some(item => {
+        const hasPluginsNeedingAction = pluginItems.some(item => {
             const status = item.querySelector('.status-column').dataset.status;
-            return status === PLUGIN_STATUS.NOT_INSTALLED || status === PLUGIN_STATUS.ERROR;
+            return status === PLUGIN_STATUS.NOT_INSTALLED || 
+                   status === PLUGIN_STATUS.ERROR || 
+                   status === PLUGIN_STATUS.INSTALLED_NOT_ACTIVE;
         });
 
         // All plugins are active when the number of active plugins equals the total number of plugins
         const allPluginsActive = pluginItems.length === activePlugins.length;
 
         // Manage Install & Activate button state
-        // Only disable the button when all plugins are active or there are no uninstalled plugins
+        // Only disable the button when all plugins are active or there are no plugins needing action
         // Do NOT disable during installation
-        installActivateBtn.disabled = allPluginsActive || !hasUninstalledPlugins;
-        installActivateBtn.style.opacity = hasUninstalledPlugins && !allPluginsActive ? '1' : '0.5';
-        installActivateBtn.style.cursor = hasUninstalledPlugins && !allPluginsActive ? 'pointer' : 'not-allowed';
+        installActivateBtn.disabled = allPluginsActive || !hasPluginsNeedingAction;
+        installActivateBtn.style.opacity = hasPluginsNeedingAction && !allPluginsActive ? '1' : '0.5';
+        installActivateBtn.style.cursor = hasPluginsNeedingAction && !allPluginsActive ? 'pointer' : 'not-allowed';
 
         // Update button texts for clarity - only change text, not disabled state
         if (!isInstallationInProgress) {
-            installActivateBtn.textContent = hasUninstalledPlugins ? 'Install & Activate' : 'All Plugins Installed';
+            installActivateBtn.textContent = hasPluginsNeedingAction ? 'Install & Activate' : 'All Plugins Installed';
         }
         
         return allPluginsActive;
@@ -426,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return [{
                 name: "Elementor",
                 slug: "elementor",
-                path: "elementor/elementor",
+                path: "elementor/elementor.php",
                 version: "latest",
                 pluginUri: "https://downloads.wordpress.org/plugin/elementor.latest-stable.zip",
                 premium: false,
@@ -434,30 +437,63 @@ document.addEventListener('DOMContentLoaded', function() {
             }];
         }
 
-        return manifestData.plugins.map(plugin => ({
-            name: plugin.name,
-            slug: plugin.plugin.split('/')[0],
-            path: plugin.plugin,
-            version: plugin.version,
-            pluginUri: plugin.pluginUri,
-            premium: !plugin.pluginUri.includes('wordpress.org'),
-            download_url: plugin.pluginUri
-        }));
+        return manifestData.plugins.map(plugin => {
+            // Ensure the plugin path is in the correct format
+            let path = plugin.plugin;
+            
+            // If path doesn't include the main plugin file, make sure we add the folder name + folder name + .php
+            if (path && !path.endsWith('.php')) {
+                const slug = path.split('/')[0];
+                if (path.indexOf('/') === -1) {
+                    // If there's no slash, assume the path is just the folder name
+                    path = `${slug}/${slug}.php`;
+                }
+            }
+            
+            // For contact form 7, use the known correct path
+            if (path && path.indexOf('contact-form-7') !== -1 && !path.endsWith('.php')) {
+                path = 'contact-form-7/wp-contact-form-7.php';
+            }
+            
+            console.log(`Processing plugin ${plugin.name}: Path ${plugin.plugin} → ${path}`);
+            
+            return {
+                name: plugin.name,
+                slug: path.split('/')[0],
+                path: path,
+                version: plugin.version || 'latest',
+                pluginUri: plugin.pluginUri || '',
+                premium: plugin.pluginUri ? !plugin.pluginUri.includes('wordpress.org') : false,
+                download_url: plugin.pluginUri || ''
+            };
+        });
     }
 
     function getPluginStatus(plugin) {
         if (plugin.is_active) return PLUGIN_STATUS.ACTIVE;
-        if (plugin.is_installed) return 'Installed';
+        if (plugin.is_installed) return PLUGIN_STATUS.INSTALLED_NOT_ACTIVE;
         return PLUGIN_STATUS.NOT_INSTALLED;
     }
 
     function shouldShowInExistingPlugins(plugin) {
-        return plugin.is_installed || plugin.is_active;
+        return plugin.is_active;
     }
 
     function renderPluginItem(plugin, isExisting = false) {
         const versionLink = `<a href="#" class="version-link">Version ${plugin.version} <span class="dashicons dashicons-external"></span></a>`;
         const status = getPluginStatus(plugin);
+        
+        // Create debug info for admins
+        let debugInfo = '';
+        if (mtl_plugin_vars.is_admin && plugin.debug) {
+            debugInfo = `
+                <div class="plugin-debug-info" style="display: none; margin-top: 8px; padding: 8px; background: #f7f7f7; border: 1px solid #ddd; font-size: 11px; text-align: left;">
+                    <strong>Debug Info:</strong>
+                    <pre>${JSON.stringify(plugin.debug, null, 2)}</pre>
+                    <button class="toggle-debug-info" style="font-size: 10px; padding: 2px 5px;">Hide Debug Info</button>
+                </div>
+            `;
+        }
         
         if (isExisting) {
             return `
@@ -467,6 +503,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="name-column">${plugin.name}</div>
                     <div class="version-column">${versionLink}</div>
+                    ${debugInfo}
                 </div>
             `;
         }
@@ -476,9 +513,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="checkbox-column">
                     <input type="checkbox" ${status === PLUGIN_STATUS.ACTIVE ? 'disabled' : ''} checked>
                 </div>
-                <div class="name-column">${plugin.name}</div>
+                <div class="name-column">
+                    ${plugin.name}
+                    ${mtl_plugin_vars.is_admin ? `<button class="toggle-debug-info" style="font-size: 10px; padding: 2px 5px; margin-left: 5px;">Show Debug Info</button>` : ''}
+                </div>
                 <div class="status-column" data-status="${status}">${status}</div>
                 <div class="version-column">${versionLink}</div>
+                ${debugInfo}
             </div>
         `;
     }
@@ -497,6 +538,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     }))
                 }
             });
+
+            console.log('Plugin Status Check Response:', response);
 
             if (response.success && response.data && response.data.statuses) {
                 return response.data.statuses;
@@ -574,8 +617,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 pluginsData = pluginsData.map(plugin => ({
                     ...plugin,
                     is_installed: statuses[plugin.slug]?.is_installed || false,
-                    is_active: statuses[plugin.slug]?.is_active || false
+                    is_active: statuses[plugin.slug]?.is_active || false,
+                    debug: statuses[plugin.slug]?.debug || null
                 }));
+
+                // Log plugin status information for debugging
+                console.log('Plugin Data with Status Info:', pluginsData);
 
                 // Render plugins in their respective lists
                 renderPluginLists(pluginsData);
@@ -609,9 +656,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function installPlugin(plugin) {
         const pluginElement = document.querySelector(`[data-plugin-slug="${plugin.slug}"]`);
+        if (!pluginElement) {
+            console.error(`Could not find plugin element for ${plugin.slug}`);
+            return false;
+        }
+        
         const statusElement = pluginElement.querySelector('.status-column');
+        if (!statusElement) {
+            console.error(`Could not find status element for ${plugin.slug}`);
+            return false;
+        }
         
         try {
+            console.log(`Starting installation of ${plugin.name} (${plugin.slug}) with path: ${plugin.path}`);
+            
             statusElement.textContent = PLUGIN_STATUS.INSTALLING;
             statusElement.dataset.status = PLUGIN_STATUS.INSTALLING;
             statusElement.className = 'status-column installing';
@@ -632,6 +690,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 version: plugin.version
             };
 
+            console.log(`Sending install request for ${plugin.name} with data:`, pluginData);
+            
             const response = await jQuery.ajax({
                 url: mtl_plugin_vars.ajax_url,
                 type: 'POST',
@@ -641,6 +701,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     plugin: pluginData
                 }
             });
+
+            console.log(`Received response for ${plugin.name}:`, response);
 
             if (response.success) {
                 statusElement.textContent = PLUGIN_STATUS.ACTIVE;
@@ -652,11 +714,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 checkAllPluginsInstalled();
                 return true;
             } else {
-                throw new Error(response.data?.message || 'Installation failed');
+                const errorMsg = response.data?.message || 'Installation failed: Unknown error';
+                console.error(`Installation error for ${plugin.name}:`, response.data);
+                throw new Error(errorMsg);
             }
 
         } catch (error) {
             const errorMessage = error.message || 'Unknown error occurred during installation';
+            console.error(`Installation process error for ${plugin.name}:`, error);
             
             statusElement.textContent = PLUGIN_STATUS.ERROR;
             statusElement.dataset.status = PLUGIN_STATUS.ERROR;
@@ -664,13 +729,18 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const detailsDiv = document.createElement('div');
             detailsDiv.className = 'installation-details';
-            detailsDiv.innerHTML = `<strong>Error Details:</strong> ${errorMessage}`;
+            detailsDiv.innerHTML = `
+                <strong>Error Details:</strong> ${errorMessage}
+                <div class="error-troubleshooting" style="margin-top: 5px; font-size: 12px;">
+                    <p>This error often occurs when the plugin structure doesn't match what WordPress expects.</p>
+                    <p>Plugin Path: ${plugin.path}</p>
+                </div>
+            `;
             pluginElement.classList.add('has-error');
             pluginElement.appendChild(detailsDiv);
             
             showError(`Failed to install ${plugin.name}: ${errorMessage}`);
             
-            console.error('Plugin installation failed:', error);
             return false;
         }
     }
@@ -680,7 +750,10 @@ document.addEventListener('DOMContentLoaded', function() {
             .filter(item => {
                 const checkbox = item.querySelector('input[type="checkbox"]');
                 const status = item.querySelector('.status-column').dataset.status;
-                return checkbox.checked && status !== PLUGIN_STATUS.ACTIVE;
+                return checkbox.checked && 
+                       (status === PLUGIN_STATUS.NOT_INSTALLED || 
+                        status === PLUGIN_STATUS.INSTALLED_NOT_ACTIVE || 
+                        status === PLUGIN_STATUS.ERROR);
             })
             .map(item => {
                 const plugin = window.pluginsData.find(p => p.slug === item.dataset.pluginSlug);
@@ -857,6 +930,45 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (event.target.closest('.version-link')) {
             event.preventDefault();
+        }
+        
+        // Handle debug info toggle buttons
+        if (event.target.closest('.toggle-debug-info')) {
+            event.preventDefault();
+            const button = event.target.closest('.toggle-debug-info');
+            const pluginItem = button.closest('.plugin-item');
+            const debugInfo = pluginItem.querySelector('.plugin-debug-info');
+            
+            if (debugInfo) {
+                const isVisible = debugInfo.style.display !== 'none';
+                debugInfo.style.display = isVisible ? 'none' : 'block';
+                button.textContent = isVisible ? 'Show Debug Info' : 'Hide Debug Info';
+            } else {
+                // If debug info element doesn't exist yet, create it
+                const newDebugInfo = document.createElement('div');
+                newDebugInfo.className = 'plugin-debug-info';
+                newDebugInfo.style = 'margin-top: 8px; padding: 8px; background: #f7f7f7; border: 1px solid #ddd; font-size: 11px; text-align: left;';
+                
+                // Get the plugin slug to find its data
+                const slug = pluginItem.dataset.pluginSlug;
+                const plugin = window.pluginsData.find(p => p.slug === slug);
+                
+                if (plugin) {
+                    newDebugInfo.innerHTML = `
+                        <strong>Debug Info:</strong>
+                        <pre>${JSON.stringify({
+                            slug: plugin.slug,
+                            path: plugin.path,
+                            is_installed: plugin.is_installed,
+                            is_active: plugin.is_active
+                        }, null, 2)}</pre>
+                        <button class="toggle-debug-info" style="font-size: 10px; padding: 2px 5px;">Hide Debug Info</button>
+                    `;
+                    
+                    pluginItem.appendChild(newDebugInfo);
+                    button.textContent = 'Hide Debug Info';
+                }
+            }
         }
     });
 
