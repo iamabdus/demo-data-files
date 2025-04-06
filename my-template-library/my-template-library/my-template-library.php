@@ -3630,7 +3630,7 @@ function mtl_import_customizer_data($customizer_file) {
             
             // Handle image URLs
             if (is_string($value) && filter_var($value, FILTER_VALIDATE_URL) 
-                && preg_match('/\.(jpe?g|png|gif|webp|svg)$/i', $value)) {
+                && preg_match('/\.(jpe?g|png|gif|webp|svg|ico)$/i', $value)) {
                 // This looks like an image URL, try to import it
                 $attachment_id = mtl_download_and_import_image($value);
                 if (!is_wp_error($attachment_id)) {
@@ -3647,7 +3647,7 @@ function mtl_import_customizer_data($customizer_file) {
             if (is_array($value)) {
                 foreach ($value as $sub_key => $sub_value) {
                     if (is_string($sub_value) && filter_var($sub_value, FILTER_VALIDATE_URL) 
-                        && preg_match('/\.(jpe?g|png|gif|webp|svg)$/i', $sub_value)) {
+                        && preg_match('/\.(jpe?g|png|gif|webp|svg|ico)$/i', $sub_value)) {
                         $attachment_id = mtl_download_and_import_image($sub_value);
                         if (!is_wp_error($attachment_id)) {
                             $image_url = wp_get_attachment_url($attachment_id);
@@ -3724,6 +3724,9 @@ function mtl_download_and_import_image($url) {
     // Remove query strings if any
     $file_name = preg_replace('/\?.*/', '', $file_name);
     
+    // Extract file extension to ensure it's preserved
+    $file_ext = pathinfo($file_name, PATHINFO_EXTENSION);
+    
     // Check if this image already exists in the media library
     $existing_attachment = get_page_by_title($file_name, OBJECT, 'attachment');
     
@@ -3738,16 +3741,30 @@ function mtl_download_and_import_image($url) {
         return $tmp_file;
     }
     
+    // Define allowed mime types to include all common image formats
+    $allowed_mime_types = array(
+        'jpg'  => 'image/jpeg',
+        'jpeg' => 'image/jpeg',
+        'png'  => 'image/png',
+        'gif'  => 'image/gif',
+        'webp' => 'image/webp',
+        'svg'  => 'image/svg+xml',
+        'ico'  => 'image/x-icon'
+    );
+    
     // Prepare file data for wp_handle_sideload
     $file_data = array(
         'name'     => $file_name,
         'tmp_name' => $tmp_file
     );
     
-    // Move the temporary file to the uploads directory
+    // Move the temporary file to the uploads directory with explicit mime type handling
     $results = wp_handle_sideload(
         $file_data,
-        array('test_form' => false)
+        array(
+            'test_form' => false,
+            'mimes' => $allowed_mime_types
+        )
     );
     
     if (!empty($results['error'])) {
@@ -3991,9 +4008,16 @@ function mtl_ajax_upload_site_logo() {
     }
     
     // Check file type
-    $file_type = wp_check_filetype($file['name'], ['jpg' => 'image/jpeg', 'jpeg' => 'image/jpeg', 'png' => 'image/png', 'gif' => 'image/gif', 'webp' => 'image/webp']);
+    $file_type = wp_check_filetype($file['name'], [
+        'jpg' => 'image/jpeg', 
+        'jpeg' => 'image/jpeg', 
+        'png' => 'image/png', 
+        'gif' => 'image/gif', 
+        'webp' => 'image/webp',
+        'svg' => 'image/svg+xml'
+    ]);
     if (!$file_type['type']) {
-        wp_send_json_error(['message' => 'Invalid file type. Please upload a valid image file (JPG, PNG, GIF, or WEBP).']);
+        wp_send_json_error(['message' => 'Invalid file type. Please upload a valid image file (JPG, PNG, GIF, WEBP, or SVG).']);
     }
     
     // Prepare for upload
@@ -4122,10 +4146,17 @@ function mtl_ajax_upload_site_icon() {
         wp_send_json_error(['message' => $error_message]);
     }
     
-    // Check file type
-    $file_type = wp_check_filetype($file['name'], ['jpg' => 'image/jpeg', 'jpeg' => 'image/jpeg', 'png' => 'image/png', 'ico' => 'image/x-icon']);
+    // Check file type - including GIF
+    $file_type = wp_check_filetype($file['name'], [
+        'jpg' => 'image/jpeg', 
+        'jpeg' => 'image/jpeg', 
+        'png' => 'image/png', 
+        'gif' => 'image/gif',
+        'ico' => 'image/x-icon',
+        'webp' => 'image/webp'
+    ]);
     if (!$file_type['type']) {
-        wp_send_json_error(['message' => 'Invalid file type. Please upload a valid image file (JPG, PNG, or ICO).']);
+        wp_send_json_error(['message' => 'Invalid file type. Please upload a valid image file (JPG, PNG, GIF, ICO, or WEBP).']);
     }
     
     // Prepare for upload
